@@ -3,5 +3,6 @@ public class TestClass {
 		System.out.println("Fun with Git"); //hi hello testing
 		System.out.println("Test Pushing."); //test pushing
 		System.out.println("Anas Ishtiaque"); //my name
+		System.out.println("Bilal Farooqui"); //my name 1
 	}
 }
