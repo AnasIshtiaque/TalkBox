@@ -7,5 +7,6 @@ public class TestClass {
 		System.out.println("Bilal Farooqui testing "); //my name testing 
 		System.out.println("TEST");
 		System.out.println("Can you see this");
+		System.out.println("home"); // home
 	}
 }
