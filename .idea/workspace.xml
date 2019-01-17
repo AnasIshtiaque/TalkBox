@@ -3,11 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="f4af569a-96fa-43f3-a9a0-1a12027d254c" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TalkBox/TalkBoxSimTester.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TalkBox/TalkBoxSimulator$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TalkBox/TalkBoxSimulator$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TalkBox/TalkBoxSimTester.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TalkBox/TalkBoxSimTester.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TalkBox/TalkBoxSimulator$1.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/TalkBox/TalkBoxSimulator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TalkBox/TalkBoxSimulator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TalkBoxSimTester.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TalkBoxSimTester.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TalkBoxSimulator.form" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TalkBox/yes-5.wav" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/TalkBoxSimulator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TalkBoxSimulator.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -33,23 +32,24 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/TalkBoxSimulator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="21" lean-forward="true" selection-start-column="21" selection-end-column="21" />
+            <state relative-caret-position="165">
+              <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
               <folding>
+                <element signature="imports" expanded="true" />
                 <element signature="e#411#420#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/TalkBoxSimTester.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="1" lean-forward="true" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+            <state relative-caret-position="60">
+              <caret line="4" column="58" selection-start-line="4" selection-start-column="58" selection-end-line="4" selection-end-column="58" />
             </state>
           </provider>
         </entry>
@@ -72,8 +72,8 @@
       <list>
         <option value="$PROJECT_DIR$/src/TestClass.java" />
         <option value="$PROJECT_DIR$/src/TalkBoxSimulator.form" />
-        <option value="$PROJECT_DIR$/src/TalkBoxSimulator.java" />
         <option value="$PROJECT_DIR$/src/TalkBoxSimTester.java" />
+        <option value="$PROJECT_DIR$/src/TalkBoxSimulator.java" />
       </list>
     </option>
   </component>
@@ -115,7 +115,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547706461568" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547742312248" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
@@ -193,12 +193,12 @@
       <workItem from="1547658305879" duration="21000" />
       <workItem from="1547658350408" duration="165000" />
       <workItem from="1547658545165" duration="1162000" />
-      <workItem from="1547660034428" duration="9001000" />
+      <workItem from="1547660034428" duration="12167000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11737000" />
+    <option name="totallyTimeSpent" value="14903000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -213,7 +213,7 @@
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26190478" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26190478" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Learn" order="2" weight="0.32967034" />
       <window_info id="Image Layers" order="3" />
@@ -223,16 +223,16 @@
       <window_info id="Favorites" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.492674" visible="true" weight="0.31428573" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.491453" visible="true" weight="0.31428573" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.4993895" weight="0.32959184" />
       <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.497558" weight="0.32857144" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.497558" weight="0.32959184" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.507326" side_tool="true" visible="true" weight="0.31428573" />
-      <window_info anchor="bottom" id="Messages" order="11" sideWeight="0.4945055" weight="0.32959184" />
+      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.4969475" weight="0.32959184" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.508547" side_tool="true" visible="true" weight="0.31428573" />
+      <window_info anchor="bottom" id="Messages" order="11" sideWeight="0.493895" weight="0.32959184" />
       <window_info anchor="bottom" id="Docker" order="12" show_stripe_button="false" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.24969475" />
@@ -330,20 +330,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/TalkBoxSimulator.java">
+    <entry file="file://$PROJECT_DIR$/src/TalkBoxSimTester.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="21" lean-forward="true" selection-start-column="21" selection-end-column="21" />
-          <folding>
-            <element signature="e#411#420#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="60">
+          <caret line="4" column="58" selection-start-line="4" selection-start-column="58" selection-end-line="4" selection-end-column="58" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/TalkBoxSimTester.java">
+    <entry file="file://$PROJECT_DIR$/src/TalkBoxSimulator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="1" lean-forward="true" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+        <state relative-caret-position="165">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#411#420#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -1,8 +1,12 @@
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import java.util.ArrayList;
 
 public class TalkBoxSimulator extends JFrame {
+
+    public static int i;
 
     public TalkBoxSimulator() {
 
@@ -10,13 +14,12 @@ public class TalkBoxSimulator extends JFrame {
         setSize(400,200);
         setLayout(new GridLayout());
 
+
         ArrayList<JButton> buttons = new ArrayList<JButton>();
 
-        for(int i = 0; i < 5; i++){
-            buttons.add(new JButton("Button: " + (i+1)));
+        for(i = 0; i < 10; i++) {
+            buttons.add(new JButton("Button: " + (i + 1)));
             add(buttons.get(i));
         }
-
-
     }
 }
