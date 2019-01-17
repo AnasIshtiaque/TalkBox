@@ -1,23 +1,22 @@
 import javax.swing.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
+import java.awt.*;
+import java.util.ArrayList;
 
 public class TalkBoxSimulator extends JFrame {
-    private JPanel panel1;
-    private JButton button1;
-    private JButton button2;
 
     public TalkBoxSimulator() {
 
-        add(panel1);
-        setTitle("Talk Box Simulator");
-        setSize(400,400);
+        setVisible(true);
+        setSize(400,200);
+        setLayout(new GridLayout());
 
-        button1.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                System.out.println("Hello World");
-            }
-        });
+        ArrayList<JButton> buttons = new ArrayList<JButton>();
+
+        for(int i = 0; i < 5; i++){
+            buttons.add(new JButton("Button: " + (i+1)));
+            add(buttons.get(i));
+        }
+
+
     }
 }

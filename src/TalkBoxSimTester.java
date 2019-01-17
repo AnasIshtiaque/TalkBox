@@ -1,9 +1,8 @@
 public class TalkBoxSimTester {
 
-    public static void main(String args[]){
+    public static void main(String args[]) {
 
         TalkBoxSimulator talkbox = new TalkBoxSimulator();
-        talkbox.setVisible(true);
 
     }
 
