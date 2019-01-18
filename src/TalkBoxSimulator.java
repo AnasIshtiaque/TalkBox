@@ -1,7 +1,5 @@
 import javax.swing.*;
 
-import javafx.scene.media.AudioClip;
-
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -32,9 +30,9 @@ public class TalkBoxSimulator extends JFrame {
     }
 public class PlayListener implements ActionListener {
         public void actionPerformed(ActionEvent event) {
-       ClassLoader classLoader=this.getClass().getClassLoader();
-       java.applet.AudioClip audio=JApplet.newAudioClip(classLoader.getResource("duke3d.mid"));
-           audio.play();
+            ClassLoader classLoader=this.getClass().getClassLoader();
+            java.applet.AudioClip audio=JApplet.newAudioClip(classLoader.getResource("yes-5.wav"));
+            audio.play();
         }
      }
     
