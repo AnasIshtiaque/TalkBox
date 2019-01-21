@@ -8,6 +8,7 @@ import java.util.ArrayList;
 public class TalkBoxSimulator extends JFrame {
 	float a = 0;
     public static int i;
+
     ArrayList<JButton> buttons = new ArrayList<JButton>();
     ArrayList<PlayListener> listeners = new ArrayList<PlayListener>();
 
@@ -17,13 +18,11 @@ public class TalkBoxSimulator extends JFrame {
         setSize(400,200);
         setLayout(new GridLayout());
 
-
-
-
         for(i = 0; i < 5; i++) {
             buttons.add(new JButton(i+"button"));
             add(buttons.get(i));
             buttons.get(i).addActionListener(new PlayListener());
+
         }
     String path = "GWgwHBK.jpg";
     ImageIcon icon = new ImageIcon(TalkBoxSimulator.class.getResource(path));
