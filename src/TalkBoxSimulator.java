@@ -27,7 +27,6 @@ public class TalkBoxSimulator extends JFrame {
         }
     String path = "GWgwHBK.jpg";
     ImageIcon icon = new ImageIcon(TalkBoxSimulator.class.getResource(path));
-    //buttons.get(0).setIcon(icon);
     }
 public class PlayListener implements ActionListener {
         public void actionPerformed(ActionEvent event) {
