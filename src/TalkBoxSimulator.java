@@ -6,9 +6,8 @@ import java.awt.event.ActionListener;
 import java.util.ArrayList;
 
 public class TalkBoxSimulator extends JFrame {
-	double a = 0;
+
     public static int i;
-    int ab = 0;
 
     ArrayList<JButton> buttons = new ArrayList<JButton>();
     ArrayList<PlayListener> listeners = new ArrayList<PlayListener>();
@@ -23,8 +22,8 @@ public class TalkBoxSimulator extends JFrame {
             buttons.add(new JButton(i+"button"));
             add(buttons.get(i));
             buttons.get(i).addActionListener(new PlayListener());
-
         }
+        
     String path = "GWgwHBK.jpg";
     ImageIcon icon = new ImageIcon(TalkBoxSimulator.class.getResource(path));
     }
