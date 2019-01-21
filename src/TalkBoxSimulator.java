@@ -6,7 +6,7 @@ import java.awt.event.ActionListener;
 import java.util.ArrayList;
 
 public class TalkBoxSimulator extends JFrame {
-	double h = 0;
+	float a = 0;
     public static int i;
     ArrayList<JButton> buttons = new ArrayList<JButton>();
     ArrayList<PlayListener> listeners = new ArrayList<PlayListener>();
