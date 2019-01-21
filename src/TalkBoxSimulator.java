@@ -9,6 +9,7 @@ public class TalkBoxSimulator extends JFrame {
 
     public static int i;
     ArrayList<JButton> buttons = new ArrayList<JButton>();
+    ArrayList<PlayListener> listeners = new ArrayList<PlayListener>();
 
     public TalkBoxSimulator() {
 
@@ -19,23 +20,24 @@ public class TalkBoxSimulator extends JFrame {
 
 
 
-        for(i = 0; i < 10; i++) {
-            buttons.add(new JButton("Button: " + (i + 1)));
+        for(i = 0; i < 5; i++) {
+            buttons.add(new JButton(i+"button"));
             add(buttons.get(i));
             buttons.get(i).addActionListener(new PlayListener());
         }
-    buttons.get(0).setText("PLAY"); 
     String path = "GWgwHBK.jpg";
     ImageIcon icon = new ImageIcon(TalkBoxSimulator.class.getResource(path));
-    buttons.get(0).setIcon(icon);
-
+    //buttons.get(0).setIcon(icon);
     }
 public class PlayListener implements ActionListener {
         public void actionPerformed(ActionEvent event) {
-            ClassLoader classLoader=this.getClass().getClassLoader();
-            java.applet.AudioClip audio=JApplet.newAudioClip(classLoader.getResource("1.wav"));
-            audio.play();
+            for(int k = 0; k < 5; k++){
+                if(event.getSource().equals(buttons.get(k))){
+                    ClassLoader classLoader=this.getClass().getClassLoader();
+                    java.applet.AudioClip audio=JApplet.newAudioClip(classLoader.getResource((k+1)+".wav"));
+                    audio.play();
+                }
+            }
         }
      }
-
 }
