@@ -8,7 +8,7 @@ import java.util.ArrayList;
 public class TalkBoxSimulator extends JFrame {
 
     public static int i;
-    int a = 0;
+    int ab = 0;
     ArrayList<JButton> buttons = new ArrayList<JButton>();
 
     public TalkBoxSimulator() {
