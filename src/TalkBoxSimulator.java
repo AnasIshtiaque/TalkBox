@@ -6,37 +6,33 @@ import java.awt.event.ActionListener;
 import java.util.ArrayList;
 
 public class TalkBoxSimulator extends JFrame {
-	double a = 0;
-    public static int i;
-    ArrayList<JButton> buttons = new ArrayList<JButton>();
-    ArrayList<PlayListener> listeners = new ArrayList<PlayListener>();
+	ArrayList<JButton> buttons = new ArrayList<JButton>();
+	ArrayList<PlayListener> listeners = new ArrayList<PlayListener>();
 
-    public TalkBoxSimulator() {
+	public TalkBoxSimulator() {
+		setVisible(true);
+		setSize(400, 200);
+		getContentPane().setLayout(null);
+		
+		JButton greetbtn = new JButton("Greetings");
+		
+		greetbtn.setIcon(new ImageIcon("0-1289024.png"));
+		greetbtn.setBounds(0, 0, 75, 50);
+		greetbtn.setHorizontalTextPosition(JButton.CENTER);
+		greetbtn.setVerticalTextPosition(JButton.CENTER);
+		getContentPane().add(greetbtn);
+		
+	}
 
-        setVisible(true);
-        setSize(400,200);
-        setLayout(new GridLayout());
-
-
-
-
-        for(i = 0; i < 5; i++) {
-            buttons.add(new JButton(i+"button"));
-            add(buttons.get(i));
-            buttons.get(i).addActionListener(new PlayListener());
-        }
-    String path = "GWgwHBK.jpg";
-    ImageIcon icon = new ImageIcon(TalkBoxSimulator.class.getResource(path));
-    }
-public class PlayListener implements ActionListener {
-        public void actionPerformed(ActionEvent event) {
-            for(int k = 0; k < 5; k++){
-                if(event.getSource().equals(buttons.get(k))){
-                    ClassLoader classLoader=this.getClass().getClassLoader();
-                    java.applet.AudioClip audio=JApplet.newAudioClip(classLoader.getResource((k+1)+".wav"));
-                    audio.play();
-                }
-            }
-        }
-     }
+	public class PlayListener implements ActionListener {
+		public void actionPerformed(ActionEvent event) {
+			for (int k = 0; k < 5; k++) {
+				if (event.getSource().equals(buttons.get(k))) {
+					ClassLoader classLoader = this.getClass().getClassLoader();
+					java.applet.AudioClip audio = JApplet.newAudioClip(classLoader.getResource((k + 1) + ".wav"));
+					audio.play();
+				}
+			}
+		}
+	}
 }
