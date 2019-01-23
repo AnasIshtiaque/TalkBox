@@ -26,6 +26,7 @@ public class TalkBoxConfigurator extends JFrame {
             buttons.add(new JButton("button" + counter));
             add(buttons.get(counter));
             counter++;
+            revalidate();
         }
     }
 
