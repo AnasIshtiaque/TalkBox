@@ -15,7 +15,7 @@ public class TalkBoxSimulator extends JFrame {
     public TalkBoxSimulator() {
 
         setVisible(true);
-        setSize(400,200);
+        setSize(200,200);
         setLayout(new GridLayout());
 
         for(i = 0; i < 5; i++) {
