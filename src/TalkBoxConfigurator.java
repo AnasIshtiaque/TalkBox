@@ -1,7 +1,5 @@
 import javax.imageio.ImageIO;
-import javax.sound.sampled.AudioSystem;
 import javax.swing.*;
-import java.applet.AudioClip;
 import java.awt.*;
 import java.awt.datatransfer.DataFlavor;
 import java.awt.datatransfer.Transferable;
@@ -47,6 +45,7 @@ public class TalkBoxConfigurator extends JFrame {
                 DataFlavor.imageFlavor
         };
 
+
         @Override
         public boolean canImport(TransferHandler.TransferSupport support) {
             boolean canImport = false;
@@ -68,7 +67,6 @@ public class TalkBoxConfigurator extends JFrame {
                     Component component = support.getComponent();
                     if (component instanceof JButton) {
                         Image image = null;
-                        AudioClip audio = null;
                         if (support.isDataFlavorSupported(DataFlavor.imageFlavor)) {
                             image = (Image) t.getTransferData(DataFlavor.imageFlavor);
                         } else if (support.isDataFlavorSupported(DataFlavor.javaFileListFlavor)) {
