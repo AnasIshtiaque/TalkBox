@@ -32,7 +32,7 @@ public class TalkBoxConfigurator extends JFrame {
 
     public class PlayListener implements ActionListener {
         public void actionPerformed(ActionEvent event) {
-            buttons.add(new JButton("button" + counter));
+            buttons.add(new JButton("Drag image file... "));
             buttons.get(counter).setTransferHandler(new TalkBoxConfigurator.ImageTransferHandler());
             add(buttons.get(counter));
             counter++;
