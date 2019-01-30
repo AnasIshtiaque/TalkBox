@@ -224,6 +224,7 @@ public class essentials1 extends JFrame{
 			@Override
 			public void actionPerformed(ActionEvent e) {
 				TalkBoxSimulator menu = new TalkBoxSimulator();
+				setVisible(false);
 			}
 		});
 	}
