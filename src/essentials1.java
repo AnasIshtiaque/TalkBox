@@ -9,51 +9,87 @@ import javax.swing.JApplet;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import java.awt.GridLayout;
+import java.awt.Image;
+
 import javax.swing.JLabel;
+import javax.swing.SwingConstants;
+
 import java.awt.GridBagLayout;
+import java.awt.Frame;
 import java.awt.GridBagConstraints;
 import java.awt.Insets;
 import javax.swing.GroupLayout;
 import javax.swing.GroupLayout.Alignment;
+import javax.swing.Icon;
+import javax.swing.ImageIcon;
 
 
 public class essentials1 extends JFrame{
-	private JButton hello, gbye, feel_sick, back, mouth_dry,need_break,need_suction,need_help, yes, no, thank, youre_welcome, upset;
-	
+	private JButton hello, gbye, feel_sick, back, mouth_dry,need_break,need_help, yes, no, thank, youre_welcome, upset;
+	private JFrame frame;
+	private ImageIcon hello_ic, gbye_ic, sick_ic, mouth_dry_ic,break_ic,help_ic,yes_ic,no_ic,thank_ic,welcome_ic,upset_ic,back_ic;
 	public essentials1() {
-		setVisible(true);
-		setSize(800, 500);
-		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		getContentPane().setLayout(new GridLayout(3, 4, 1, 1));
+		frame = new JFrame();
+		frame.setExtendedState(JFrame.MAXIMIZED_BOTH); 
+		//for fullscreen mode: frame.setUndecorated(true);
+		frame.setState(Frame.NORMAL);
+		frame.setVisible(true);
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		frame.getContentPane().setLayout(new GridLayout(3, 4, 1, 1));
 		
-		hello = new JButton("Hello");
-		gbye = new JButton("Goodbye");
-		feel_sick = new JButton("Feel Sick");
-		mouth_dry = new JButton("Mouth Dry");
-		need_break = new JButton("Need A Break");
-		need_help = new JButton("Need Help");
-		need_suction = new JButton("Need Suction");
-		yes = new JButton("YES");
-		no = new JButton("NO");
-		thank = new JButton("Thank you");
-		youre_welcome = new JButton("You're Welcome");
-		upset = new JButton("Upset");
-		back = new JButton("Back");
+		hello_ic = new ImageIcon("icon/essential1/hello.png");
+		hello = new JButton("Hello",hello_ic);
+		
+		gbye_ic = new ImageIcon("icon/essential1/goodbye.png");
+		gbye = new JButton("Goodbye", gbye_ic);
+		
+		sick_ic = new ImageIcon("icon/essential1/feel_sick.gif");
+		feel_sick = new JButton("Feel Sick",sick_ic);
+		
+		mouth_dry_ic = new ImageIcon("icon/essential1/mouth_dry.png");
+		mouth_dry = new JButton("Mouth Dry",mouth_dry_ic);
+		
+		break_ic = new ImageIcon("icon/essential1/break.png");
+		need_break = new JButton("Need A Break",break_ic);
+		
+		help_ic = new ImageIcon("icon/essential1/help.png");
+		need_help = new JButton("Need Help",help_ic);
+		
+		yes_ic = new ImageIcon("icon/essential1/yes.png");
+		yes = new JButton("YES",yes_ic);
+		
+		no_ic = new ImageIcon("icon/essential1/no.png");
+		no = new JButton("NO",no_ic);
+		
+		thank_ic = new ImageIcon("icon/essential1/thanks.png");
+		thank = new JButton("Thank you",thank_ic);
+		
+		welcome_ic = new ImageIcon("icon/essential1/yourewelcome.png");
+		youre_welcome = new JButton("You're Welcome",welcome_ic);
+		
+		upset_ic = new ImageIcon("icon/essential1/upset.png");
+		upset = new JButton("Upset",upset_ic);
+		
+		back_ic = new ImageIcon("icon/essential1/back.png");
+		back = new JButton("Back", back_ic);
+		
 		back.setBounds(615, 216, 169, 93);
-		
-		getContentPane().add(hello);
-		getContentPane().add(gbye);
-		getContentPane().add(feel_sick);
-		getContentPane().add(mouth_dry);
-		getContentPane().add(need_break);
-		getContentPane().add(need_suction);
-		getContentPane().add(need_help);
-		getContentPane().add(yes);
-		getContentPane().add(no);
-		getContentPane().add(thank);
-		getContentPane().add(youre_welcome);
-		getContentPane().add(upset);
-		getContentPane().add(back);
+	
+		//hello.setIcon(resizeIcon(hello_ic,hello.getWidth(),hello.getHeight()));
+		//hello.setVerticalTextPosition(SwingConstants.BOTTOM);
+		//hello.setHorizontalTextPosition(SwingConstants.CENTER);
+		frame.getContentPane().add(hello);
+		frame.getContentPane().add(gbye);
+		frame.getContentPane().add(feel_sick);
+		frame.getContentPane().add(mouth_dry);
+		frame.getContentPane().add(need_break);
+		frame.getContentPane().add(need_help);
+		frame.getContentPane().add(yes);
+		frame.getContentPane().add(no);
+		frame.getContentPane().add(thank);
+		frame.getContentPane().add(youre_welcome);
+		frame.getContentPane().add(upset);
+		frame.getContentPane().add(back);
 		
 		buttons();
 
@@ -126,19 +162,7 @@ public class essentials1 extends JFrame{
 				}
 			}
 		});
-		need_suction.addActionListener(new ActionListener() {
-			@Override
-			public void actionPerformed(ActionEvent e) {
-				try {  
-					AudioInputStream audioInputStream = AudioSystem.getAudioInputStream(new File("sounds/essentials1_f/need_suction.wav"));
-					Clip clip = AudioSystem.getClip();
-					clip.open(audioInputStream);
-					clip.start();
-				} catch(Exception e1) {
-					e1.printStackTrace();
-				}
-			}
-		});
+		
 		need_help.addActionListener(new ActionListener() {
 			@Override
 			public void actionPerformed(ActionEvent e) {
@@ -224,8 +248,14 @@ public class essentials1 extends JFrame{
 			@Override
 			public void actionPerformed(ActionEvent e) {
 				TalkBoxSimulator menu = new TalkBoxSimulator();
-				setVisible(false);
+				frame.setVisible(false);
 			}
 		});
 	}
+
+	private static Icon resizeIcon(ImageIcon icon, int resizedWidth, int resizedHeight) {
+	    Image img = icon.getImage();  
+	    Image resizedImage = img.getScaledInstance(resizedWidth, resizedHeight,  java.awt.Image.SCALE_SMOOTH);  
+	    return new ImageIcon(resizedImage);
+}
 }

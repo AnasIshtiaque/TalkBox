@@ -10,28 +10,49 @@ import java.io.File;
 import java.util.ArrayList;
 
 public class TalkBoxSimulator extends JFrame {
-	private JButton essential;
+	private JButton essential1, essential2;
+	private JFrame frame;
 
 	public TalkBoxSimulator() {
-		setVisible(true);
-		setSize(800, 500);
-		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		getContentPane().setLayout(null);
+		frame = new JFrame();
+		frame.setExtendedState(JFrame.MAXIMIZED_BOTH); 
+		// for fullscreen mode:frame.setUndecorated(true);
+
+		frame.setVisible(true);
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		frame.getContentPane().setLayout(new GridLayout(3, 4, 1, 1));
+
+		essential1 = new JButton("Essentials 1");
+		essential2 = new JButton("Essentials 2");
 		
-		essential = new JButton("Essentials 1");
-		getContentPane().add(essential);
-		essential.setBounds(0, 0, 169, 93);
+		frame.getContentPane().add(essential1);
+		frame.getContentPane().add(essential2);
 		buttons();
 	}
-	
+
 	private void buttons() {
-		essential.addActionListener(new ActionListener() {
+		essential1.addActionListener(new ActionListener() {
 			@Override
 			public void actionPerformed(ActionEvent e) {
 				essentials1 ess = new essentials1();
-				setVisible(false);
+				frame.setVisible(false);
 				try {  
 					AudioInputStream audioInputStream = AudioSystem.getAudioInputStream(new File("sounds/essentials1_f/essentials1_f.wav"));
+					Clip clip = AudioSystem.getClip();
+					clip.open(audioInputStream);
+					clip.start();
+				} catch(Exception e1) {
+					e1.printStackTrace();
+				}
+			}
+		});
+		essential2.addActionListener(new ActionListener() {
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				essentials2 ess = new essentials2();
+				frame.setVisible(false);
+				try {  
+					AudioInputStream audioInputStream = AudioSystem.getAudioInputStream(new File("sounds/essentials2_f/essentials2_f.wav"));
 					Clip clip = AudioSystem.getClip();
 					clip.open(audioInputStream);
 					clip.start();
