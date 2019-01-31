@@ -37,7 +37,7 @@ public class TalkBoxSimulator extends JFrame {
 				essentials1 ess = new essentials1();
 				frame.setVisible(false);
 				try {  
-					AudioInputStream audioInputStream = AudioSystem.getAudioInputStream(new File("sounds/essentials1_f/essentials1_f.wav"));
+					AudioInputStream audioInputStream = AudioSystem.getAudioInputStream(new File("sounds/pop.wav"));
 					Clip clip = AudioSystem.getClip();
 					clip.open(audioInputStream);
 					clip.start();
@@ -52,7 +52,7 @@ public class TalkBoxSimulator extends JFrame {
 				essentials2 ess = new essentials2();
 				frame.setVisible(false);
 				try {  
-					AudioInputStream audioInputStream = AudioSystem.getAudioInputStream(new File("sounds/essentials2_f/essentials2_f.wav"));
+					AudioInputStream audioInputStream = AudioSystem.getAudioInputStream(new File("sounds/pop.wav"));
 					Clip clip = AudioSystem.getClip();
 					clip.open(audioInputStream);
 					clip.start();

@@ -121,6 +121,19 @@ public class essentials2 extends JFrame{
 				}
 			}
 		});
+		back.addActionListener(new ActionListener() {
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				try {  
+					AudioInputStream audioInputStream = AudioSystem.getAudioInputStream(new File("sounds/pop.wav"));
+					Clip clip = AudioSystem.getClip();
+					clip.open(audioInputStream);
+					clip.start();
+				} catch(Exception e1) {
+					e1.printStackTrace();
+				}
+			}
+		});
 	}
 	
 	private void main(JButton back) {
