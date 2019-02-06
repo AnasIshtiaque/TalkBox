@@ -5,21 +5,12 @@ import java.io.File;
 import javax.sound.sampled.AudioInputStream;
 import javax.sound.sampled.AudioSystem;
 import javax.sound.sampled.Clip;
-import javax.swing.JApplet;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import java.awt.GridLayout;
 import java.awt.Image;
 
-import javax.swing.JLabel;
-import javax.swing.SwingConstants;
-
-import java.awt.GridBagLayout;
 import java.awt.Frame;
-import java.awt.GridBagConstraints;
-import java.awt.Insets;
-import javax.swing.GroupLayout;
-import javax.swing.GroupLayout.Alignment;
 import javax.swing.Icon;
 import javax.swing.ImageIcon;
 
