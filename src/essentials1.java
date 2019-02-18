@@ -257,9 +257,9 @@ public class essentials1 extends JFrame{
 		});
 	}
 
-	private static Icon resizeIcon(ImageIcon icon, int resizedWidth, int resizedHeight) {
+/*	private static Icon resizeIcon(ImageIcon icon, int resizedWidth, int resizedHeight) {
 	    Image img = icon.getImage();  
 	    Image resizedImage = img.getScaledInstance(resizedWidth, resizedHeight,  java.awt.Image.SCALE_SMOOTH);  
 	    return new ImageIcon(resizedImage);
-}
+}*/
 }
