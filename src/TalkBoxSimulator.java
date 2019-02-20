@@ -15,8 +15,7 @@ public class TalkBoxSimulator extends JFrame {
 	public TalkBoxSimulator() {
 		frame = new JFrame();
 		frame.setExtendedState(JFrame.MAXIMIZED_BOTH); 
-		// for fullscreen mode:frame.setUndecorated(true);
-
+		
 		frame.setVisible(true);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.getContentPane().setLayout(new GridLayout(3, 4, 1, 1));
