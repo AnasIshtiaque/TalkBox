@@ -1,19 +1,19 @@
 {
-  "soundset_name": "example",
-  "soundset_filename": "example.wav",
+  "soundset_name": "temperature",
+  "soundset_filename": "temperature.wav",
   "sounds": {
     "0": {
-      "filename":"",
+      "filename":"hot.wav",
       "image": "",
       "description": ""
     },
     "1": {
-      "filename":"",
+      "filename":"cold.wav",
       "image": "",
       "description": ""
     },
     "2": {
-      "filename":"",
+      "filename":"just_right.wav",
       "image": "",
       "description": ""
     },
