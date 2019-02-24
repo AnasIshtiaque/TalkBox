@@ -16,14 +16,14 @@ import java.nio.file.Path;
 import java.util.ArrayList;
 import java.util.List;
 
-public class TalkBoxConfigurator extends JFrame implements TalkBoxConfiguration{
+public class TalkBoxConfigurator extends JFrame implements TalkBoxConfiguration {
 	static ArrayList<JTextArea> c = new ArrayList<JTextArea>();
 	static ArrayList<JButton> buttons = new ArrayList<JButton>();
 	List<String> filenames = new ArrayList<String>();
-	String RRfilename = new String();
+	List<String> images = new ArrayList<String>();
 	Path RRfilenames;
 	StringBuilder builder = new StringBuilder();
-	//int filecounter;
+	// int filecounter;
 	int counter = 0;
 	String filename = "";
 	ArrayList<StringBuilder> builders = new ArrayList<StringBuilder>();
@@ -49,10 +49,10 @@ public class TalkBoxConfigurator extends JFrame implements TalkBoxConfiguration{
 
 			builder = new StringBuilder();
 			buttons.add(new JButton("Drag image file... "));
-			buttons.get(counter).setTransferHandler(new TalkBoxConfigurator.ImageTransferHandler());
+		//	buttons.get(counter).setTransferHandler(new TalkBoxConfigurator.ImageTransferHandler());
 			add(buttons.get(counter));
 			buttons.get(counter).addActionListener(new PlayListener1());
-			c.add(new JTextArea("Drag audio file... "));
+			c.add(new JTextArea());
 
 			getContentPane().add(new javax.swing.JScrollPane(c.get(counter)), java.awt.BorderLayout.CENTER);
 
@@ -60,7 +60,7 @@ public class TalkBoxConfigurator extends JFrame implements TalkBoxConfiguration{
 				public void filesDropped(java.io.File[] files) {
 					for (int i = 0; i < files.length; i++) {
 						try {
-							c.get(counter - 1).append("\n" + files[i].getCanonicalPath() + "\n");
+							c.get(counter - 1).append(files[i].getCanonicalPath() + "\n");
 							// filecounter = files.length;
 							// a.append(files[i].getCanonicalPath()+"\n");
 							builder.append(files[i].getCanonicalPath() + "\n");
@@ -68,7 +68,7 @@ public class TalkBoxConfigurator extends JFrame implements TalkBoxConfiguration{
 							RRfilenames = files[i].toPath().getParent();
 							filenames.add(filename);
 							builders.add(builder);
-								
+
 						} // end try
 						catch (java.io.IOException e) {
 						}
@@ -77,8 +77,23 @@ public class TalkBoxConfigurator extends JFrame implements TalkBoxConfiguration{
 				} // end filesDropped
 			}); // end FileDrop.Listener
 			// filename = builder.toString();
-			
-
+			new FileDrop(System.out, buttons.get(counter), /* dragBorder, */ new FileDrop.Listener() {
+				public void filesDropped(java.io.File[] files) {
+					for (int i = 0; i < files.length; i++) {
+						try {
+							images.add("" + files[i].getCanonicalPath());
+							
+							System.out.println(images.get(counter-1));
+							ImageIcon img = new ImageIcon(""+images.get(counter-1));
+							buttons.get(counter-1).setIcon(img);
+						} // end try
+						catch (java.io.IOException e) {
+						}
+					}
+					// end for: through each dropped file
+				} // end filesDropped
+			});
+			// System.out.println(images);
 			counter++;
 
 			revalidate();
@@ -100,8 +115,9 @@ public class TalkBoxConfigurator extends JFrame implements TalkBoxConfiguration{
 						clip.open(audioIn);
 						clip.start();
 						// System.out.println(c.get(k).getText());
-						//System.out.println(builder.toString().equals(c.get(k).getText()));
-						//System.out.println(RRfilenames);
+						// System.out.println(builder.toString().equals(c.get(k).getText()));
+						// System.out.println(RRfilenames);
+					//	System.out.println(images.get(counter));
 						getAudioFileNames();
 						getRelativePathToAudioFiles();
 					} catch (UnsupportedAudioFileException e1) {
@@ -117,54 +133,54 @@ public class TalkBoxConfigurator extends JFrame implements TalkBoxConfiguration{
 		}
 	}
 
-	public static class ImageTransferHandler extends TransferHandler {
-
-		public static final DataFlavor[] SUPPORTED_DATA_FLAVORS = new DataFlavor[] { DataFlavor.javaFileListFlavor,
-				DataFlavor.imageFlavor };
-
-		@Override
-		public boolean canImport(TransferHandler.TransferSupport support) {
-			boolean canImport = false;
-			for (DataFlavor flavor : SUPPORTED_DATA_FLAVORS) {
-				if (support.isDataFlavorSupported(flavor)) {
-					canImport = true;
-					break;
-				}
-			}
-			return canImport;
-		}
-
-		@Override
-		public boolean importData(TransferHandler.TransferSupport support) {
-			boolean accept = false;
-			if (canImport(support)) {
-				try {
-					Transferable t = support.getTransferable();
-					Component component = support.getComponent();
-					if (component instanceof JButton) {
-						Image image = null;
-						if (support.isDataFlavorSupported(DataFlavor.imageFlavor)) {
-							image = (Image) t.getTransferData(DataFlavor.imageFlavor);
-						} else if (support.isDataFlavorSupported(DataFlavor.javaFileListFlavor)) {
-							java.util.List files = (List) t.getTransferData(DataFlavor.javaFileListFlavor);
-							if (files.size() > 0) {
-								image = ImageIO.read((File) files.get(0));
-							}
-						}
-						ImageIcon icon = null;
-						if (image != null) {
-							icon = new ImageIcon(image);
-						}
-						((JButton) component).setIcon(icon);
-						accept = true;
-					}
-				} catch (Exception exp) {
-					exp.printStackTrace();
-				}
-			}
-			return accept;
-		}
-	}
+//	public static class ImageTransferHandler extends TransferHandler {
+//
+//		public static final DataFlavor[] SUPPORTED_DATA_FLAVORS = new DataFlavor[] { DataFlavor.javaFileListFlavor,
+//				DataFlavor.imageFlavor };
+//
+//		@Override
+//		public boolean canImport(TransferHandler.TransferSupport support) {
+//			boolean canImport = false;
+//			for (DataFlavor flavor : SUPPORTED_DATA_FLAVORS) {
+//				if (support.isDataFlavorSupported(flavor)) {
+//					canImport = true;
+//					break;
+//				}
+//			}
+//			return canImport;
+//		}
+//
+//		@Override
+//		public boolean importData(TransferHandler.TransferSupport support) {
+//			boolean accept = false;
+//			if (canImport(support)) {
+//				try {
+//					Transferable t = support.getTransferable();
+//					Component component = support.getComponent();
+//					if (component instanceof JButton) {
+//						Image image = null;
+//						if (support.isDataFlavorSupported(DataFlavor.imageFlavor)) {
+//							image = (Image) t.getTransferData(DataFlavor.imageFlavor);
+//						} else if (support.isDataFlavorSupported(DataFlavor.javaFileListFlavor)) {
+//							java.util.List files = (List) t.getTransferData(DataFlavor.javaFileListFlavor);
+//							if (files.size() > 0) {
+//								image = ImageIO.read((File) files.get(0));
+//							}
+//						}
+//						ImageIcon icon = null;
+//						if (image != null) {
+//							icon = new ImageIcon(image);
+//						}
+//						((JButton) component).setIcon(icon);
+//						accept = true;
+//					}
+//				} catch (Exception exp) {
+//					exp.printStackTrace();
+//				}
+//			}
+//			return accept;
+//		}
+//	}
 
 	@Override
 	public int getNumberOfAudioButtons() {
@@ -193,11 +209,11 @@ public class TalkBoxConfigurator extends JFrame implements TalkBoxConfiguration{
 	@Override
 	public String[][] getAudioFileNames() {
 		// TODO Auto-generated method stub
-		String[][] a =new String[counter][1];
-		for (int i = 0; i<counter; i++) {
-			
-			a[i][0]=filenames.get(i);
-			
+		String[][] a = new String[counter][1];
+		for (int i = 0; i < counter; i++) {
+
+			a[i][0] = filenames.get(i);
+
 		}
 		return a;
 	}
