@@ -5,6 +5,7 @@ import javax.sound.sampled.Clip;
 import javax.sound.sampled.LineUnavailableException;
 import javax.sound.sampled.UnsupportedAudioFileException;
 import javax.swing.*;
+import javax.swing.filechooser.FileNameExtensionFilter;
 import java.awt.*;
 import java.awt.datatransfer.DataFlavor;
 import java.awt.datatransfer.Transferable;
@@ -12,10 +13,12 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.File;
 import java.io.IOException;
+import java.net.FileNameMap;
 import java.net.URISyntaxException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.nio.file.StandardCopyOption;
 import java.security.CodeSource;
 import java.util.ArrayList;
 import java.util.List;
@@ -33,6 +36,9 @@ public class TalkBoxConfigurator extends JFrame implements TalkBoxConfiguration 
 	ArrayList<StringBuilder> builders = new ArrayList<StringBuilder>();
 	int height = 300;
 	int width = 600;
+	CodeSource cs = TalkBoxConfigurator.class.getProtectionDomain().getCodeSource();
+	File jF = new File(cs.getLocation().toURI().getPath());
+	String jDirectory = jF.getParentFile().getPath()+"/config";
 
 	public TalkBoxConfigurator() throws URISyntaxException, IOException {
 
@@ -45,10 +51,6 @@ public class TalkBoxConfigurator extends JFrame implements TalkBoxConfiguration 
 		a.add(button);
 		button.addActionListener(new PlayListener());
 
-		CodeSource cs = TalkBoxConfigurator.class.getProtectionDomain().getCodeSource();
-		File jF = new File(cs.getLocation().toURI().getPath());
-		String jDirectory = jF.getParentFile().getPath() ;
-
 		Files.createDirectories(Paths.get(jDirectory+"/audio"));
 		Files.createDirectories(Paths.get(jDirectory+"/images"));
 		Files.createDirectories(Paths.get(jDirectory+"/serialize"));
@@ -57,7 +59,7 @@ public class TalkBoxConfigurator extends JFrame implements TalkBoxConfiguration 
 
 	public class PlayListener implements ActionListener {
 
-		public void actionPerformed(ActionEvent event) {
+		public void actionPerformed(ActionEvent event){
 
 			setSize(width+=80, height);
 
@@ -82,6 +84,9 @@ public class TalkBoxConfigurator extends JFrame implements TalkBoxConfiguration 
 							RRfilenames = files[i].toPath().getParent();
 							filenames.add(filename);
 							builders.add(builder);
+							File source = new File(filename);
+							File dest = new File(jDirectory+"/audio/aud"+counter+"."+getFileExtension(source));
+							Files.copy(source.toPath(), dest.toPath(), StandardCopyOption.REPLACE_EXISTING);
 
 						} // end try
 
@@ -104,7 +109,9 @@ public class TalkBoxConfigurator extends JFrame implements TalkBoxConfiguration 
 						try {
 
 							images.add(counter-1, files[i].getCanonicalPath());
-							System.out.println(images.get(counter-1));
+							File source = new File(files[i].getCanonicalPath());
+							File dest = new File(jDirectory+"/images/img"+counter+"."+getFileExtension(source));
+							Files.copy(source.toPath(), dest.toPath(), StandardCopyOption.REPLACE_EXISTING);
 							ImageIcon img = new ImageIcon(""+images.get(counter-1));
 							buttons.get(counter-1).setIcon(img);
 
@@ -217,6 +224,19 @@ public class TalkBoxConfigurator extends JFrame implements TalkBoxConfiguration 
 	public static void main(String args[]) throws IOException, URISyntaxException{
 
 		TalkBoxConfigurator talkBoxConf = new TalkBoxConfigurator();
+
+	}
+
+	private static String getFileExtension(File file) {
+
+		String fileName = file.getName();
+
+		if(fileName.lastIndexOf(".") != -1 && fileName.lastIndexOf(".") != 0) {
+
+			return fileName.substring(fileName.lastIndexOf(".") + 1);
+		}
+
+		else return "";
 
 	}
 
