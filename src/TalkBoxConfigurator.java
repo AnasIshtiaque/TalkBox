@@ -27,17 +27,16 @@ public class TalkBoxConfigurator extends JFrame implements TalkBoxConfiguration 
 	int counter = 0;
 	String filename = "";
 	ArrayList<StringBuilder> builders = new ArrayList<StringBuilder>();
+	int height = 300;
+	int width = 600;
 
 	public TalkBoxConfigurator() {
 
 		JPanel a = new JPanel();
-		a.setVisible(true);
-		a.setSize(300, 200);
 		add(a);
 		setVisible(true);
-		setSize(300, 200);
-		setLayout(new GridLayout(1, 1, 1, 1));
-		setExtendedState(JFrame.MAXIMIZED_BOTH); 
+		setSize(width, height);
+		setLayout(new GridLayout(1, 1));
 		JButton button = new JButton("Add");
 		a.add(button);
 		button.addActionListener(new PlayListener());
@@ -45,7 +44,10 @@ public class TalkBoxConfigurator extends JFrame implements TalkBoxConfiguration 
 	}
 
 	public class PlayListener implements ActionListener {
+
 		public void actionPerformed(ActionEvent event) {
+
+			setSize(width+=80, height);
 
 			builder = new StringBuilder();
 			buttons.add(new JButton("Drag image file... "));
@@ -198,6 +200,12 @@ public class TalkBoxConfigurator extends JFrame implements TalkBoxConfiguration 
 		}
 
 		return a;
+	}
+
+	public static void main(String args[]) {
+
+		TalkBoxConfigurator talkBoxConf = new TalkBoxConfigurator();
+
 	}
 
 }

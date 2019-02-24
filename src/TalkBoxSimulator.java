@@ -26,6 +26,7 @@ public class TalkBoxSimulator extends JFrame {
 		essential2 = new JButton("Essentials 2");
 		frame.getContentPane().add(essential1);
 		frame.getContentPane().add(essential2);
+
 		buttons();
 
 	}
@@ -81,6 +82,12 @@ private void buttons() {
 			}
 
 		});
+
+	}
+
+	public static void main(String args[]) {
+
+		TalkBoxSimulator talkBoxSim = new TalkBoxSimulator();
 
 	}
 

@@ -2,7 +2,42 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="96c90e65-c1c8-47b8-8b98-4abf4a3da66c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/essentials1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/essentials1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TalkBox/TalkBoxConfigTester.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TalkBox/TalkBoxConfigurator$PlayListener$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TalkBox/TalkBoxConfigurator$PlayListener$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TalkBox/TalkBoxConfigurator$PlayListener$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TalkBox/TalkBoxConfigurator$PlayListener$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TalkBox/TalkBoxConfigurator$PlayListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TalkBox/TalkBoxConfigurator$PlayListener.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TalkBox/TalkBoxConfigurator$PlayListener1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TalkBox/TalkBoxConfigurator$PlayListener1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TalkBox/TalkBoxConfigurator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TalkBox/TalkBoxConfigurator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TalkBox/TalkBoxSimTester.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TalkBox/TalkBoxSimulator$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TalkBox/TalkBoxSimulator$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TalkBox/TalkBoxSimulator$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TalkBox/TalkBoxSimulator$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TalkBox/TalkBoxSimulator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TalkBox/TalkBoxSimulator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TalkBox/essentials1$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TalkBox/essentials1$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TalkBox/essentials1$10.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TalkBox/essentials1$10.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TalkBox/essentials1$11.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TalkBox/essentials1$11.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TalkBox/essentials1$12.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TalkBox/essentials1$12.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TalkBox/essentials1$13.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TalkBox/essentials1$13.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TalkBox/essentials1$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TalkBox/essentials1$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TalkBox/essentials1$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TalkBox/essentials1$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TalkBox/essentials1$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TalkBox/essentials1$4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TalkBox/essentials1$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TalkBox/essentials1$5.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TalkBox/essentials1$6.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TalkBox/essentials1$6.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TalkBox/essentials1$7.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TalkBox/essentials1$7.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TalkBox/essentials1$8.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TalkBox/essentials1$8.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TalkBox/essentials1$9.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TalkBox/essentials1$9.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TalkBox/essentials1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TalkBox/essentials1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TalkBox/essentials2$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TalkBox/essentials2$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TalkBox/essentials2$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TalkBox/essentials2$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TalkBox/essentials2$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TalkBox/essentials2$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TalkBox/essentials2$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TalkBox/essentials2$4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TalkBox/essentials2$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TalkBox/essentials2$5.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TalkBox/essentials2$6.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TalkBox/essentials2$6.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TalkBox/essentials2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TalkBox/essentials2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TalkBoxConfigTester.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TalkBoxConfigurator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TalkBoxConfigurator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TalkBoxSimTester.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TalkBoxSimulator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TalkBoxSimulator.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -37,26 +72,26 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/TalkBoxSimulator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="27" column="47" lean-forward="true" selection-start-line="27" selection-start-column="47" selection-end-line="27" selection-end-column="47" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/essentials1.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="26" column="54" lean-forward="true" selection-start-line="26" selection-start-column="54" selection-end-line="26" selection-end-column="54" />
+            <state relative-caret-position="240">
+              <caret line="25" column="49" lean-forward="true" selection-start-line="25" selection-start-column="49" selection-end-line="25" selection-end-column="49" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/TalkBoxSimTester.java">
+        <entry file="file://$PROJECT_DIR$/src/TalkBoxConfiguration.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="1" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+            <state relative-caret-position="112">
+              <caret line="10" column="78" selection-start-line="10" selection-start-column="78" selection-end-line="10" selection-end-column="78" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/essentials1.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="47">
+              <caret line="64" column="60" selection-start-line="64" selection-start-column="60" selection-end-line="64" selection-end-column="60" />
             </state>
           </provider>
         </entry>
@@ -64,8 +99,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/essentials2.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+            <state relative-caret-position="270">
+              <caret line="29" column="40" selection-start-line="29" selection-start-column="40" selection-end-line="29" selection-end-column="40" />
             </state>
           </provider>
         </entry>
@@ -73,40 +108,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/TalkBoxConfigurator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="27" column="25" lean-forward="true" selection-start-line="27" selection-start-column="25" selection-end-line="27" selection-end-column="25" />
+            <state relative-caret-position="1710">
+              <caret line="130" column="58" lean-forward="true" selection-start-line="130" selection-start-column="58" selection-end-line="130" selection-end-column="58" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/FileDrop.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1500">
-              <caret line="105" column="49" selection-start-line="105" selection-start-column="49" selection-end-line="105" selection-end-column="49" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/0-1289024.png">
-          <provider selected="true" editor-type-id="images" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/TalkBoxConfiguration.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="19" column="7" selection-start-line="19" selection-start-column="7" selection-end-line="19" selection-end-column="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/TalkBoxConfigTester.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="5" lean-forward="true" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
+            <state relative-caret-position="247">
+              <caret line="146" column="7" lean-forward="true" selection-start-line="146" selection-start-column="7" selection-end-line="146" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -127,12 +139,14 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/TalkBoxConfigTester.java" />
         <option value="$PROJECT_DIR$/src/DragListener.java" />
-        <option value="$PROJECT_DIR$/src/TalkBoxConfigurator.java" />
-        <option value="$PROJECT_DIR$/src/TalkBoxSimulator.java" />
-        <option value="$PROJECT_DIR$/src/FileDrop.java" />
         <option value="$PROJECT_DIR$/src/essentials1.java" />
+        <option value="$PROJECT_DIR$/src/essentials2.java" />
+        <option value="$PROJECT_DIR$/src/FileDrop.java" />
+        <option value="$PROJECT_DIR$/src/TalkBoxConfigTester.java" />
+        <option value="$PROJECT_DIR$/src/TalkBoxConfiguration.java" />
+        <option value="$PROJECT_DIR$/src/TalkBoxSimulator.java" />
+        <option value="$PROJECT_DIR$/src/TalkBoxConfigurator.java" />
       </list>
     </option>
   </component>
@@ -169,7 +183,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551037266512" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551041491442" />
     <property name="extract.method.default.visibility" value="private" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Project" />
@@ -189,9 +203,16 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.TalkBoxConfigTester">
+  <component name="RunManager" selected="Application.TalkBoxConfigurator">
     <configuration name="TalkBoxConfigTester" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="TalkBoxConfigTester" />
+      <module name="TalkBox" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TalkBoxConfigurator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="TalkBoxConfigurator" />
       <module name="TalkBox" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -204,8 +225,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TalkBoxSimulator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="TalkBoxSimulator" />
+      <module name="TalkBox" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.TalkBoxConfigurator" />
+        <item itemvalue="Application.TalkBoxSimulator" />
         <item itemvalue="Application.TalkBoxConfigTester" />
         <item itemvalue="Application.TalkBoxSimTester" />
       </list>
@@ -231,12 +261,12 @@
       <workItem from="1548689713032" duration="512000" />
       <workItem from="1548690571314" duration="6240000" />
       <workItem from="1550979482449" duration="1737000" />
-      <workItem from="1551034498016" duration="2864000" />
+      <workItem from="1551034498016" duration="6289000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19112000" />
+    <option name="totallyTimeSpent" value="22537000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -251,7 +281,7 @@
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1019536" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1019536" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -261,7 +291,7 @@
       <window_info id="Learn" order="7" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32959184" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3122449" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3122449" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -269,7 +299,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32905984" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.327551" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.327551" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" weight="0.32905984" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.327551" />
       <window_info anchor="right" id="Coverage" order="0" sideWeight="0.5037936" side_tool="true" weight="0.24969475" />
@@ -305,34 +335,10 @@
     <entry file="file://$PROJECT_DIR$/src/GWgwHBK.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/TalkBoxConfiguration.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="19" column="7" selection-start-line="19" selection-start-column="7" selection-end-line="19" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/TalkBoxSimTester.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="1" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/TestClass.java">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="13" selection-start-column="13" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/0-1289024.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/essentials2.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -343,38 +349,62 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/TalkBoxConfigurator.java">
+    <entry file="file://$PROJECT_DIR$/src/essentials1.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="27" column="25" lean-forward="true" selection-start-line="27" selection-start-column="25" selection-end-line="27" selection-end-column="25" />
+        <state relative-caret-position="47">
+          <caret line="64" column="60" selection-start-line="64" selection-start-column="60" selection-end-line="64" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/essentials2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="29" column="40" selection-start-line="29" selection-start-column="40" selection-end-line="29" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/TalkBoxSimTester.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" selection-start-line="2" selection-end-line="6" selection-end-column="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/TalkBoxConfigTester.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="5" lean-forward="true" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
+        <state relative-caret-position="45">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/TalkBoxConfiguration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="10" column="78" selection-start-line="10" selection-start-column="78" selection-end-line="10" selection-end-column="78" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/TalkBoxSimulator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="27" column="47" lean-forward="true" selection-start-line="27" selection-start-column="47" selection-end-line="27" selection-end-column="47" />
+        <state relative-caret-position="240">
+          <caret line="25" column="49" lean-forward="true" selection-start-line="25" selection-start-column="49" selection-end-line="25" selection-end-column="49" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/TalkBoxConfigurator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1710">
+          <caret line="130" column="58" lean-forward="true" selection-start-line="130" selection-start-column="58" selection-end-line="130" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/0-1289024.png">
+      <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/FileDrop.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1500">
-          <caret line="105" column="49" selection-start-line="105" selection-start-column="49" selection-end-line="105" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/essentials1.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="26" column="54" lean-forward="true" selection-start-line="26" selection-start-column="54" selection-end-line="26" selection-end-column="54" />
+        <state relative-caret-position="247">
+          <caret line="146" column="7" lean-forward="true" selection-start-line="146" selection-start-column="7" selection-end-line="146" selection-end-column="7" />
         </state>
       </provider>
     </entry>
