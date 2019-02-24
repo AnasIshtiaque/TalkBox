@@ -12,13 +12,16 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.File;
 import java.io.IOException;
+import java.nio.file.Path;
 import java.util.ArrayList;
 import java.util.List;
 
-public class TalkBoxConfigurator extends JFrame {
+public class TalkBoxConfigurator extends JFrame implements TalkBoxConfiguration{
 	static ArrayList<JTextArea> c = new ArrayList<JTextArea>();
 	ArrayList<JButton> buttons = new ArrayList<JButton>();
 	List<String> filenames = new ArrayList<String>();
+	String RRfilename = new String();
+	Path RRfilenames;
 	StringBuilder builder = new StringBuilder();
 	int filecounter;
 	int counter = 0;
@@ -62,9 +65,10 @@ public class TalkBoxConfigurator extends JFrame {
 							// a.append(files[i].getCanonicalPath()+"\n");
 							builder.append(files[i].getCanonicalPath() + "\n");
 							filename = "" + files[i].getCanonicalPath();
+							RRfilenames = files[i].toPath().getParent();
 							filenames.add(filename);
 							builders.add(builder);
-
+								
 						} // end try
 						catch (java.io.IOException e) {
 						}
@@ -73,7 +77,7 @@ public class TalkBoxConfigurator extends JFrame {
 				} // end filesDropped
 			}); // end FileDrop.Listener
 			// filename = builder.toString();
-			System.out.println(builder);
+			System.out.println(RRfilenames);
 
 			counter++;
 
@@ -158,6 +162,42 @@ public class TalkBoxConfigurator extends JFrame {
 			}
 			return accept;
 		}
+	}
+
+	@Override
+	public int getNumberOfAudioButtons() {
+		// TODO Auto-generated method stub
+		return counter;
+	}
+
+	@Override
+	public int getNumberOfAudioSets() {
+		// TODO Auto-generated method stub
+		return counter;
+	}
+
+	@Override
+	public int getTotalNumberOfButtons() {
+		// TODO Auto-generated method stub
+		return counter + 1;
+	}
+
+	@Override
+	public Path getRelativePathToAudioFiles() {
+		// TODO Auto-generated method stub
+		return RRfilenames;
+	}
+
+	@Override
+	public String[][] getAudioFileNames() {
+		// TODO Auto-generated method stub
+		String[][] a =new String[counter][];
+		for (int i = 0; i<counter; i++) {
+			
+			a[i][0]=filenames.get(i);
+			
+		}
+		return a;
 	}
 
 }
