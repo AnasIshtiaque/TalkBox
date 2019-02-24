@@ -77,7 +77,7 @@ public class TalkBoxConfigurator extends JFrame implements TalkBoxConfiguration{
 				} // end filesDropped
 			}); // end FileDrop.Listener
 			// filename = builder.toString();
-			System.out.println(RRfilenames);
+			
 
 			counter++;
 
@@ -100,8 +100,10 @@ public class TalkBoxConfigurator extends JFrame implements TalkBoxConfiguration{
 						clip.open(audioIn);
 						clip.start();
 						// System.out.println(c.get(k).getText());
-						System.out.println(builder.toString().equals(c.get(k).getText()));
-
+						//System.out.println(builder.toString().equals(c.get(k).getText()));
+						//System.out.println(RRfilenames);
+						getAudioFileNames();
+						getRelativePathToAudioFiles();
 					} catch (UnsupportedAudioFileException e1) {
 						e1.printStackTrace();
 					} catch (IOException e1) {
@@ -191,7 +193,7 @@ public class TalkBoxConfigurator extends JFrame implements TalkBoxConfiguration{
 	@Override
 	public String[][] getAudioFileNames() {
 		// TODO Auto-generated method stub
-		String[][] a =new String[counter][];
+		String[][] a =new String[counter][1];
 		for (int i = 0; i<counter; i++) {
 			
 			a[i][0]=filenames.get(i);

@@ -13,7 +13,7 @@ public class TalkBoxSimulator extends JFrame {
     public static int i;
 
     ArrayList<JButton> buttons = new ArrayList<JButton>();
-    ArrayList<PlayListener> listeners = new ArrayList<PlayListener>();
+ //   ArrayList<PlayListener> listeners = new ArrayList<PlayListener>();
 	private JButton essential1, essential2;
 	private JFrame frame;
 
@@ -24,41 +24,43 @@ public class TalkBoxSimulator extends JFrame {
 		frame.setVisible(true);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.getContentPane().setLayout(new GridLayout(3, 4, 1, 1));
-
-        setVisible(true);
-        setSize(200,200);
+//
+//        setVisible(true);
+//        setSize(200,200);
         setLayout(new GridLayout());
 		essential1 = new JButton("Essentials 1");
 		essential2 = new JButton("Essentials 2");
 		
 		frame.getContentPane().add(essential1);
 		frame.getContentPane().add(essential2);
-		//buttons();
 	
+		buttons();
+	}
+	
+//
+//        for(i = 0; i < 5; i++) {
+//            buttons.add(new JButton(i+"button"));
+//            add(buttons.get(i));
+//            buttons.get(i).addActionListener(new PlayListener());
+//        }
+//        
+//    String path = "GWgwHBK.jpg";
+//    ImageIcon icon = new ImageIcon(TalkBoxSimulator.class.getResource(path));
+//    }
+//
+//public class PlayListener implements ActionListener {
+//        public void actionPerformed(ActionEvent event) {
+//            for(int k = 0; k < 5; k++){
+//                if(event.getSource().equals(buttons.get(k))){
+//                    ClassLoader classLoader=this.getClass().getClassLoader();
+//                    java.applet.AudioClip audio=JApplet.newAudioClip(classLoader.getResource((k+1)+".wav"));
+//                    audio.play();
+//                }
+//            }
+//        }
+//     }
 
-        for(i = 0; i < 5; i++) {
-            buttons.add(new JButton(i+"button"));
-            add(buttons.get(i));
-            buttons.get(i).addActionListener(new PlayListener());
-        }
-        
-    String path = "GWgwHBK.jpg";
-    ImageIcon icon = new ImageIcon(TalkBoxSimulator.class.getResource(path));
-    }
-
-public class PlayListener implements ActionListener {
-        public void actionPerformed(ActionEvent event) {
-            for(int k = 0; k < 5; k++){
-                if(event.getSource().equals(buttons.get(k))){
-                    ClassLoader classLoader=this.getClass().getClassLoader();
-                    java.applet.AudioClip audio=JApplet.newAudioClip(classLoader.getResource((k+1)+".wav"));
-                    audio.play();
-                }
-            }
-        }
-     }
-
-/*private void buttons() {
+private void buttons() {
 		essential1.addActionListener(new ActionListener() {
 			@Override
 			public void actionPerformed(ActionEvent e) {
@@ -89,5 +91,5 @@ public class PlayListener implements ActionListener {
 				}
 			}
 		});
-	}*/
+	}
 }
