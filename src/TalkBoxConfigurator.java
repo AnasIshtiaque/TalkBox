@@ -12,7 +12,11 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.File;
 import java.io.IOException;
+import java.net.URISyntaxException;
+import java.nio.file.Files;
 import java.nio.file.Path;
+import java.nio.file.Paths;
+import java.security.CodeSource;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -30,7 +34,7 @@ public class TalkBoxConfigurator extends JFrame implements TalkBoxConfiguration 
 	int height = 300;
 	int width = 600;
 
-	public TalkBoxConfigurator() {
+	public TalkBoxConfigurator() throws URISyntaxException, IOException {
 
 		JPanel a = new JPanel();
 		add(a);
@@ -40,6 +44,14 @@ public class TalkBoxConfigurator extends JFrame implements TalkBoxConfiguration 
 		JButton button = new JButton("Add");
 		a.add(button);
 		button.addActionListener(new PlayListener());
+
+		CodeSource cs = TalkBoxConfigurator.class.getProtectionDomain().getCodeSource();
+		File jF = new File(cs.getLocation().toURI().getPath());
+		String jDirectory = jF.getParentFile().getPath() ;
+
+		Files.createDirectories(Paths.get(jDirectory+"/audio"));
+		Files.createDirectories(Paths.get(jDirectory+"/images"));
+		Files.createDirectories(Paths.get(jDirectory+"/serialize"));
 
 	}
 
@@ -202,7 +214,7 @@ public class TalkBoxConfigurator extends JFrame implements TalkBoxConfiguration 
 		return a;
 	}
 
-	public static void main(String args[]) {
+	public static void main(String args[]) throws IOException, URISyntaxException{
 
 		TalkBoxConfigurator talkBoxConf = new TalkBoxConfigurator();
 
