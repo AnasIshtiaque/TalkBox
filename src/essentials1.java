@@ -14,15 +14,16 @@ import java.awt.Frame;
 import javax.swing.Icon;
 import javax.swing.ImageIcon;
 
-
 public class essentials1 extends JFrame{
+
 	private JButton hello, gbye, feel_sick, back, mouth_dry,need_break,need_help, yes, no, thank, youre_welcome, upset;
 	private JFrame frame;
 	private ImageIcon hello_ic, gbye_ic, sick_ic, mouth_dry_ic,break_ic,help_ic,yes_ic,no_ic,thank_ic,welcome_ic,upset_ic,back_ic;
+
 	public essentials1() {
+
 		frame = new JFrame();
-		frame.setExtendedState(JFrame.MAXIMIZED_BOTH); 
-		//for fullscreen mode: frame.setUndecorated(true);
+		frame.setExtendedState(JFrame.MAXIMIZED_BOTH);
 		frame.setState(Frame.NORMAL);
 		frame.setVisible(true);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -63,12 +64,8 @@ public class essentials1 extends JFrame{
 		
 		back_ic = new ImageIcon("icon/essential1/back.png");
 		back = new JButton("Back", back_ic);
-		
 		back.setBounds(615, 216, 169, 93);
-	
-		//hello.setIcon(resizeIcon(hello_ic,hello.getWidth(),hello.getHeight()));
-		//hello.setVerticalTextPosition(SwingConstants.BOTTOM);
-		//hello.setHorizontalTextPosition(SwingConstants.CENTER);
+
 		frame.getContentPane().add(hello);
 		frame.getContentPane().add(gbye);
 		frame.getContentPane().add(feel_sick);
@@ -85,181 +82,291 @@ public class essentials1 extends JFrame{
 		buttons();
 
 		main(back);
+
 	}
 	
 	private void buttons() {
+
 		hello.addActionListener(new ActionListener() {
+
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				try {  
+
+				try {
+
 					AudioInputStream audioInputStream = AudioSystem.getAudioInputStream(new File("sounds/essentials1_f/hello.wav"));
 					Clip clip = AudioSystem.getClip();
 					clip.open(audioInputStream);
 					clip.start();
+
 				} catch(Exception e1) {
+
 					e1.printStackTrace();
+
 				}
+
 			}
+
 		});
+
 		gbye.addActionListener(new ActionListener() {
+
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				try {  
+
+				try {
+
 					AudioInputStream audioInputStream = AudioSystem.getAudioInputStream(new File("sounds/essentials1_f/goodbye.wav"));
 					Clip clip = AudioSystem.getClip();
 					clip.open(audioInputStream);
 					clip.start();
+
 				} catch(Exception e1) {
+
 					e1.printStackTrace();
+
 				}
+
 			}
+
 		});
+
 		feel_sick.addActionListener(new ActionListener() {
+
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				try {  
+
+				try {
+
 					AudioInputStream audioInputStream = AudioSystem.getAudioInputStream(new File("sounds/essentials1_f/feel_sick.wav"));
 					Clip clip = AudioSystem.getClip();
 					clip.open(audioInputStream);
 					clip.start();
+
 				} catch(Exception e1) {
+
 					e1.printStackTrace();
+
 				}
+
 			}
+
 		});
+
 		mouth_dry.addActionListener(new ActionListener() {
+
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				try {  
+
+				try {
+
 					AudioInputStream audioInputStream = AudioSystem.getAudioInputStream(new File("sounds/essentials1_f/mouth_dry.wav"));
 					Clip clip = AudioSystem.getClip();
 					clip.open(audioInputStream);
 					clip.start();
+
 				} catch(Exception e1) {
+
 					e1.printStackTrace();
+
 				}
+
 			}
+
 		});
+
 		need_break.addActionListener(new ActionListener() {
+
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				try {  
+
+				try {
+
 					AudioInputStream audioInputStream = AudioSystem.getAudioInputStream(new File("sounds/essentials1_f/need_break.wav"));
 					Clip clip = AudioSystem.getClip();
 					clip.open(audioInputStream);
 					clip.start();
+
 				} catch(Exception e1) {
+
 					e1.printStackTrace();
+
 				}
+
 			}
+
 		});
 		
 		need_help.addActionListener(new ActionListener() {
+
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				try {  
+
+				try {
+
 					AudioInputStream audioInputStream = AudioSystem.getAudioInputStream(new File("sounds/essentials1_f/need_help.wav"));
 					Clip clip = AudioSystem.getClip();
 					clip.open(audioInputStream);
 					clip.start();
+
 				} catch(Exception e1) {
+
 					e1.printStackTrace();
+
 				}
+
 			}
+
 		});
+
 		no.addActionListener(new ActionListener() {
+
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				try {  
+
+				try {
+
 					AudioInputStream audioInputStream = AudioSystem.getAudioInputStream(new File("sounds/essentials1_f/no.wav"));
 					Clip clip = AudioSystem.getClip();
 					clip.open(audioInputStream);
 					clip.start();
+
 				} catch(Exception e1) {
+
 					e1.printStackTrace();
+
 				}
+
 			}
+
 		});
+
 		yes.addActionListener(new ActionListener() {
+
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				try {  
+
+				try {
+
 					AudioInputStream audioInputStream = AudioSystem.getAudioInputStream(new File("sounds/essentials1_f/yes.wav"));
 					Clip clip = AudioSystem.getClip();
 					clip.open(audioInputStream);
 					clip.start();
+
 				} catch(Exception e1) {
+
 					e1.printStackTrace();
+
 				}
+
 			}
+
 		});
+
 		thank.addActionListener(new ActionListener() {
+
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				try {  
+
+				try {
+
 					AudioInputStream audioInputStream = AudioSystem.getAudioInputStream(new File("sounds/essentials1_f/thank_you.wav"));
 					Clip clip = AudioSystem.getClip();
 					clip.open(audioInputStream);
 					clip.start();
+
 				} catch(Exception e1) {
+
 					e1.printStackTrace();
+
 				}
+
 			}
+
 		});
+
 		youre_welcome.addActionListener(new ActionListener() {
+
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				try {  
+
+				try {
+
 					AudioInputStream audioInputStream = AudioSystem.getAudioInputStream(new File("sounds/essentials1_f/youre_welcome.wav"));
 					Clip clip = AudioSystem.getClip();
 					clip.open(audioInputStream);
 					clip.start();
+
 				} catch(Exception e1) {
+
 					e1.printStackTrace();
+
 				}
+
 			}
+
 		});
+
 		upset.addActionListener(new ActionListener() {
+
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				try {  
+
+				try {
+
 					AudioInputStream audioInputStream = AudioSystem.getAudioInputStream(new File("sounds/essentials1_f/upset.wav"));
 					Clip clip = AudioSystem.getClip();
 					clip.open(audioInputStream);
 					clip.start();
+
 				} catch(Exception e1) {
+
 					e1.printStackTrace();
+
 				}
+
 			}
+
 		});
+
 		back.addActionListener(new ActionListener() {
+
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				try {  
+
+				try {
+
 					AudioInputStream audioInputStream = AudioSystem.getAudioInputStream(new File("sounds/pop.wav"));
 					Clip clip = AudioSystem.getClip();
 					clip.open(audioInputStream);
 					clip.start();
+
 				} catch(Exception e1) {
+
 					e1.printStackTrace();
+
 				}
+
 			}
+
 		});
+
 	}
 	
 	private void main(JButton back) {
+
 		back.addActionListener(new ActionListener() {
+
 			@Override
 			public void actionPerformed(ActionEvent e) {
+
 				TalkBoxSimulator menu = new TalkBoxSimulator();
 				frame.setVisible(false);
+
 			}
+
 		});
+
 	}
 
-/*	private static Icon resizeIcon(ImageIcon icon, int resizedWidth, int resizedHeight) {
-	    Image img = icon.getImage();  
-	    Image resizedImage = img.getScaledInstance(resizedWidth, resizedHeight,  java.awt.Image.SCALE_SMOOTH);  
-	    return new ImageIcon(resizedImage);
-}*/
 }

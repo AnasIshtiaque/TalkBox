@@ -11,15 +11,16 @@ import java.awt.GridLayout;
 import java.awt.Frame;
 import javax.swing.ImageIcon;
 
-
 public class essentials2 extends JFrame{
+
 	private JButton back, walk, more, washroom, noisy;
 	private JFrame frame;
 	private ImageIcon walk_ic, more_ic, washroom_ic, noisy_ic, back_ic;
+
 	public essentials2() {
+
 		frame = new JFrame();
-		frame.setExtendedState(JFrame.MAXIMIZED_BOTH); 
-		//for fullscreen mode: frame.setUndecorated(true);
+		frame.setExtendedState(JFrame.MAXIMIZED_BOTH);
 		frame.setState(Frame.NORMAL);
 		frame.setVisible(true);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -39,12 +40,8 @@ public class essentials2 extends JFrame{
 		
 		back_ic = new ImageIcon("icon/back.png");
 		back = new JButton("Back", back_ic);
-		
 		back.setBounds(615, 216, 169, 93);
-	
-		//hello.setIcon(resizeIcon(hello_ic,hello.getWidth(),hello.getHeight()));
-		//hello.setVerticalTextPosition(SwingConstants.BOTTOM);
-		//hello.setHorizontalTextPosition(SwingConstants.CENTER);
+
 		frame.getContentPane().add(walk);
 		frame.getContentPane().add(more);
 		frame.getContentPane().add(washroom);
@@ -57,81 +54,133 @@ public class essentials2 extends JFrame{
 	}
 	
 	private void buttons() {
+
 		walk.addActionListener(new ActionListener() {
+
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				try {  
+
+				try {
+
 					AudioInputStream audioInputStream = AudioSystem.getAudioInputStream(new File("sounds/essentials2_f/go_for_walk.wav"));
 					Clip clip = AudioSystem.getClip();
 					clip.open(audioInputStream);
 					clip.start();
+
 				} catch(Exception e1) {
+
 					e1.printStackTrace();
+
 				}
+
 			}
+
 		});
+
 		more.addActionListener(new ActionListener() {
+
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				try {  
+
+				try {
+
 					AudioInputStream audioInputStream = AudioSystem.getAudioInputStream(new File("sounds/essentials2_f/like_more.wav"));
 					Clip clip = AudioSystem.getClip();
 					clip.open(audioInputStream);
 					clip.start();
+
 				} catch(Exception e1) {
+
 					e1.printStackTrace();
+
 				}
+
 			}
+
 		});
+
 		washroom.addActionListener(new ActionListener() {
+
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				try {  
+
+				try {
+
 					AudioInputStream audioInputStream = AudioSystem.getAudioInputStream(new File("sounds/essentials2_f/need_washroom.wav"));
 					Clip clip = AudioSystem.getClip();
 					clip.open(audioInputStream);
 					clip.start();
+
 				} catch(Exception e1) {
+
 					e1.printStackTrace();
+
 				}
+
 			}
+
 		});
+
 		noisy.addActionListener(new ActionListener() {
+
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				try {  
+
+				try {
+
 					AudioInputStream audioInputStream = AudioSystem.getAudioInputStream(new File("sounds/essentials2_f/too_noisy.wav"));
 					Clip clip = AudioSystem.getClip();
 					clip.open(audioInputStream);
 					clip.start();
+
 				} catch(Exception e1) {
+
 					e1.printStackTrace();
+
 				}
+
 			}
+
 		});
+
 		back.addActionListener(new ActionListener() {
+
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				try {  
+
+				try {
+
 					AudioInputStream audioInputStream = AudioSystem.getAudioInputStream(new File("sounds/pop.wav"));
 					Clip clip = AudioSystem.getClip();
 					clip.open(audioInputStream);
 					clip.start();
+
 				} catch(Exception e1) {
+
 					e1.printStackTrace();
+
 				}
+
 			}
+
 		});
+
 	}
 	
 	private void main(JButton back) {
+
 		back.addActionListener(new ActionListener() {
+
 			@Override
 			public void actionPerformed(ActionEvent e) {
+
 				TalkBoxSimulator menu = new TalkBoxSimulator();
 				frame.setVisible(false);
+
 			}
+
 		});
+
 	}
 
 }

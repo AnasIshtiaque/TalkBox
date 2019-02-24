@@ -2,36 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="96c90e65-c1c8-47b8-8b98-4abf4a3da66c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TalkBox/1.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TalkBox/10.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TalkBox/2.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TalkBox/3.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TalkBox/4.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TalkBox/5.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TalkBox/6.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TalkBox/7.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TalkBox/8.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TalkBox/9.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TalkBox/Example$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TalkBox/Example.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TalkBox/GWgwHBK.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TalkBox/TestClass.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TalkBox/duke3d.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/1.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/10.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/2.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/3.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/4.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/5.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/6.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/7.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/8.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/9.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Example.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GWgwHBK.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TestClass.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/duke3d.mid" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/essentials1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/essentials1.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -47,9 +18,23 @@
   <component name="CoverageViewManager">
     <option name="myElementSize" value="249" />
   </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/TalkBoxSimulator.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="270">
@@ -58,11 +43,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/essentials1.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-513">
-              <caret line="195" column="33" selection-start-line="195" selection-start-column="33" selection-end-line="195" selection-end-column="33" />
+            <state relative-caret-position="180">
+              <caret line="26" column="54" lean-forward="true" selection-start-line="26" selection-start-column="54" selection-end-line="26" selection-end-column="54" />
             </state>
           </provider>
         </entry>
@@ -147,6 +132,7 @@
         <option value="$PROJECT_DIR$/src/TalkBoxConfigurator.java" />
         <option value="$PROJECT_DIR$/src/TalkBoxSimulator.java" />
         <option value="$PROJECT_DIR$/src/FileDrop.java" />
+        <option value="$PROJECT_DIR$/src/essentials1.java" />
       </list>
     </option>
   </component>
@@ -183,7 +169,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551037013359" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551037266512" />
     <property name="extract.method.default.visibility" value="private" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Project" />
@@ -245,12 +231,12 @@
       <workItem from="1548689713032" duration="512000" />
       <workItem from="1548690571314" duration="6240000" />
       <workItem from="1550979482449" duration="1737000" />
-      <workItem from="1551034498016" duration="2496000" />
+      <workItem from="1551034498016" duration="2864000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18744000" />
+    <option name="totallyTimeSpent" value="19112000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -275,7 +261,7 @@
       <window_info id="Learn" order="7" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32959184" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3122449" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3122449" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -283,15 +269,15 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32905984" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.327551" />
+      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.327551" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" weight="0.32905984" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.327551" />
-      <window_info anchor="right" id="Coverage" order="0" side_tool="true" visible="true" weight="0.32967034" />
+      <window_info anchor="right" id="Coverage" order="0" sideWeight="0.5037936" side_tool="true" weight="0.24969475" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="1" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
+      <window_info anchor="right" id="Ant Build" order="2" sideWeight="0.49620637" weight="0.24969475" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
       <window_info anchor="right" id="Palette" order="4" />
-      <window_info anchor="right" id="Database" order="5" />
+      <window_info anchor="right" id="Database" order="5" sideWeight="0.49772382" weight="0.32967034" />
       <window_info anchor="right" id="Theme Preview" order="6" />
       <window_info anchor="right" id="Maven" order="7" />
       <window_info anchor="right" id="Capture Analysis" order="8" />
@@ -300,6 +286,10 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
     <entry file="jar://C:/Program Files/Java/jdk-11.0.2/lib/src.zip!/java.desktop/javax/swing/AbstractButton.java" />
@@ -339,24 +329,10 @@
     <entry file="file://$PROJECT_DIR$/src/0-1289024.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/essentials1.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-513">
-          <caret line="195" column="33" selection-start-line="195" selection-start-column="33" selection-end-line="195" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/essentials2.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
           <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/FileDrop.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1500">
-          <caret line="105" column="49" selection-start-line="105" selection-start-column="49" selection-end-line="105" selection-end-column="49" />
         </state>
       </provider>
     </entry>
@@ -385,6 +361,20 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
           <caret line="27" column="47" lean-forward="true" selection-start-line="27" selection-start-column="47" selection-end-line="27" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/FileDrop.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1500">
+          <caret line="105" column="49" selection-start-line="105" selection-start-column="49" selection-end-line="105" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/essentials1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="26" column="54" lean-forward="true" selection-start-line="26" selection-start-column="54" selection-end-line="26" selection-end-column="54" />
         </state>
       </provider>
     </entry>

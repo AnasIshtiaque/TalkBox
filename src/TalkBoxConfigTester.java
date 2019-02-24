@@ -5,7 +5,6 @@ public class TalkBoxConfigTester {
     {
 
         TalkBoxConfigurator talkbox = new TalkBoxConfigurator();
-        
 
     }
 
