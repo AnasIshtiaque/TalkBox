@@ -81,7 +81,7 @@ public class TalkBoxConfigurator extends JFrame implements TalkBoxConfiguration 
 				public void filesDropped(java.io.File[] files) {
 					for (int i = 0; i < files.length; i++) {
 						try {
-							images.add("" + files[i].getCanonicalPath());
+							images.add(counter-1, files[i].getCanonicalPath());
 							
 							System.out.println(images.get(counter-1));
 							ImageIcon img = new ImageIcon(""+images.get(counter-1));
