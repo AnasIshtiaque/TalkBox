@@ -18,12 +18,12 @@ import java.util.List;
 
 public class TalkBoxConfigurator extends JFrame implements TalkBoxConfiguration{
 	static ArrayList<JTextArea> c = new ArrayList<JTextArea>();
-	ArrayList<JButton> buttons = new ArrayList<JButton>();
+	static ArrayList<JButton> buttons = new ArrayList<JButton>();
 	List<String> filenames = new ArrayList<String>();
 	String RRfilename = new String();
 	Path RRfilenames;
 	StringBuilder builder = new StringBuilder();
-	int filecounter;
+	//int filecounter;
 	int counter = 0;
 	String filename = "";
 	ArrayList<StringBuilder> builders = new ArrayList<StringBuilder>();
@@ -52,7 +52,7 @@ public class TalkBoxConfigurator extends JFrame implements TalkBoxConfiguration{
 			buttons.get(counter).setTransferHandler(new TalkBoxConfigurator.ImageTransferHandler());
 			add(buttons.get(counter));
 			buttons.get(counter).addActionListener(new PlayListener1());
-			c.add(new JTextArea());
+			c.add(new JTextArea("Drag audio file... "));
 
 			getContentPane().add(new javax.swing.JScrollPane(c.get(counter)), java.awt.BorderLayout.CENTER);
 
@@ -60,7 +60,7 @@ public class TalkBoxConfigurator extends JFrame implements TalkBoxConfiguration{
 				public void filesDropped(java.io.File[] files) {
 					for (int i = 0; i < files.length; i++) {
 						try {
-							c.get(counter - 1).append(files[i].getCanonicalPath() + "\n");
+							c.get(counter - 1).append("\n" + files[i].getCanonicalPath() + "\n");
 							// filecounter = files.length;
 							// a.append(files[i].getCanonicalPath()+"\n");
 							builder.append(files[i].getCanonicalPath() + "\n");
