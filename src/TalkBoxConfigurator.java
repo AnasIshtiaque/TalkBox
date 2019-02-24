@@ -36,7 +36,7 @@ public class TalkBoxConfigurator extends JFrame implements TalkBoxConfiguration 
 		setVisible(true);
 		setSize(300, 200);
 		setLayout(new GridLayout(1, 1, 1, 1));
-
+		setExtendedState(JFrame.MAXIMIZED_BOTH); 
 		JButton button = new JButton("Add");
 		a.add(button);
 
