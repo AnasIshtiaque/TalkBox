@@ -36,7 +36,7 @@ public class TalkBoxConfigurator extends JFrame implements TalkBoxConfiguration 
 	String jDirectory = jF.getParentFile().getPath()+"/config";
 
 	public TalkBoxConfigurator() throws URISyntaxException, IOException {
-
+		super ("Configuration Window");
 		JPanel a = new JPanel();
 		add(a);
 		setVisible(true);
