@@ -57,7 +57,7 @@ public class simulator extends JFrame {
 
         for(int i = 0; i < aLen-1; i++){
 
-            buttons.add(new JButton(new ImageIcon(jDirectoryImg+"/img"+(i+1)+".jpg")));
+            buttons.add(new JButton(new ImageIcon(jDirectoryImg+"/img"+(i+1)+".png")));
             add(buttons.get(i));
             frame.getContentPane().add(buttons.get(i));
             buttons.get(i).addActionListener(new PlayListener());
