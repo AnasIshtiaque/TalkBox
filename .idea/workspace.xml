@@ -8,18 +8,7 @@
   <component name="ChangeListManager">
     <list default="true" id="96c90e65-c1c8-47b8-8b98-4abf4a3da66c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/config_jar/config.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/config_jar/config.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TalkBox/TalkBoxConfigurator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TalkBox/TalkBoxConfigurator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TalkBox/simulator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TalkBox/simulator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/config/audio/aud1.wav" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/config/audio/aud1.wav" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/config/audio/aud2.wav" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/config/audio/aud2.wav" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/config/audio/aud3.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/config/audio/aud4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/config/audio/aud4.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/config/images/img1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/config/images/img2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/config/images/img3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/config/images/img4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/simulator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/simulator.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -63,7 +52,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/TalkBoxConfiguration.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-99">
+            <state relative-caret-position="120">
               <caret line="9" column="78" selection-start-line="9" selection-start-column="78" selection-end-line="9" selection-end-column="78" />
             </state>
           </provider>
@@ -90,11 +79,10 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/simulator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="415">
-              <caret line="75" selection-start-line="75" selection-end-line="75" />
+            <state relative-caret-position="387">
+              <caret line="41" lean-forward="true" selection-start-line="41" selection-end-line="41" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#245#254#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -103,7 +91,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/TalkBoxConfigurator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="359">
+            <state relative-caret-position="3075">
               <caret line="223" selection-start-line="223" selection-end-line="234" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -115,7 +103,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/FileDrop.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
+            <state relative-caret-position="615">
               <caret line="46" column="13" selection-start-line="46" selection-start-column="13" selection-end-line="46" selection-end-column="13" />
             </state>
           </provider>
@@ -154,7 +142,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
+  <component name="ProjectFrameBounds" fullScreen="true">
     <option name="x" value="846" />
     <option name="width" value="834" />
     <option name="height" value="1050" />
@@ -187,7 +175,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551068179247" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551069593315" />
     <property name="extract.method.default.visibility" value="private" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Artifacts" />
@@ -265,12 +253,13 @@
       <workItem from="1548690571314" duration="6240000" />
       <workItem from="1550979482449" duration="1737000" />
       <workItem from="1551034498016" duration="9218000" />
-      <workItem from="1551045741377" duration="15109000" />
+      <workItem from="1551045741377" duration="15979000" />
+      <workItem from="1551073219410" duration="17000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="40575000" />
+    <option name="totallyTimeSpent" value="41462000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -282,7 +271,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1680" height="1050" extended-state="6" />
+    <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.103174604" />
@@ -295,7 +284,7 @@
       <window_info id="Learn" order="7" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32959184" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3122449" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3122449" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -342,13 +331,6 @@
     <entry file="file://$PROJECT_DIR$/src/TalkBoxSimTester.java" />
     <entry file="file://$PROJECT_DIR$/src/TalkBoxConfigTester.java" />
     <entry file="file://$PROJECT_DIR$/src/0-1289024.png" />
-    <entry file="file://$PROJECT_DIR$/src/TalkBoxConfiguration.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-99">
-          <caret line="9" column="78" selection-start-line="9" selection-start-column="78" selection-end-line="9" selection-end-column="78" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-11.0.2.jdk/Contents/Home/lib/src.zip!/java.base/java/util/function/Function.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
@@ -356,20 +338,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/FileDrop.java">
+    <entry file="file://$PROJECT_DIR$/src/TalkBoxSimulator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="46" column="13" selection-start-line="46" selection-start-column="13" selection-end-line="46" selection-end-column="13" />
+        <state relative-caret-position="1575">
+          <caret line="115" column="7" selection-start-line="115" selection-start-column="7" selection-end-line="115" selection-end-column="7" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/TalkBoxConfigurator.java">
+    <entry file="file://$PROJECT_DIR$/src/TalkBoxConfiguration.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="359">
-          <caret line="223" selection-start-line="223" selection-end-line="234" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="120">
+          <caret line="9" column="78" selection-start-line="9" selection-start-column="78" selection-end-line="9" selection-end-column="78" />
         </state>
       </provider>
     </entry>
@@ -387,20 +366,29 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/TalkBoxSimulator.java">
+    <entry file="file://$PROJECT_DIR$/src/TalkBoxConfigurator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1575">
-          <caret line="115" column="7" selection-start-line="115" selection-start-column="7" selection-end-line="115" selection-end-column="7" />
+        <state relative-caret-position="3075">
+          <caret line="223" selection-start-line="223" selection-end-line="234" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/FileDrop.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="615">
+          <caret line="46" column="13" selection-start-line="46" selection-start-column="13" selection-end-line="46" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/simulator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="415">
-          <caret line="75" selection-start-line="75" selection-end-line="75" />
+        <state relative-caret-position="387">
+          <caret line="41" lean-forward="true" selection-start-line="41" selection-end-line="41" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#245#254#0" expanded="true" />
           </folding>
         </state>
       </provider>
