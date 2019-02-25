@@ -6,7 +6,10 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="96c90e65-c1c8-47b8-8b98-4abf4a3da66c" name="Default Changelist" comment="" />
+    <list default="true" id="96c90e65-c1c8-47b8-8b98-4abf4a3da66c" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TalkBoxConfigurator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TalkBoxConfigurator.java" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -76,8 +79,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/TalkBoxConfigurator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="874">
-              <caret line="126" column="15" lean-forward="true" selection-start-line="126" selection-start-column="15" selection-end-line="126" selection-end-column="15" />
+            <state relative-caret-position="330">
+              <caret line="22" column="63" lean-forward="true" selection-start-line="22" selection-start-column="63" selection-end-line="22" selection-end-column="63" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -140,11 +143,6 @@
               <item name="TalkBox" type="b2602c69:ProjectViewProjectNode" />
               <item name="TalkBox" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="TalkBox" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TalkBox" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -154,7 +152,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551052812266" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551053168401" />
     <property name="extract.method.default.visibility" value="private" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Artifacts" />
@@ -232,12 +230,12 @@
       <workItem from="1548690571314" duration="6240000" />
       <workItem from="1550979482449" duration="1737000" />
       <workItem from="1551034498016" duration="9218000" />
-      <workItem from="1551045741377" duration="3994000" />
+      <workItem from="1551045741377" duration="4366000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="29460000" />
+    <option name="totallyTimeSpent" value="29832000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -252,7 +250,7 @@
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.103174604" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.103174604" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -270,7 +268,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32905984" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.327551" />
+      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.327551" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" weight="0.32905984" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.327551" />
       <window_info anchor="right" id="Coverage" order="0" sideWeight="0.5037936" side_tool="true" weight="0.24969475" />
@@ -346,8 +344,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/TalkBoxConfigurator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="874">
-          <caret line="126" column="15" lean-forward="true" selection-start-line="126" selection-start-column="15" selection-end-line="126" selection-end-column="15" />
+        <state relative-caret-position="330">
+          <caret line="22" column="63" lean-forward="true" selection-start-line="22" selection-start-column="63" selection-end-line="22" selection-end-column="63" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
