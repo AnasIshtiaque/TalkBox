@@ -8,7 +8,18 @@
   <component name="ChangeListManager">
     <list default="true" id="96c90e65-c1c8-47b8-8b98-4abf4a3da66c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/simulator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/simulator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/config_jar/config.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/config_jar/config.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TalkBox/TalkBoxConfigurator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TalkBox/TalkBoxConfigurator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TalkBox/simulator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TalkBox/simulator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/config/audio/aud1.wav" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/config/audio/aud1.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/config/audio/aud2.wav" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/config/audio/aud2.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/config/audio/aud3.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/config/audio/aud4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/config/audio/aud4.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/config/images/img1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/config/images/img2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/config/images/img3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/config/images/img4.jpg" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -79,8 +90,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/simulator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="268">
-              <caret line="63" lean-forward="true" selection-start-line="63" selection-end-line="63" />
+            <state relative-caret-position="415">
+              <caret line="75" selection-start-line="75" selection-end-line="75" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#245#254#0" expanded="true" />
@@ -176,7 +187,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551067670714" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551068179247" />
     <property name="extract.method.default.visibility" value="private" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Artifacts" />
@@ -254,12 +265,12 @@
       <workItem from="1548690571314" duration="6240000" />
       <workItem from="1550979482449" duration="1737000" />
       <workItem from="1551034498016" duration="9218000" />
-      <workItem from="1551045741377" duration="14779000" />
+      <workItem from="1551045741377" duration="15109000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="40245000" />
+    <option name="totallyTimeSpent" value="40575000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -284,7 +295,7 @@
       <window_info id="Learn" order="7" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32959184" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3122449" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3122449" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -292,7 +303,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32905984" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.327551" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.327551" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" weight="0.32905984" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.327551" />
       <window_info anchor="right" id="Coverage" order="0" sideWeight="0.5037936" side_tool="true" weight="0.24969475" />
@@ -385,8 +396,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/simulator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="268">
-          <caret line="63" lean-forward="true" selection-start-line="63" selection-end-line="63" />
+        <state relative-caret-position="415">
+          <caret line="75" selection-start-line="75" selection-end-line="75" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#245#254#0" expanded="true" />
