@@ -22,7 +22,7 @@ public class simulator extends JFrame {
     String jDirectoryAud = jF.getParentFile().getPath()+"/config/audio";
     String jDirectoryImg = jF.getParentFile().getPath()+"/config/images";
 
-    int aLen = new File(jDirectoryAud).listFiles().length;
+    int aLen = new File(jDirectoryAud).listFiles().length - 1;
 
     public simulator() throws URISyntaxException {
 
