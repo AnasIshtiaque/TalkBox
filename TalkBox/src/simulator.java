@@ -16,8 +16,6 @@ public class simulator extends JFrame {
 
     private JFrame frame;
     ArrayList<JButton> buttons = new ArrayList<JButton>();
-    List<String> resultAud;
-    List<String> resultImg;
 
     CodeSource cs = TalkBoxConfigurator.class.getProtectionDomain().getCodeSource();
     File jF = new File(cs.getLocation().toURI().getPath());
