@@ -11,7 +11,7 @@ import java.util.ArrayList;
 
 public class TalkBoxSimulator extends JFrame {
 
-	private JButton essential1, essential2, simulator;
+	private JButton essential1, essential2;
 	private JFrame frame;
 
 	public TalkBoxSimulator() {

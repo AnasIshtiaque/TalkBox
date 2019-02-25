@@ -45,7 +45,6 @@ public class TalkBoxConfigurator extends JFrame implements TalkBoxConfiguration 
 		JButton button = new JButton("Add");
 		a.add(button);
 		button.addActionListener(new PlayListener());
-
 		Files.createDirectories(Paths.get(jDirectory+"/audio"));
 		Files.createDirectories(Paths.get(jDirectory+"/images"));
 		Files.createDirectories(Paths.get(jDirectory+"/serialize"));
