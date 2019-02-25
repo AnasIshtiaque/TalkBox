@@ -61,8 +61,8 @@ public class essentials1 extends JFrame{
 		
 		upset_ic = new ImageIcon("icon/essential1/upset.png");
 		upset = new JButton("Upset",upset_ic);
-		
-		back_ic = new ImageIcon("icon/essential1/back.png");
+
+		back_ic = new ImageIcon("icon/back.png");
 		back = new JButton("Back", back_ic);
 		back.setBounds(615, 216, 169, 93);
 
