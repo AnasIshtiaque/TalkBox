@@ -16,11 +16,13 @@ public class simulator extends JFrame {
 
     private JFrame frame;
     ArrayList<JButton> buttons = new ArrayList<JButton>();
+    List<String> resultAud;
+    List<String> resultImg;
 
     CodeSource cs = TalkBoxConfigurator.class.getProtectionDomain().getCodeSource();
     File jF = new File(cs.getLocation().toURI().getPath());
-    String jDirectoryAud = jF.getParentFile().getPath() + "/config/audio";
-    String jDirectoryImg = jF.getParentFile().getPath() + "/config/images";
+    String jDirectoryAud = jF.getParentFile().getPath()+"/config/audio";
+    String jDirectoryImg = jF.getParentFile().getPath()+"/config/images";
 
     int aLen = new File(jDirectoryAud).listFiles().length;
 
@@ -33,9 +35,9 @@ public class simulator extends JFrame {
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.getContentPane().setLayout(new GridLayout(2, 2, 1, 1));
 
-        for (int i = 0; i < aLen - 1; i++) {
+        for(int i = 0; i < aLen; i++){
 
-            buttons.add(new JButton(new ImageIcon(jDirectoryImg + "/img" + (i + 1) + ".png")));
+            buttons.add(new JButton(new ImageIcon(jDirectoryImg+"/img"+(i+1)+".png")));
             add(buttons.get(i));
             frame.getContentPane().add(buttons.get(i));
             buttons.get(i).addActionListener(new PlayListener());
@@ -48,21 +50,20 @@ public class simulator extends JFrame {
 
         public void actionPerformed(ActionEvent event) {
 
-            for (int k = 0; k < aLen - 1; k++) {
+            for(int k = 0; k < aLen; k++){
 
-                if (event.getSource().equals(buttons.get(k))) {
+                if(event.getSource().equals(buttons.get(k))){
 
                     try {
 
-                        AudioInputStream audioInputStream = AudioSystem
-                                .getAudioInputStream(new File(jDirectoryAud + "/aud" + (k + 1) + ".wav"));
+                        AudioInputStream audioInputStream = AudioSystem.getAudioInputStream(new File(jDirectoryAud+"/aud"+(k+1)+".wav"));
                         Clip clip = AudioSystem.getClip();
                         clip.open(audioInputStream);
                         clip.start();
 
                     }
 
-                    catch (Exception e) {
+                    catch (Exception e){
 
                         e.printStackTrace();
 
