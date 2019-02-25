@@ -11,7 +11,7 @@ import java.util.ArrayList;
 
 public class TalkBoxSimulator extends JFrame {
 
-	private JButton essential1, essential2;
+	private JButton essential1, essential2, simulator;
 	private JFrame frame;
 
 	public TalkBoxSimulator() {
@@ -20,7 +20,7 @@ public class TalkBoxSimulator extends JFrame {
 		frame.setExtendedState(JFrame.MAXIMIZED_BOTH);
 		frame.setVisible(true);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		frame.getContentPane().setLayout(new GridLayout(3, 4, 1, 1));
+		frame.getContentPane().setLayout(new GridLayout(4, 4, 1, 1));
         setLayout(new GridLayout());
 		essential1 = new JButton("Essentials 1");
 		essential2 = new JButton("Essentials 2");
