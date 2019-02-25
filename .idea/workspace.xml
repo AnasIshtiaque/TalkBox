@@ -6,7 +6,9 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="96c90e65-c1c8-47b8-8b98-4abf4a3da66c" name="Default Changelist" comment="" />
+    <list default="true" id="96c90e65-c1c8-47b8-8b98-4abf4a3da66c" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -41,7 +43,7 @@
         <entry file="file://$PROJECT_DIR$/src/TalkBoxSimulator.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="315">
-              <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
+              <caret line="30" selection-start-line="30" selection-end-line="30" />
             </state>
           </provider>
         </entry>
@@ -150,7 +152,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551058688535" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551058981906" />
     <property name="extract.method.default.visibility" value="private" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Artifacts" />
@@ -228,12 +230,12 @@
       <workItem from="1548690571314" duration="6240000" />
       <workItem from="1550979482449" duration="1737000" />
       <workItem from="1551034498016" duration="9218000" />
-      <workItem from="1551045741377" duration="6403000" />
+      <workItem from="1551045741377" duration="6735000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31869000" />
+    <option name="totallyTimeSpent" value="32201000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -247,7 +249,7 @@
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.103174604" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.103174604" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -265,7 +267,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32905984" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.327551" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.327551" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" weight="0.32905984" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.327551" />
       <window_info anchor="right" id="Coverage" order="0" sideWeight="0.5037936" side_tool="true" weight="0.24969475" />
@@ -341,7 +343,7 @@
     <entry file="file://$PROJECT_DIR$/src/TalkBoxSimulator.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
-          <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
+          <caret line="30" selection-start-line="30" selection-end-line="30" />
         </state>
       </provider>
     </entry>
