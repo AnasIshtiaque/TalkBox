@@ -1,1 +1,6 @@
 /bin/
+*.class
+*.class
+TalkBox/src/bin/.DS_Store
+*.class
+*.class

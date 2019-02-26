@@ -68,25 +68,17 @@ public class essentials2 extends JFrame{
 	private void buttons() {
 
 		walk.addActionListener(new ActionListener() {
-
 			@Override
 			public void actionPerformed(ActionEvent e) {
-
 				try {
-
 					AudioInputStream audioInputStream = AudioSystem.getAudioInputStream(new File("sounds/essentials2_f/go_for_walk.wav"));
 					Clip clip = AudioSystem.getClip();
 					clip.open(audioInputStream);
 					clip.start();
-
 				} catch(Exception e1) {
-
 					e1.printStackTrace();
-
 				}
-
 			}
-
 		});
 
 		more.addActionListener(new ActionListener() {

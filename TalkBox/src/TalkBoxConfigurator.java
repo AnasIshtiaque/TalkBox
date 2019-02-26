@@ -20,7 +20,7 @@ import java.util.List;
 
 public class TalkBoxConfigurator extends JFrame implements TalkBoxConfiguration {
 
-	static ArrayList<JTextArea> c = new ArrayList<JTextArea>();
+	static ArrayList<JButton> sound_buttons = new ArrayList<JButton>();
 	static ArrayList<JButton> img_buttons = new ArrayList<JButton>();
 	List<String> filenames = new ArrayList<String>();
 	List<String> images = new ArrayList<String>();
@@ -61,18 +61,16 @@ public class TalkBoxConfigurator extends JFrame implements TalkBoxConfiguration 
 			img_buttons.add(new JButton("Drag image file... "));
 			add(img_buttons.get(counter));
 			img_buttons.get(counter).addActionListener(new PlayListener1());
-			c.add(new JTextArea());
-			getContentPane().add(new javax.swing.JScrollPane(c.get(counter)), java.awt.BorderLayout.CENTER);
+			sound_buttons.add(new JButton("Drag sound file... "));
+			getContentPane().add(new javax.swing.JScrollPane(sound_buttons.get(counter)), java.awt.BorderLayout.CENTER);
 
-			new FileDrop(System.out, c.get(counter), /* dragBorder, */ new FileDrop.Listener() {
+			new FileDrop(System.out, sound_buttons.get(counter), /* dragBorder, */ new FileDrop.Listener() {
 
 				public void filesDropped(java.io.File[] files) {
 
 					for (int i = 0; i < files.length; i++) {
 
 						try {
-
-							c.get(counter - 1).append(files[i].getCanonicalPath() + "\n");
 							builder.append(files[i].getCanonicalPath() + "\n");
 							filename = "" + files[i].getCanonicalPath();
 							RRfilenames = files[i].toPath().getParent();
@@ -81,7 +79,24 @@ public class TalkBoxConfigurator extends JFrame implements TalkBoxConfiguration 
 							File source = new File(filename);
 							File dest = new File(jDirectory+"/audio/aud"+counter+"."+getFileExtension(source));
 							Files.copy(source.toPath(), dest.toPath(), StandardCopyOption.REPLACE_EXISTING);
-
+							
+							sound_buttons.get(counter - 1).setText(files[i].getName());
+							sound_buttons.get(counter - 1).setIcon(new ImageIcon("icon/sound.png"));
+							sound_buttons.get(counter-1).setHorizontalTextPosition(JLabel.CENTER);
+							sound_buttons.get(counter-1).setVerticalTextPosition(JLabel.BOTTOM);
+							sound_buttons.get(counter-1).addActionListener(new ActionListener() {
+								@Override
+								public void actionPerformed(ActionEvent e) {
+									try {
+										AudioInputStream audioInputStream = AudioSystem.getAudioInputStream(source);
+										Clip clip = AudioSystem.getClip();
+										clip.open(audioInputStream);
+										clip.start();
+									} catch(Exception e1) {
+										e1.printStackTrace();
+									}
+								}
+							});
 						} // end try
 
 						catch (java.io.IOException e) {
@@ -136,7 +151,7 @@ public class TalkBoxConfigurator extends JFrame implements TalkBoxConfiguration 
 
 			for (int k = 0; k < counter; k++) {
 
-				if (e.getSource().equals(img_buttons.get(k)) && builders.get(k).toString().equals(c.get(k).getText())) {
+				if (e.getSource().equals(img_buttons.get(k)) && builders.get(k).toString().equals(sound_buttons.get(k).getText())) {
 
 					try {
 
