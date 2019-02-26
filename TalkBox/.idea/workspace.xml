@@ -1,8 +1,67 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="TalkBox:jar" />
+    </artifacts-to-build>
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="75a764ad-5251-4729-b5c5-e91ab90d018f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/bin/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/bin/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JUnit/TeachingCode" beforeDir="false" afterPath="$PROJECT_DIR$/../../JUnit/TeachingCode" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaProjects" beforeDir="false" afterPath="$PROJECT_DIR$/../../JavaProjects" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.." beforeDir="false" afterPath="$PROJECT_DIR$/.." afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulator.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/FileDrop$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/FileDrop$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/FileDrop$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/FileDrop$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/FileDrop$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/FileDrop$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/FileDrop$Event.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/FileDrop$Event.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/FileDrop$Listener.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/FileDrop$Listener.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/FileDrop$TransferableObject$Fetcher.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/FileDrop$TransferableObject$Fetcher.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/FileDrop$TransferableObject.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/FileDrop$TransferableObject.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/FileDrop.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/FileDrop.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/TalkBoxConfiguration.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/TalkBoxConfiguration.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/TalkBoxConfigurator$PlayListener$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/TalkBoxConfigurator$PlayListener$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/TalkBoxConfigurator$PlayListener$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/TalkBoxConfigurator$PlayListener$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/TalkBoxConfigurator$PlayListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/TalkBoxConfigurator$PlayListener.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/TalkBoxConfigurator$PlayListener1.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/TalkBoxConfigurator$PlayListener1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/TalkBoxConfigurator.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/TalkBoxConfigurator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/TalkBoxSimulator$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/TalkBoxSimulator$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/TalkBoxSimulator$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/TalkBoxSimulator$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/TalkBoxSimulator$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/TalkBoxSimulator$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/TalkBoxSimulator.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/TalkBoxSimulator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/essentials1$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/essentials1$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/essentials1$10.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/essentials1$10.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/essentials1$11.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/essentials1$11.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/essentials1$12.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/essentials1$12.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/essentials1$13.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/essentials1$13.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/essentials1$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/essentials1$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/essentials1$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/essentials1$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/essentials1$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/essentials1$4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/essentials1$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/essentials1$5.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/essentials1$6.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/essentials1$6.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/essentials1$7.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/essentials1$7.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/essentials1$8.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/essentials1$8.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/essentials1$9.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/essentials1$9.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/essentials1.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/essentials1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/essentials2$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/essentials2$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/essentials2$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/essentials2$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/essentials2$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/essentials2$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/essentials2$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/essentials2$4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/essentials2$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/essentials2$5.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/essentials2$6.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/essentials2$6.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/essentials2.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/essentials2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/simulator$PlayListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/simulator$PlayListener.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/simulator.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/simulator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TalkBox/simulator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TalkBox/simulator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/config/audio/aud1.wav" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/config/audio/aud1.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/config/audio/aud2.wav" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/config/audio/aud2.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/config/audio/aud3.wav" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/config/audio/aud3.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/config/images/img2.png" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/config/images/img2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/config/images/img3.png" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/config/images/img3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/simulator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/simulator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Website" beforeDir="false" afterPath="$PROJECT_DIR$/../../Website" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -13,11 +72,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/TalkBoxSimulator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="32" column="18" lean-forward="true" selection-start-line="32" selection-start-column="18" selection-end-line="32" selection-end-column="18" />
+            <state relative-caret-position="225">
+              <caret line="25" column="49" selection-start-line="25" selection-start-column="49" selection-end-line="25" selection-end-column="49" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/simulator.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="445">
+              <caret line="92" lean-forward="true" selection-start-line="92" selection-end-line="92" />
             </state>
           </provider>
         </entry>
@@ -25,20 +93,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/TalkBoxConfigurator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="41" column="25" selection-start-line="41" selection-start-column="25" selection-end-line="41" selection-end-column="25" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/simulator.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="24" column="62" selection-start-line="24" selection-start-column="62" selection-end-line="24" selection-end-column="62" />
-              <folding>
-                <element signature="e#470#479#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="255">
+              <caret line="35" column="63" selection-start-line="35" selection-start-column="63" selection-end-line="35" selection-end-column="63" />
             </state>
           </provider>
         </entry>
@@ -65,7 +121,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -83,15 +138,16 @@
         </subPane>
       </pane>
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551074693759" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551126212477" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
@@ -141,16 +197,29 @@
       <updated>1551073865132</updated>
       <workItem from="1551073866430" duration="789000" />
       <workItem from="1551114221966" duration="381000" />
+      <workItem from="1551115601246" duration="315000" />
+      <workItem from="1551118432525" duration="474000" />
+      <workItem from="1551211754713" duration="607000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1170000" />
+    <option name="totallyTimeSpent" value="2566000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12210012" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12576313" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -160,17 +229,17 @@
       <window_info id="Learn" order="7" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32959184" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32959184" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.32959184" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32959184" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.31428573" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.32959184" />
       <window_info anchor="bottom" id="Database Changes" order="11" />
-      <window_info anchor="bottom" id="Version Control" order="12" />
+      <window_info anchor="bottom" id="Version Control" order="12" weight="0.32959184" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -186,27 +255,31 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/TalkBoxConfigurator.java">
+    <entry file="file://$PROJECT_DIR$/src/FileDrop.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="41" column="25" selection-start-line="41" selection-start-column="25" selection-end-line="41" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/simulator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="24" column="62" selection-start-line="24" selection-start-column="62" selection-end-line="24" selection-end-column="62" />
-          <folding>
-            <element signature="e#470#479#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="375">
+          <caret line="57" column="4" selection-start-line="57" selection-start-column="4" selection-end-line="57" selection-end-column="4" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/TalkBoxSimulator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="32" column="18" lean-forward="true" selection-start-line="32" selection-start-column="18" selection-end-line="32" selection-end-column="18" />
+        <state relative-caret-position="225">
+          <caret line="25" column="49" selection-start-line="25" selection-start-column="49" selection-end-line="25" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/TalkBoxConfigurator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="35" column="63" selection-start-line="35" selection-start-column="63" selection-end-line="35" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/simulator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="445">
+          <caret line="92" lean-forward="true" selection-start-line="92" selection-end-line="92" />
         </state>
       </provider>
     </entry>
@@ -216,10 +289,12 @@
       <state key="ArtifactsStructureConfigurable.UI">
         <settings>
           <artifact-editor />
+          <last-edited>TalkBox:jar</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
                 <option value="0.2" />
+                <option value="0.5" />
               </list>
             </option>
           </splitter-proportions>
