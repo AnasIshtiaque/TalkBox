@@ -7,6 +7,8 @@ import javax.sound.sampled.AudioSystem;
 import javax.sound.sampled.Clip;
 import javax.swing.JButton;
 import javax.swing.JFrame;
+import javax.swing.JLabel;
+
 import java.awt.GridLayout;
 import java.awt.Frame;
 import javax.swing.ImageIcon;
@@ -28,19 +30,29 @@ public class essentials2 extends JFrame{
 		
 		walk_ic = new ImageIcon("icon/essential2/walk.png");
 		walk = new JButton("Go For A Walk",walk_ic);
+		walk.setHorizontalTextPosition(JLabel.CENTER);
+		walk.setVerticalTextPosition(JLabel.BOTTOM);
 		
 		more_ic = new ImageIcon("icon/essential2/more.png");
 		more = new JButton("Want More", more_ic);
+		more.setHorizontalTextPosition(JLabel.CENTER);
+		more.setVerticalTextPosition(JLabel.BOTTOM);
 		
 		washroom_ic = new ImageIcon("icon/essential2/washroom.png");
 		washroom = new JButton("Need Washroom",washroom_ic);
+		washroom.setHorizontalTextPosition(JLabel.CENTER);
+		washroom.setVerticalTextPosition(JLabel.BOTTOM);
 		
 		noisy_ic = new ImageIcon("icon/essential2/noisy.png");
-		noisy = new JButton("Too Noisy",noisy_ic);
+		noisy = new JButton("Too Noisy",noisy_ic);		
+		noisy.setHorizontalTextPosition(JLabel.CENTER);
+		noisy.setVerticalTextPosition(JLabel.BOTTOM);
 		
 		back_ic = new ImageIcon("icon/back.png");
 		back = new JButton("Back", back_ic);
 		back.setBounds(615, 216, 169, 93);
+		back.setHorizontalTextPosition(JLabel.CENTER);
+		back.setVerticalTextPosition(JLabel.BOTTOM);
 
 		frame.getContentPane().add(walk);
 		frame.getContentPane().add(more);

@@ -22,7 +22,7 @@ public class TalkBoxSimulator extends JFrame {
 		frame.setVisible(true);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.getContentPane().setLayout(new GridLayout(4, 4, 1, 1));
-        setLayout(new GridLayout());
+		setLayout(new GridLayout());
 		essential1 = new JButton("Essentials 1");
 		essential2 = new JButton("Essentials 2");
 		simulator = new JButton("Simulator");
@@ -34,89 +34,67 @@ public class TalkBoxSimulator extends JFrame {
 
 	}
 
-private void buttons() {
+	private void buttons() {
 
 		essential1.addActionListener(new ActionListener() {
-
 			@Override
 			public void actionPerformed(ActionEvent e) {
-
 				essentials1 ess = new essentials1();
 				frame.setVisible(false);
 
 				try {
-
 					AudioInputStream audioInputStream = AudioSystem.getAudioInputStream(new File("sounds/pop.wav"));
 					Clip clip = AudioSystem.getClip();
 					clip.open(audioInputStream);
 					clip.start();
-
-				} catch(Exception e1) {
-
+				} catch (Exception e1) {
 					e1.printStackTrace();
-
 				}
-
 			}
-
 		});
 
 		essential2.addActionListener(new ActionListener() {
-
 			@Override
 			public void actionPerformed(ActionEvent e) {
-
 				essentials2 ess = new essentials2();
 				frame.setVisible(false);
+				
+				try {
+					AudioInputStream audioInputStream = AudioSystem.getAudioInputStream(new File("sounds/pop.wav"));
+					Clip clip = AudioSystem.getClip();
+					clip.open(audioInputStream);
+					clip.start();
+				} catch (Exception e1) {
+					e1.printStackTrace();
+				}
+			}
+		});
 
+		simulator.addActionListener(new ActionListener() {
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				
+				try {
+					simulator sim = new simulator();
+				} catch (URISyntaxException use) {
+					
+				}
+				
+				frame.setVisible(false);
+			
 				try {
 
 					AudioInputStream audioInputStream = AudioSystem.getAudioInputStream(new File("sounds/pop.wav"));
 					Clip clip = AudioSystem.getClip();
 					clip.open(audioInputStream);
 					clip.start();
-
-				} catch(Exception e1) {
-
+				} catch (Exception e1) {
 					e1.printStackTrace();
-
 				}
-
 			}
-
 		});
 
-	simulator.addActionListener(new ActionListener() {
-
-		@Override
-		public void actionPerformed(ActionEvent e) {
-
-			try {
-				simulator sim = new simulator();
-			}
-			catch (URISyntaxException use){}
-
-			frame.setVisible(false);
-
-			try {
-
-				AudioInputStream audioInputStream = AudioSystem.getAudioInputStream(new File("sounds/pop.wav"));
-				Clip clip = AudioSystem.getClip();
-				clip.open(audioInputStream);
-				clip.start();
-
-			} catch(Exception e1) {
-
-				e1.printStackTrace();
-
-			}
-
-		}
-
-	});
-
 	}
-
 
 	public static void main(String args[]) {
 

@@ -21,7 +21,7 @@ import java.util.List;
 public class TalkBoxConfigurator extends JFrame implements TalkBoxConfiguration {
 
 	static ArrayList<JTextArea> c = new ArrayList<JTextArea>();
-	static ArrayList<JButton> buttons = new ArrayList<JButton>();
+	static ArrayList<JButton> img_buttons = new ArrayList<JButton>();
 	List<String> filenames = new ArrayList<String>();
 	List<String> images = new ArrayList<String>();
 	Path RRfilenames;
@@ -58,9 +58,9 @@ public class TalkBoxConfigurator extends JFrame implements TalkBoxConfiguration 
 			setSize(width+=80, height);
 
 			builder = new StringBuilder();
-			buttons.add(new JButton("Drag image file... "));
-			add(buttons.get(counter));
-			buttons.get(counter).addActionListener(new PlayListener1());
+			img_buttons.add(new JButton("Drag image file... "));
+			add(img_buttons.get(counter));
+			img_buttons.get(counter).addActionListener(new PlayListener1());
 			c.add(new JTextArea());
 			getContentPane().add(new javax.swing.JScrollPane(c.get(counter)), java.awt.BorderLayout.CENTER);
 
@@ -94,7 +94,7 @@ public class TalkBoxConfigurator extends JFrame implements TalkBoxConfiguration 
 
 			}); // end FileDrop.Listener
 
-			new FileDrop(System.out, buttons.get(counter), /* dragBorder, */ new FileDrop.Listener() {
+			new FileDrop(System.out, img_buttons.get(counter), /* dragBorder, */ new FileDrop.Listener() {
 
 				public void filesDropped(java.io.File[] files) {
 
@@ -107,7 +107,10 @@ public class TalkBoxConfigurator extends JFrame implements TalkBoxConfiguration 
 							File dest = new File(jDirectory+"/images/img"+counter+"."+getFileExtension(source));
 							Files.copy(source.toPath(), dest.toPath(), StandardCopyOption.REPLACE_EXISTING);
 							ImageIcon img = new ImageIcon(""+images.get(counter-1));
-							buttons.get(counter-1).setIcon(img);
+							img_buttons.get(counter-1).setIcon(img);
+							img_buttons.get(counter-1).setText(files[i].getName());
+							img_buttons.get(counter-1).setHorizontalTextPosition(JLabel.CENTER);
+							img_buttons.get(counter-1).setVerticalTextPosition(JLabel.BOTTOM);
 
 						} // end try
 
@@ -133,7 +136,7 @@ public class TalkBoxConfigurator extends JFrame implements TalkBoxConfiguration 
 
 			for (int k = 0; k < counter; k++) {
 
-				if (e.getSource().equals(buttons.get(k)) && builders.get(k).toString().equals(c.get(k).getText())) {
+				if (e.getSource().equals(img_buttons.get(k)) && builders.get(k).toString().equals(c.get(k).getText())) {
 
 					try {
 

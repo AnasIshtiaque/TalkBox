@@ -7,6 +7,8 @@ import javax.sound.sampled.AudioSystem;
 import javax.sound.sampled.Clip;
 import javax.swing.JButton;
 import javax.swing.JFrame;
+import javax.swing.JLabel;
+
 import java.awt.GridLayout;
 import java.awt.Image;
 
@@ -31,41 +33,65 @@ public class essentials1 extends JFrame{
 		
 		hello_ic = new ImageIcon("icon/essential1/hello.png");
 		hello = new JButton("Hello",hello_ic);
+		hello.setHorizontalTextPosition(JLabel.CENTER);
+		hello.setVerticalTextPosition(JLabel.BOTTOM);
 		
 		gbye_ic = new ImageIcon("icon/essential1/goodbye.png");
 		gbye = new JButton("Goodbye", gbye_ic);
+		gbye.setHorizontalTextPosition(JLabel.CENTER);
+		gbye.setVerticalTextPosition(JLabel.BOTTOM);
 		
-		sick_ic = new ImageIcon("icon/essential1/feel_sick.gif");
+		sick_ic = new ImageIcon("icon/essential1/feel_sick.png");
 		feel_sick = new JButton("Feel Sick",sick_ic);
+		feel_sick.setHorizontalTextPosition(JLabel.CENTER);
+		feel_sick.setVerticalTextPosition(JLabel.BOTTOM);
 		
 		mouth_dry_ic = new ImageIcon("icon/essential1/mouth_dry.png");
 		mouth_dry = new JButton("Mouth Dry",mouth_dry_ic);
+		mouth_dry.setHorizontalTextPosition(JLabel.CENTER);
+		mouth_dry.setVerticalTextPosition(JLabel.BOTTOM);
 		
 		break_ic = new ImageIcon("icon/essential1/break.png");
 		need_break = new JButton("Need A Break",break_ic);
+		need_break.setHorizontalTextPosition(JLabel.CENTER);
+		need_break.setVerticalTextPosition(JLabel.BOTTOM);
 		
 		help_ic = new ImageIcon("icon/essential1/help.png");
 		need_help = new JButton("Need Help",help_ic);
+		need_help.setHorizontalTextPosition(JLabel.CENTER);
+		need_help.setVerticalTextPosition(JLabel.BOTTOM);
 		
 		yes_ic = new ImageIcon("icon/essential1/yes.png");
 		yes = new JButton("YES",yes_ic);
+		yes.setHorizontalTextPosition(JLabel.CENTER);
+		yes.setVerticalTextPosition(JLabel.BOTTOM);
 		
 		no_ic = new ImageIcon("icon/essential1/no.png");
 		no = new JButton("NO",no_ic);
+		no.setHorizontalTextPosition(JLabel.CENTER);
+		no.setVerticalTextPosition(JLabel.BOTTOM);
 		
 		thank_ic = new ImageIcon("icon/essential1/thanks.png");
 		thank = new JButton("Thank you",thank_ic);
+		thank.setHorizontalTextPosition(JLabel.CENTER);
+		thank.setVerticalTextPosition(JLabel.BOTTOM);
 		
 		welcome_ic = new ImageIcon("icon/essential1/yourewelcome.png");
 		youre_welcome = new JButton("You're Welcome",welcome_ic);
+		youre_welcome.setHorizontalTextPosition(JLabel.CENTER);
+		youre_welcome.setVerticalTextPosition(JLabel.BOTTOM);
 		
 		upset_ic = new ImageIcon("icon/essential1/upset.png");
 		upset = new JButton("Upset",upset_ic);
-
+		upset.setHorizontalTextPosition(JLabel.CENTER);
+		upset.setVerticalTextPosition(JLabel.BOTTOM);
+		
 		back_ic = new ImageIcon("icon/back.png");
 		back = new JButton("Back", back_ic);
 		back.setBounds(615, 216, 169, 93);
-
+		back.setHorizontalTextPosition(JLabel.CENTER);
+		back.setVerticalTextPosition(JLabel.BOTTOM);
+		
 		frame.getContentPane().add(hello);
 		frame.getContentPane().add(gbye);
 		frame.getContentPane().add(feel_sick);
