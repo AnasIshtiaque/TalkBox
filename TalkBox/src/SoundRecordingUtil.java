@@ -16,7 +16,7 @@ import javax.sound.sampled.UnsupportedAudioFileException;
 
 /**
  * A utility class provides general functions for recording sound.
- * @author www.codejava.net
+ * 
  *
  */
 public class SoundRecordingUtil {

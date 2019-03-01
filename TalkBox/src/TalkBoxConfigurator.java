@@ -171,30 +171,6 @@ public class TalkBoxConfigurator extends JFrame implements TalkBoxConfiguration 
 				ex.printStackTrace();
 			}
 		}
-//		private void playBack() {
-//			playbackThread = new Thread(new Runnable() {
-//				public void run() {
-//					try {
-//
-//						buttonRecord.setEnabled(false);
-//
-//						player.play(saveFilePaths.get(RecordCounter));
-//			
-//
-//					} catch (UnsupportedAudioFileException ex) {
-//						ex.printStackTrace();
-//					} catch (LineUnavailableException ex) {
-//						ex.printStackTrace();
-//					} catch (IOException ex) {
-//						ex.printStackTrace();
-//					}
-//
-//				}
-//			});
-//
-//			playbackThread.start();
-//		}
-//	
 
 		/**
 		 * Save the recorded sound into a WAV file.
