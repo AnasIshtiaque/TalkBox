@@ -63,14 +63,36 @@ public class TalkBoxConfigurator extends JFrame implements TalkBoxConfiguration 
 		Files.createDirectories(Paths.get(jDirectory + "/audio"));
 		Files.createDirectories(Paths.get(jDirectory + "/images"));
 		Files.createDirectories(Paths.get(jDirectory + "/serialize"));
-
+		JButton reset = new JButton("Reset");
+		reset.addActionListener(new PlayListener4());
 		a.add(buttonRecord);
-
+		a.add(reset);
 		buttonRecord.setIcon(iconRecord);
 
 		// add(buttonRecord);
 		buttonRecord.addActionListener(new PlayListener2());
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+	}
+	
+	public class PlayListener4 implements ActionListener {
+		public void actionPerformed(ActionEvent event) {
+			try {
+				TalkBoxConfigurator reset = new TalkBoxConfigurator();
+				dispose();
+				File AudioDirectory = new File(jDirectory + "/audio");
+				for(File f: AudioDirectory.listFiles()) 
+					  f.delete();
+				File IconDirectory = new File(jDirectory + "/images");
+				for(File f: IconDirectory.listFiles()) 
+					  f.delete();
+			} catch (URISyntaxException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			} catch (IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		}
 	}
 
 	public class PlayListener2 implements ActionListener {
