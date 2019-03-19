@@ -18,8 +18,14 @@ import java.nio.file.StandardCopyOption;
 import java.security.CodeSource;
 import java.util.ArrayList;
 import java.util.List;
+import java.awt.event.WindowAdapter;
+import java.awt.event.WindowEvent;
+
+
 
 public class TalkBoxConfigurator extends JFrame implements TalkBoxConfiguration {
+	
+	
 	//
 	private JButton buttonRecord = new JButton("Record");
 	private SoundRecordingUtil recorder = new SoundRecordingUtil();
@@ -435,6 +441,21 @@ public class TalkBoxConfigurator extends JFrame implements TalkBoxConfiguration 
 	public static void main(String args[]) throws IOException, URISyntaxException {
 
 		TalkBoxConfigurator talkBoxConf = new TalkBoxConfigurator();
+
+
+        // Add window listener by implementing WindowAdapter class to
+        // the frame instance. To handle the close event we just need
+        // to implement the windowClosing() method.
+		talkBoxConf.addWindowListener(new WindowAdapter() {
+            @Override
+            public void windowClosing(WindowEvent e) {
+                System.out.println("WindowClosingDemo.windowClosing");
+                System.exit(0);
+            }
+        });
+
+        // Show the frame
+		talkBoxConf.setVisible(true);
 
 	}
 
