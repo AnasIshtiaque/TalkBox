@@ -78,7 +78,7 @@ public class ConfiguratorController {
 	
 	public void save() {
 		
-		saveFilePath = jDirectory + "/audio/" + "aud" + (TalkBoxConfigurator.counter+1) + ".wav";
+		saveFilePath = jDirectory + "/audio/" + "aud" + (TalkBoxConfigurator.counter+1) + TalkBoxConfigurator.currentSet + ".wav";
 		File wavFile = new File(saveFilePath);
 		ConfiguratorController.saveFilePaths.add(saveFilePath);
 		filenames.add(saveFilePath);
@@ -100,7 +100,7 @@ public class ConfiguratorController {
 		images.add(TalkBoxConfigurator.counter - 1, files[i].getCanonicalPath());
 		File source = new File(files[i].getCanonicalPath());
 		String extension = ConfiguratorController.getFileExtension(source);
-		File dest = new File(jDirectory + "/images/img" + TalkBoxConfigurator.counter + "." + extension);
+		File dest = new File(jDirectory + "/images/img" + TalkBoxConfigurator.counter + TalkBoxConfigurator.currentSet + "." + extension);
 		Files.copy(source.toPath(), dest.toPath(), StandardCopyOption.REPLACE_EXISTING);
 		
 	}
@@ -109,7 +109,7 @@ public class ConfiguratorController {
 		
 		images.add(TalkBoxConfigurator.counter - 1, files[i].getCanonicalPath());
 		File source = new File(files[i].getCanonicalPath());
-		File dest = new File(jDirectory + "/images/img" + TalkBoxConfigurator.counter + "." + ConfiguratorController.getFileExtension(source));
+		File dest = new File(jDirectory + "/images/img" + TalkBoxConfigurator.counter + TalkBoxConfigurator.currentSet + "." + ConfiguratorController.getFileExtension(source));
 		Files.copy(source.toPath(), dest.toPath(), StandardCopyOption.REPLACE_EXISTING);
 		
 	}
@@ -122,7 +122,7 @@ public class ConfiguratorController {
 		filenames.add(filename);
 		builders.add(TalkBoxConfigurator.builder);
 		File source = new File(filename);
-		File dest = new File(jDirectory + "/audio/aud" + TalkBoxConfigurator.counter + "." + ConfiguratorController.getFileExtension(source));
+		File dest = new File(jDirectory + "/audio/aud" + TalkBoxConfigurator.counter + TalkBoxConfigurator.currentSet + "." + ConfiguratorController.getFileExtension(source));
 		Files.copy(source.toPath(), dest.toPath(), StandardCopyOption.REPLACE_EXISTING);
 		
 	}

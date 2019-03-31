@@ -3,42 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="c011a209-260b-4be2-a866-af52cf5faba1" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/TalkBoxConfigurator$PlayListener$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/TalkBoxConfigurator$PlayListener$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/TalkBoxConfigurator$PlayListener.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/TalkBoxConfigurator$PlayListener1.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/TalkBoxConfigurator$PlayListener1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/TalkBoxConfigurator.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/TalkBoxConfigurator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/TalkBoxSimulator$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/TalkBoxSimulator$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/TalkBoxSimulator.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/TalkBoxSimulator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/essentials1$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/essentials1$10.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/essentials1$11.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/essentials1$12.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/essentials1$13.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/essentials1$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/essentials1$3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/essentials1$4.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/essentials1$5.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/essentials1$6.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/essentials1$7.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/essentials1$8.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/essentials1$9.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/essentials1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/essentials2$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/essentials2$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/essentials2$3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/essentials2$4.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/essentials2$5.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/essentials2$6.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/essentials2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/simulator$PlayListener.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/simulator.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ConfiguratorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ConfiguratorController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/TalkBoxConfigurator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TalkBoxConfigurator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TalkBoxSimulator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TalkBoxSimulator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/essentials1.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/essentials2.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/simulator.java" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -63,8 +31,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/TalkBoxConfigurator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="318">
-              <caret line="502" lean-forward="true" selection-start-line="502" selection-end-line="502" />
+            <state relative-caret-position="606">
+              <caret line="514" column="18" lean-forward="true" selection-start-line="514" selection-start-column="18" selection-end-line="514" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -157,12 +125,12 @@
       <workItem from="1553900306142" duration="107000" />
       <workItem from="1553970512234" duration="46000" />
       <workItem from="1553988148283" duration="2962000" />
-      <workItem from="1554063290065" duration="397000" />
+      <workItem from="1554063290065" duration="794000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3512000" />
+    <option name="totallyTimeSpent" value="3909000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
@@ -234,8 +202,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/TalkBoxConfigurator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="318">
-          <caret line="502" lean-forward="true" selection-start-line="502" selection-end-line="502" />
+        <state relative-caret-position="606">
+          <caret line="514" column="18" lean-forward="true" selection-start-line="514" selection-start-column="18" selection-end-line="514" selection-end-column="18" />
         </state>
       </provider>
     </entry>

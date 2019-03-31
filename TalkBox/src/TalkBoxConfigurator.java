@@ -31,7 +31,8 @@ public class TalkBoxConfigurator extends JFrame implements TalkBoxConfiguration 
 	static ArrayList<JButton> img_buttons = new ArrayList<JButton>();
 	private JComboBox<String> setBox;
 	static int setCount = 1;
-	static String[] setList = {"Set 1"};
+	static String[] setList = {"Set_1"};
+	static String currentSet;
 	ConfiguratorController cc = new ConfiguratorController();
 	static StringBuilder builder = new StringBuilder();
 	public static int counter = 0;
@@ -99,7 +100,8 @@ public class TalkBoxConfigurator extends JFrame implements TalkBoxConfiguration 
 						
 						if(event.getStateChange() == ItemEvent.SELECTED) {
 							
-							System.out.println(ItemEvent.SELECTED);
+							currentSet = event.getItem().toString();
+							revalidate();
 							
 						}
 						
@@ -132,7 +134,7 @@ public class TalkBoxConfigurator extends JFrame implements TalkBoxConfiguration 
 		public void actionPerformed(ActionEvent ev) {
 			
 			setCount++;
-			setBox.addItem("Set " + setCount);
+			setBox.addItem("Set_" + setCount);
 			
 		}
 		
