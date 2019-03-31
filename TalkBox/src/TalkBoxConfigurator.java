@@ -44,7 +44,7 @@ public class TalkBoxConfigurator extends JFrame implements TalkBoxConfiguration 
 		setVisible(true);
 		setSize(width, height);
 		setLayout(new GridLayout(1, 1));
-		JButton button = new JButton("Add");
+		JButton button = new JButton("Add Button");
 		a.add(button);
 		button.addActionListener(new PlayListener());
 		JButton reset = new JButton("Reset");

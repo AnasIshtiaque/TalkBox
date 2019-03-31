@@ -2,70 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c011a209-260b-4be2-a866-af52cf5faba1" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/TalkBox_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/TalkBox.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/TalkBox.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TalkBox.iml" beforeDir="false" afterPath="$PROJECT_DIR$/TalkBox.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/FileDrop$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/FileDrop$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/FileDrop$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/FileDrop$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/FileDrop$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/FileDrop$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/FileDrop$Event.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/FileDrop$Event.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/FileDrop$Listener.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/FileDrop$Listener.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/FileDrop$TransferableObject$Fetcher.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/FileDrop$TransferableObject$Fetcher.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/FileDrop$TransferableObject.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/FileDrop$TransferableObject.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/FileDrop.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/FileDrop.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/TalkBoxConfiguration.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/TalkBoxConfiguration.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/TalkBoxConfigurator$PlayListener$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/TalkBoxConfigurator$PlayListener$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/TalkBoxConfigurator$PlayListener$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/TalkBoxConfigurator$PlayListener$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/TalkBoxConfigurator$PlayListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/TalkBoxConfigurator$PlayListener.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/TalkBoxConfigurator$PlayListener1.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/TalkBoxConfigurator$PlayListener1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/TalkBoxConfigurator.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/TalkBoxConfigurator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/TalkBoxSimulator$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/TalkBoxSimulator$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/TalkBoxSimulator$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/TalkBoxSimulator$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/TalkBoxSimulator$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/TalkBoxSimulator$3.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/TalkBoxSimulator.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/TalkBoxSimulator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/essentials1$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/essentials1$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/essentials1$10.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/essentials1$10.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/essentials1$11.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/essentials1$11.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/essentials1$12.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/essentials1$12.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/essentials1$13.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/essentials1$13.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/essentials1$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/essentials1$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/essentials1$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/essentials1$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/essentials1$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/essentials1$4.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/essentials1$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/essentials1$5.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/essentials1$6.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/essentials1$6.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/essentials1$7.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/essentials1$7.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/essentials1$8.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/essentials1$8.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/essentials1$9.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/essentials1$9.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/essentials1.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/essentials1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/essentials2$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/essentials2$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/essentials2$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/essentials2$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/essentials2$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/essentials2$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/essentials2$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/essentials2$4.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/essentials2$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/essentials2$5.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/essentials2$6.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/essentials2$6.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/essentials2.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/essentials2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/simulator$PlayListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/simulator$PlayListener.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/simulator.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/simulator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/audio/aud1.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/images/img1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/audio/aud1.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/images/img1.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/TalkBoxConfigurator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TalkBoxConfigurator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bin/FileDrop$Event.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/bin/FileDrop$Event.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bin/FileDrop$Listener.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/bin/FileDrop$Listener.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bin/FileDrop$TransferableObject$Fetcher.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/bin/FileDrop$TransferableObject$Fetcher.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bin/FileDrop$TransferableObject.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/bin/FileDrop$TransferableObject.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bin/FileDrop.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/bin/FileDrop.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bin/TalkBoxConfiguration.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/bin/TalkBoxConfiguration.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bin/TalkBoxConfigurator$PlayListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/bin/TalkBoxConfigurator$PlayListener.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bin/TalkBoxConfigurator$PlayListener1.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/bin/TalkBoxConfigurator$PlayListener1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bin/TalkBoxConfigurator.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/bin/TalkBoxConfigurator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bin/TalkBoxSimulator.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/bin/TalkBoxSimulator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bin/essentials1.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/bin/essentials1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bin/essentials2.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/bin/essentials2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bin/simulator$PlayListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/bin/simulator$PlayListener.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bin/simulator.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/bin/simulator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TalkBoxSimulator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TalkBoxSimulator.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -87,13 +30,24 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/TalkBoxConfigurator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="566">
-              <caret line="41" column="33" lean-forward="true" selection-start-line="41" selection-start-column="33" selection-end-line="41" selection-end-column="33" />
+            <state relative-caret-position="-5232">
+              <caret line="38" column="38" lean-forward="true" selection-start-line="38" selection-start-column="38" selection-end-line="38" selection-end-column="38" />
               <folding>
                 <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/TalkBoxSimulator.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <folding>
+                <element signature="e#0#2912#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -157,7 +111,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1554001827858" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1554002736698" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -186,12 +140,12 @@
       <updated>1553900300897</updated>
       <workItem from="1553900306142" duration="107000" />
       <workItem from="1553970512234" duration="46000" />
-      <workItem from="1553988148283" duration="1788000" />
+      <workItem from="1553988148283" duration="2041000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1941000" />
+    <option name="totallyTimeSpent" value="2194000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
@@ -256,10 +210,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/TalkBoxConfigurator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="566">
-          <caret line="41" column="33" lean-forward="true" selection-start-line="41" selection-start-column="33" selection-end-line="41" selection-end-column="33" />
+        <state relative-caret-position="-5232">
+          <caret line="38" column="38" lean-forward="true" selection-start-line="38" selection-start-column="38" selection-end-line="38" selection-end-column="38" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/TalkBoxSimulator.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#2912#0" expanded="true" />
           </folding>
         </state>
       </provider>

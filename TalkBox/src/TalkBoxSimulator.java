@@ -23,11 +23,11 @@ public class TalkBoxSimulator extends JFrame {
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.getContentPane().setLayout(new GridLayout(4, 4, 1, 1));
 		setLayout(new GridLayout());
-		essential1 = new JButton("Essentials 1");
-		essential2 = new JButton("Essentials 2");
+		//essential1 = new JButton("Essentials 1");
+		//essential2 = new JButton("Essentials 2");
 		simulator = new JButton("Simulator");
-		frame.getContentPane().add(essential1);
-		frame.getContentPane().add(essential2);
+		//frame.getContentPane().add(essential1);
+		//frame.getContentPane().add(essential2);
 		frame.getContentPane().add(simulator);
 
 		buttons();
@@ -36,39 +36,42 @@ public class TalkBoxSimulator extends JFrame {
 
 	private void buttons() {
 
-		essential1.addActionListener(new ActionListener() {
-			@Override
-			public void actionPerformed(ActionEvent e) {
-				essentials1 ess = new essentials1();
-				frame.setVisible(false);
+		/*
+		 * essential1.addActionListener(new ActionListener() {
+		@Override
+		public void actionPerformed(ActionEvent e) {
+			essentials1 ess = new essentials1();
+			frame.setVisible(false);
 
-				try {
-					AudioInputStream audioInputStream = AudioSystem.getAudioInputStream(new File("sounds/pop.wav"));
-					Clip clip = AudioSystem.getClip();
-					clip.open(audioInputStream);
-					clip.start();
-				} catch (Exception e1) {
-					e1.printStackTrace();
-				}
+			try {
+				AudioInputStream audioInputStream = AudioSystem.getAudioInputStream(new File("sounds/pop.wav"));
+				Clip clip = AudioSystem.getClip();
+				clip.open(audioInputStream);
+				clip.start();
+			} catch (Exception e1) {
+				e1.printStackTrace();
 			}
-		});
+		}
+	});
 
 		essential2.addActionListener(new ActionListener() {
-			@Override
-			public void actionPerformed(ActionEvent e) {
-				essentials2 ess = new essentials2();
-				frame.setVisible(false);
-				
-				try {
-					AudioInputStream audioInputStream = AudioSystem.getAudioInputStream(new File("sounds/pop.wav"));
-					Clip clip = AudioSystem.getClip();
-					clip.open(audioInputStream);
-					clip.start();
-				} catch (Exception e1) {
-					e1.printStackTrace();
-				}
+		@Override
+		public void actionPerformed(ActionEvent e) {
+			essentials2 ess = new essentials2();
+			frame.setVisible(false);
+
+			try {
+				AudioInputStream audioInputStream = AudioSystem.getAudioInputStream(new File("sounds/pop.wav"));
+				Clip clip = AudioSystem.getClip();
+				clip.open(audioInputStream);
+				clip.start();
+			} catch (Exception e1) {
+				e1.printStackTrace();
 			}
-		});
+		}
+	});
+	*
+	*/
 
 		simulator.addActionListener(new ActionListener() {
 			@Override
