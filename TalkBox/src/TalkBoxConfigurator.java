@@ -32,12 +32,11 @@ public class TalkBoxConfigurator extends JFrame implements TalkBoxConfiguration 
 	private JComboBox<String> setBox;
 	static int setCount = 1;
 	static String[] setList = {"Set_1"};
-	static String currentSet = "Set_1";
+	static String currentSet;
 	ConfiguratorController cc = new ConfiguratorController();
 	static StringBuilder builder = new StringBuilder();
 	public static int counter = 0;
 	static int RecordCounter = 0;
-	public Clip clip;
 	int height = 300;
 	int width = 600;
 
@@ -101,9 +100,7 @@ public class TalkBoxConfigurator extends JFrame implements TalkBoxConfiguration 
 						
 						if(event.getStateChange() == ItemEvent.SELECTED) {
 							
-							JOptionPane.showMessageDialog(null, "Set saved. " + currentSet + " can no longer be edited.");
-		        			currentSet = event.getItem().toString();
-							counter = 0;
+							currentSet = event.getItem().toString();
 							revalidate();
 							
 						}
@@ -138,11 +135,6 @@ public class TalkBoxConfigurator extends JFrame implements TalkBoxConfiguration 
 			
 			setCount++;
 			setBox.addItem("Set_" + setCount);
-			setBox.getItemAt(setCount-1);
-			sound_buttons.clear();
-			img_buttons.clear();
-			revalidate();
-			
 			
 		}
 		
@@ -153,18 +145,12 @@ public class TalkBoxConfigurator extends JFrame implements TalkBoxConfiguration 
 		public void actionPerformed(ActionEvent event) {
 			
 			cc.resetDirectories();
-			sound_buttons.clear();
 			img_buttons.clear();
-			builder = new StringBuilder();
-			cc.filenames.clear();
-			cc.images.clear();
-			cc.builders.clear();
-			ConfiguratorController.saveFilePaths.clear();
-			ConfiguratorController.saveFilePath = "";
 			counter = 0;
 			setCount = 1;
 			dispose();
 			
+
 		}
 		
 	}
@@ -183,7 +169,7 @@ public class TalkBoxConfigurator extends JFrame implements TalkBoxConfiguration 
 					setSize(width += 80, height);
 					img_buttons.add(new JButton("Drag image file... "));
 					add(img_buttons.get(counter));
-					sound_buttons.add(new JButton("Drag audio file... "));
+					sound_buttons.add(new JButton(" ...Recording... "));
 					sound_buttons.get(counter).addActionListener(new soundListener());
 					getContentPane().add(new javax.swing.JScrollPane(sound_buttons.get(counter)), java.awt.BorderLayout.CENTER);
 
@@ -236,6 +222,7 @@ public class TalkBoxConfigurator extends JFrame implements TalkBoxConfiguration 
 						
 						isRecording = true;
 						buttonRecord.setText("Stop");
+						sound_buttons.get(counter).setText("Press to record...");
 						buttonRecord.setIcon(iconStop);
 
 						recorder.start();
@@ -266,6 +253,7 @@ public class TalkBoxConfigurator extends JFrame implements TalkBoxConfiguration 
 				
 				buttonRecord.setText("Record");
 				buttonRecord.setIcon(iconRecord);
+				sound_buttons.get(counter).setText("**Done recording **");
 				setCursor(Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR));
 				recorder.stop();
 				setCursor(Cursor.getPredefinedCursor(Cursor.DEFAULT_CURSOR));
@@ -306,38 +294,17 @@ public class TalkBoxConfigurator extends JFrame implements TalkBoxConfiguration 
 
 							File soundFile = new File(ConfiguratorController.saveFilePaths.get(j)); // you could also get the sound file with
 																				// an URL
+							AudioInputStream audioIn = AudioSystem.getAudioInputStream(soundFile);
+							System.out.println(ConfiguratorController.saveFilePaths.get(j));
 							
-					/* Here Here Here Here */if (clip == null) {
-								AudioInputStream audioIn = AudioSystem.getAudioInputStream(soundFile);
-								System.out.println(ConfiguratorController.saveFilePaths.get(j));
-								// Get a sound clip resource.
-								clip = AudioSystem.getClip();
-								// Open audio clip and load samples from the audio input stream.
-								clip.open(audioIn);
-								clip.start();
-								getAudioFileNames();
-								
-								// getRelativePathToAudioFiles();
-							}
-							/* here */else if (isPlaying()) {
-								System.out.println("STOP");
-				//if the sound is playing, stop it then open a new one to play;				
-								clip.stop();
-								AudioInputStream audioIn = AudioSystem.getAudioInputStream(soundFile);
-								//	System.out.println(ConfiguratorController.saveFilePaths.get(j));
-									// Get a sound clip resource.
-									clip = AudioSystem.getClip();
-									clip.open(audioIn);
-								clip.start();
-							/* here */} else {
-								AudioInputStream audioIn = AudioSystem.getAudioInputStream(soundFile);
-								System.out.println(ConfiguratorController.saveFilePaths.get(j));
-								// Get a sound clip resource.
-								clip = AudioSystem.getClip();
-								clip.open(audioIn);
-								clip.start();
-							}
-						
+							// Get a sound clip resource.
+							Clip clip = AudioSystem.getClip();
+							// Open audio clip and load samples from the audio input stream.
+							clip.open(audioIn);
+							clip.start();
+							getAudioFileNames();
+							
+							// getRelativePathToAudioFiles();
 
 						} catch (UnsupportedAudioFileException e1) {
 
@@ -361,6 +328,7 @@ public class TalkBoxConfigurator extends JFrame implements TalkBoxConfiguration 
 		}
 
 	}
+
 	public class addListener implements ActionListener {
 
 		public void actionPerformed(ActionEvent event) {
@@ -560,12 +528,6 @@ public class TalkBoxConfigurator extends JFrame implements TalkBoxConfiguration 
 		  }
 		  
 		}
-	
-	public boolean isPlaying() {
-		
-		return clip.isActive();
-		
-	}
 
 
 	@Override

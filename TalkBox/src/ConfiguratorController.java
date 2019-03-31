@@ -18,7 +18,7 @@ public class ConfiguratorController {
 	public String filename = "";
 	public ArrayList<StringBuilder> builders = new ArrayList<StringBuilder>();
 	public static ArrayList<String> saveFilePaths = new ArrayList<String>();
-	public static String saveFilePath;
+	public String saveFilePath;
 	
     public void createDirectories() throws IOException, URISyntaxException{
 
