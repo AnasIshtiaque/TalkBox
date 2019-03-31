@@ -11,6 +11,7 @@ import java.io.File;
 import java.io.IOException;
 import java.net.URISyntaxException;
 import java.nio.file.Path;
+import java.security.CodeSource;
 import java.util.ArrayList;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
@@ -421,8 +422,28 @@ public class TalkBoxConfigurator extends JFrame implements TalkBoxConfiguration 
             @Override
             public void windowClosing(WindowEvent e) {
             	
-                System.out.println("WindowClosingDemo.windowClosing");
-                System.exit(0);
+        		File dir = new File(ConfiguratorController.jDirectory);
+        		
+        		if(dir.isDirectory() == false) {
+        			
+        			System.out.println("Not a directory. Do nothing");
+        			return;
+        			
+        		}
+        		
+        		File[] listFiles = dir.listFiles();
+        		
+        		for(File file : listFiles){
+        			
+        			System.out.println("Deleting "+file.getName());
+        			file.delete();
+        			
+        		}
+        		
+        		//now directory is empty, so we can delete it
+        		dir.delete();
+        		
+            	System.exit(0);
                 
             }
             

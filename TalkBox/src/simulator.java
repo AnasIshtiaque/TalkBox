@@ -28,7 +28,8 @@ public class simulator extends JFrame {
 
     public simulator() throws URISyntaxException {
 
-        frame = new JFrame();
+		super("Simulator");
+    	frame = new JFrame();
         frame.setExtendedState(JFrame.MAXIMIZED_BOTH);
         frame.setState(Frame.NORMAL);
         frame.setVisible(true);

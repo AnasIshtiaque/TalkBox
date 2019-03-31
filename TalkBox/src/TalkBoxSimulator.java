@@ -6,6 +6,8 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.event.WindowAdapter;
+import java.awt.event.WindowEvent;
 import java.io.File;
 import java.net.URISyntaxException;
 import java.util.ArrayList;
@@ -102,6 +104,23 @@ public class TalkBoxSimulator extends JFrame {
 	public static void main(String args[]) {
 
 		TalkBoxSimulator talkBoxSim = new TalkBoxSimulator();
+
+        // Add window listener by implementing WindowAdapter class to
+        // the frame instance. To handle the close event we just need
+        // to implement the windowClosing() method.
+		talkBoxSim.addWindowListener(new WindowAdapter() {
+			
+            @Override
+            public void windowClosing(WindowEvent e) {
+            	
+                System.exit(0);
+                
+            }
+            
+        });
+
+        // Show the frame
+		talkBoxSim.setVisible(true);
 
 	}
 

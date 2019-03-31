@@ -11,7 +11,7 @@ import java.util.List;
 
 public class ConfiguratorController {
 	
-	public String jDirectory;
+	public static String jDirectory;
 	public List<String> filenames = new ArrayList<String>();
 	public List<String> images = new ArrayList<String>();
 	public Path RRfilenames;
