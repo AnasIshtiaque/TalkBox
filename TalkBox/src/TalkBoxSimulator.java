@@ -41,6 +41,7 @@ public class TalkBoxSimulator extends JFrame {
             }
             
         });
+		
     	frame = new JFrame();
         frame.setExtendedState(JFrame.MAXIMIZED_BOTH);
         frame.setState(Frame.NORMAL);
