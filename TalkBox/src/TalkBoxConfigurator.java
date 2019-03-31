@@ -7,11 +7,12 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.event.ItemEvent;
+import java.awt.event.ItemListener;
 import java.io.File;
 import java.io.IOException;
 import java.net.URISyntaxException;
 import java.nio.file.Path;
-import java.security.CodeSource;
 import java.util.ArrayList;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
@@ -19,6 +20,7 @@ import java.awt.event.WindowEvent;
 public class TalkBoxConfigurator extends JFrame implements TalkBoxConfiguration {
 	
 	private JButton buttonRecord = new JButton("Record");
+	private JButton addSet = new JButton("Add new set");
 	public static SoundRecordingUtil recorder = new SoundRecordingUtil();
 	private boolean isRecording = false;
 
@@ -27,51 +29,131 @@ public class TalkBoxConfigurator extends JFrame implements TalkBoxConfiguration 
 	private ImageIcon iconStop = new ImageIcon(getClass().getResource("Stop.gif"));
 	static ArrayList<JButton> sound_buttons = new ArrayList<JButton>();
 	static ArrayList<JButton> img_buttons = new ArrayList<JButton>();
+	private JComboBox<String> setBox;
+	static int setCount = 1;
+	static String[] setList = {"Set 1"};
 	ConfiguratorController cc = new ConfiguratorController();
 	static StringBuilder builder = new StringBuilder();
-	
 	public static int counter = 0;
 	static int RecordCounter = 0;
 	int height = 300;
 	int width = 600;
 
-	public TalkBoxConfigurator() throws URISyntaxException, IOException {
 
+	public TalkBoxConfigurator() throws URISyntaxException, IOException {
+		
 		super("Configuration Window");
+		addWindowListener(new WindowAdapter() {
+			
+            @Override
+            public void windowClosing(WindowEvent e) {
+            	
+        		int x = JOptionPane.showConfirmDialog(null, "Would you like to save and exit? [You will lose your current configuration and previous configurations (if any) if you don't save]",
+        				"Exit", JOptionPane.YES_NO_OPTION, JOptionPane.INFORMATION_MESSAGE);
+        		
+        		if(x == JOptionPane.NO_OPTION) {
+        			
+        			try {
+						deleteDirectoryRecursion(new File(ConfiguratorController.jDirectory));
+					} catch (IOException e1) {
+
+						e1.printStackTrace();
+					}
+            		
+                	System.exit(0);
+        			
+        		}
+        		
+        		else {
+        			
+        			System.exit(0);
+        			
+        		}
+                
+            }
+            
+        });
+		
 		cc.createDirectories();
+		addSet.addActionListener(new addSetListener());
 		JPanel a = new JPanel();
 		a.setLayout(new BoxLayout(a, 1));
-		add(a);
-		setVisible(true);
 		setSize(width, height);
 		setLayout(new GridLayout(1, 1));
 		JButton button = new JButton("Add Button");
 		a.add(button);
-		button.addActionListener(new PlayListener());
+		button.addActionListener(new addListener());
 		JButton reset = new JButton("Reset");
-		reset.addActionListener(new PlayListener4());
+		a.add(addSet);
+		reset.addActionListener(new resetListener());
 		a.add(buttonRecord);
 		a.add(reset);
 		buttonRecord.setIcon(iconRecord);
+		setBox = new JComboBox<String>(setList);
+		
+		setBox.addItemListener(
+				
+				new ItemListener() {
+					
+					public void itemStateChanged(ItemEvent event) {
+						
+						if(event.getStateChange() == ItemEvent.SELECTED) {
+							
+							System.out.println(ItemEvent.SELECTED);
+							
+						}
+						
+					}
+					
+				});
+		
+		setBox.setMaximumSize(setBox.getPreferredSize());
+		float alignment = Component.LEFT_ALIGNMENT;
+		a.add(setBox);
+	    BoxLayout layout = new BoxLayout(a, BoxLayout.Y_AXIS);
+	    a.setLayout(layout);
+	    button.setAlignmentX(alignment);
+	    reset.setAlignmentX(alignment);
+	    addSet.setAlignmentX(alignment);
+	    setBox.setAlignmentX(alignment);
+	    buttonRecord.setAlignmentX(alignment);
+		add(a);
+		setVisible(true);
+		
 
 		// add(buttonRecord);
-		buttonRecord.addActionListener(new PlayListener2());
+		buttonRecord.addActionListener(new recordListener());
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		
 	}
 	
-	public class PlayListener4 implements ActionListener {
+	public class addSetListener implements ActionListener {
+		
+		public void actionPerformed(ActionEvent ev) {
+			
+			setCount++;
+			setBox.addItem("Set " + setCount);
+			
+		}
+		
+	}
+	
+	public class resetListener implements ActionListener {
 		
 		public void actionPerformed(ActionEvent event) {
 			
 			cc.resetDirectories();
+			img_buttons.clear();
+			counter = 0;
+			setCount = 1;
 			dispose();
+			
 
 		}
 		
 	}
 
-	public class PlayListener2 implements ActionListener {
+	public class recordListener implements ActionListener {
 		
 		public void actionPerformed(ActionEvent event) {
 			
@@ -85,8 +167,8 @@ public class TalkBoxConfigurator extends JFrame implements TalkBoxConfiguration 
 					setSize(width += 80, height);
 					img_buttons.add(new JButton("Drag image file... "));
 					add(img_buttons.get(counter));
-					sound_buttons.add(new JButton("Press "));
-					sound_buttons.get(counter).addActionListener(new PlayListener3());
+					sound_buttons.add(new JButton(" ...Recording... "));
+					sound_buttons.get(counter).addActionListener(new soundListener());
 					getContentPane().add(new javax.swing.JScrollPane(sound_buttons.get(counter)), java.awt.BorderLayout.CENTER);
 
 					new FileDrop(System.out, img_buttons.get(counter), /* dragBorder, */ new FileDrop.Listener() {
@@ -138,6 +220,7 @@ public class TalkBoxConfigurator extends JFrame implements TalkBoxConfiguration 
 						
 						isRecording = true;
 						buttonRecord.setText("Stop");
+						sound_buttons.get(counter).setText("Press to record...");
 						buttonRecord.setIcon(iconStop);
 
 						recorder.start();
@@ -168,6 +251,7 @@ public class TalkBoxConfigurator extends JFrame implements TalkBoxConfiguration 
 				
 				buttonRecord.setText("Record");
 				buttonRecord.setIcon(iconRecord);
+				sound_buttons.get(counter).setText("**Done recording **");
 				setCursor(Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR));
 				recorder.stop();
 				setCursor(Cursor.getPredefinedCursor(Cursor.DEFAULT_CURSOR));
@@ -194,11 +278,9 @@ public class TalkBoxConfigurator extends JFrame implements TalkBoxConfiguration 
 		
 	}
 
-	public class PlayListener3 implements ActionListener {
+	public class soundListener implements ActionListener {
 
 		public void actionPerformed(ActionEvent e) {
-			
-			System.out.println(ConfiguratorController.saveFilePaths.get(0));
 			
 			for (int k = 0; k < counter; k++) {
 				
@@ -245,7 +327,7 @@ public class TalkBoxConfigurator extends JFrame implements TalkBoxConfiguration 
 
 	}
 
-	public class PlayListener implements ActionListener {
+	public class addListener implements ActionListener {
 
 		public void actionPerformed(ActionEvent event) {
 			
@@ -413,54 +495,37 @@ public class TalkBoxConfigurator extends JFrame implements TalkBoxConfiguration 
 	public static void main(String args[]) throws IOException, URISyntaxException {
 
 		TalkBoxConfigurator talkBoxConf = new TalkBoxConfigurator();
-
-        // Add window listener by implementing WindowAdapter class to
-        // the frame instance. To handle the close event we just need
-        // to implement the windowClosing() method.
-		talkBoxConf.addWindowListener(new WindowAdapter() {
-			
-            @Override
-            public void windowClosing(WindowEvent e) {
-            	
-        		int x = JOptionPane.showConfirmDialog(null, "Would you like to save and exit? (You will lose your current configuration if you don't save)",
-        				"Exit", JOptionPane.YES_NO_OPTION, JOptionPane.INFORMATION_MESSAGE);
-        		
-        		if(x == JOptionPane.NO_OPTION) {
-        			
-                	File dir = new File(ConfiguratorController.jDirectory);
-            		
-            		if(dir.isDirectory() == false) {
-            			
-            			System.out.println("Not a directory. Do nothing");
-            			return;
-            			
-            		}
-            		
-            		File[] listFiles = dir.listFiles();
-            		
-            		for(File file : listFiles){
-            			
-            			file.delete();
-            			
-            		}
-            		
-            		//now directory is empty, so we can delete it
-            		dir.delete();
-            		
-        			e.getWindow().dispose();
-            		
-                	System.exit(0);
-        			
-        		}
-                
-            }
-            
-        });
-
+		
         // Show the frame
 		talkBoxConf.setVisible(true);
 
 	}
+
+	static void deleteDirectoryRecursion(File file) throws IOException {
+		
+		  if (file.isDirectory()) {
+			  
+		    File[] entries = file.listFiles();
+		    
+		    if (entries != null) {
+		    	
+		      for (File entry : entries) {
+		    	  
+		        deleteDirectoryRecursion(entry);
+		        
+		      }
+		      
+		    }
+		    
+		  }
+		  
+		  if (!file.delete()) {
+			  
+		    throw new IOException("Failed to delete " + file);
+		    
+		  }
+		  
+		}
 
 
 	@Override

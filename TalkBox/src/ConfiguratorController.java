@@ -78,7 +78,7 @@ public class ConfiguratorController {
 	
 	public void save() {
 		
-		saveFilePath = jDirectory + "/audio/" + TalkBoxConfigurator.RecordCounter + ".wav";
+		saveFilePath = jDirectory + "/audio/" + "aud" + (TalkBoxConfigurator.counter+1) + ".wav";
 		File wavFile = new File(saveFilePath);
 		ConfiguratorController.saveFilePaths.add(saveFilePath);
 		filenames.add(saveFilePath);
