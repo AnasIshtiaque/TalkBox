@@ -1,18 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="ArtifactsWorkspaceSettings">
-    <artifacts-to-build>
-      <artifact name="TalkBox:jar" />
-    </artifacts-to-build>
-  </component>
   <component name="ChangeListManager">
-    <list default="true" id="75a764ad-5251-4729-b5c5-e91ab90d018f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../../JUnit/TeachingCode" beforeDir="false" afterPath="$PROJECT_DIR$/../../JUnit/TeachingCode" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../JavaProjects" beforeDir="false" afterPath="$PROJECT_DIR$/../../JavaProjects" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.." beforeDir="false" afterPath="$PROJECT_DIR$/.." afterDir="false" />
+    <list default="true" id="c011a209-260b-4be2-a866-af52cf5faba1" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/TalkBox_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/TalkBox.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/TalkBox.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Simulator.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TalkBox.iml" beforeDir="false" afterPath="$PROJECT_DIR$/TalkBox.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/FileDrop$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/FileDrop$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/FileDrop$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/FileDrop$2.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/FileDrop$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/FileDrop$3.class" afterDir="false" />
@@ -54,14 +49,23 @@
       <change beforePath="$PROJECT_DIR$/bin/essentials2.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/essentials2.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/simulator$PlayListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/simulator$PlayListener.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/simulator.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/simulator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TalkBox/simulator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TalkBox/simulator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/config/audio/aud1.wav" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/config/audio/aud1.wav" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/config/audio/aud2.wav" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/config/audio/aud2.wav" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/config/audio/aud3.wav" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/config/audio/aud3.wav" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/config/images/img2.png" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/config/images/img2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/config/images/img3.png" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/config/images/img3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/simulator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/simulator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Website" beforeDir="false" afterPath="$PROJECT_DIR$/../../Website" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/audio/aud1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/images/img1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TalkBoxConfigurator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TalkBoxConfigurator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bin/FileDrop$Event.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/bin/FileDrop$Event.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bin/FileDrop$Listener.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/bin/FileDrop$Listener.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bin/FileDrop$TransferableObject$Fetcher.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/bin/FileDrop$TransferableObject$Fetcher.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bin/FileDrop$TransferableObject.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/bin/FileDrop$TransferableObject.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bin/FileDrop.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/bin/FileDrop.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bin/TalkBoxConfiguration.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/bin/TalkBoxConfiguration.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bin/TalkBoxConfigurator$PlayListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/bin/TalkBoxConfigurator$PlayListener.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bin/TalkBoxConfigurator$PlayListener1.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/bin/TalkBoxConfigurator$PlayListener1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bin/TalkBoxConfigurator.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/bin/TalkBoxConfigurator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bin/TalkBoxSimulator.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/bin/TalkBoxSimulator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bin/essentials1.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/bin/essentials1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bin/essentials2.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/bin/essentials2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bin/simulator$PlayListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/bin/simulator$PlayListener.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bin/simulator.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/bin/simulator.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -73,28 +77,36 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/TalkBoxSimulator.java">
+        <entry file="file://$PROJECT_DIR$/src/TalkBoxConfiguration.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="25" column="49" selection-start-line="25" selection-start-column="49" selection-end-line="25" selection-end-column="49" />
+            <state>
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/simulator.java">
+        <entry file="file://$PROJECT_DIR$/src/TalkBoxConfigurator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="445">
-              <caret line="92" lean-forward="true" selection-start-line="92" selection-end-line="92" />
+            <state relative-caret-position="566">
+              <caret line="41" column="33" lean-forward="true" selection-start-line="41" selection-start-column="33" selection-end-line="41" selection-end-column="33" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/TalkBoxConfigurator.java">
+        <entry file="file://$PROJECT_DIR$/src/ConfiguratorController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="35" column="63" selection-start-line="35" selection-start-column="63" selection-end-line="35" selection-end-column="63" />
+            <state relative-caret-position="405">
+              <caret line="27" column="48" selection-start-line="27" selection-start-column="48" selection-end-line="27" selection-end-column="48" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -107,7 +119,8 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/simulator.java" />
+        <option value="$PROJECT_DIR$/src/TalkBoxConfigurator.java" />
+        <option value="$PROJECT_DIR$/src/ConfiguratorController.java" />
       </list>
     </option>
   </component>
@@ -121,6 +134,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -137,19 +152,15 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551126212477" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1554001827858" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Artifacts" />
-    <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -163,206 +174,102 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.TalkBoxSimulator">
-    <configuration name="TalkBoxConfigurator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="TalkBoxConfigurator" />
-      <module name="TalkBox" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TalkBoxSimulator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="TalkBoxSimulator" />
-      <module name="TalkBox" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Application.TalkBoxSimulator" />
-        <item itemvalue="Application.TalkBoxConfigurator" />
-      </list>
-    </recent_temporary>
-  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="75a764ad-5251-4729-b5c5-e91ab90d018f" name="Default Changelist" comment="" />
-      <created>1551073865132</created>
+      <changelist id="c011a209-260b-4be2-a866-af52cf5faba1" name="Default Changelist" comment="" />
+      <created>1553900300897</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1551073865132</updated>
-      <workItem from="1551073866430" duration="789000" />
-      <workItem from="1551114221966" duration="381000" />
-      <workItem from="1551115601246" duration="315000" />
-      <workItem from="1551118432525" duration="474000" />
-      <workItem from="1551211754713" duration="607000" />
+      <updated>1553900300897</updated>
+      <workItem from="1553900306142" duration="107000" />
+      <workItem from="1553970512234" duration="46000" />
+      <workItem from="1553988148283" duration="1788000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2566000" />
-  </component>
-  <component name="TodoView">
-    <todo-panel id="selected-file">
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
-    <todo-panel id="all">
-      <are-packages-shown value="true" />
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
+    <option name="totallyTimeSpent" value="1941000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12576313" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25579977" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
       <window_info id="Capture Tool" order="4" />
       <window_info id="UI Designer" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info id="Learn" order="7" />
+      <window_info id="simpleUML" order="7" />
+      <window_info id="Learn" order="8" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32959184" />
+      <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.32959184" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.31428573" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.32959184" />
+      <window_info anchor="bottom" id="Messages" order="10" />
       <window_info anchor="bottom" id="Database Changes" order="11" />
-      <window_info anchor="bottom" id="Version Control" order="12" weight="0.32959184" />
+      <window_info anchor="bottom" id="Version Control" order="12" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Maven" order="3" />
       <window_info anchor="right" id="Palette" order="4" />
       <window_info anchor="right" id="Capture Analysis" order="5" />
-      <window_info anchor="right" id="Database" order="6" />
-      <window_info anchor="right" id="Palette&#9;" order="7" />
-      <window_info anchor="right" id="Theme Preview" order="8" />
+      <window_info anchor="right" id="Code Iris" order="6" />
+      <window_info anchor="right" id="Database" order="7" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
+      <window_info anchor="right" id="Theme Preview" order="9" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/FileDrop.java">
+    <entry file="file://$PROJECT_DIR$/src/ConfiguratorController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="57" column="4" selection-start-line="57" selection-start-column="4" selection-end-line="57" selection-end-column="4" />
+        <state relative-caret-position="405">
+          <caret line="27" column="48" selection-start-line="27" selection-start-column="48" selection-end-line="27" selection-end-column="48" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/TalkBoxSimulator.java">
+    <entry file="file://$PROJECT_DIR$/src/TalkBoxConfiguration.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="25" column="49" selection-start-line="25" selection-start-column="49" selection-end-line="25" selection-end-column="49" />
+        <state>
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/TalkBoxConfigurator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="35" column="63" selection-start-line="35" selection-start-column="63" selection-end-line="35" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/simulator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="445">
-          <caret line="92" lean-forward="true" selection-start-line="92" selection-end-line="92" />
+        <state relative-caret-position="566">
+          <caret line="41" column="33" lean-forward="true" selection-start-line="41" selection-start-column="33" selection-end-line="41" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
   </component>
   <component name="masterDetails">
     <states>
-      <state key="ArtifactsStructureConfigurable.UI">
-        <settings>
-          <artifact-editor />
-          <last-edited>TalkBox:jar</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-                <option value="0.5" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="FacetStructureConfigurable.UI">
-        <settings>
-          <last-edited>No facets are configured</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="GlobalLibrariesConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="JdkListConfigurable.UI">
-        <settings>
-          <last-edited>9.0</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ModuleStructureConfigurable.UI">
-        <settings>
-          <last-edited>TalkBox</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-                <option value="0.6" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
       <state key="ProjectJDKs.UI">
         <settings>
-          <last-edited>11</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ProjectLibrariesConfigurable.UI">
-        <settings>
-          <last-edited>config</last-edited>
+          <last-edited>1.8</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -373,5 +280,56 @@
         </settings>
       </state>
     </states>
+  </component>
+  <component name="simpleUML.UMLToolWindowPlugin">
+    <General>
+      <option name="birdViewUpdateDelay" value="2000" />
+      <option name="knownFile0" value="file://$PROJECT_DIR$/../Config.suml" />
+      <option name="defaultFileLocation" value="file://$PROJECT_DIR$/.." />
+    </General>
+    <Classdiagram>
+      <option name="diagramTitleFont" value="SansSerif,1,12" />
+      <option name="diagramFont" value="SansSerif,0,10" />
+      <option name="defaultFieldsExpanded" value="false" />
+      <option name="defaultContructorsExpanded" value="false" />
+      <option name="defaultMethodsExpanded" value="false" />
+      <option name="showParameters" value="true" />
+      <option name="showTooltip" value="true" />
+      <option name="showReturnValues" value="true" />
+      <option name="longModifier" value="true" />
+      <option name="implementsBehaviour" value="1" />
+      <option name="extendsBehaviour" value="1" />
+      <option name="compartmentBehaviour" value="1" />
+      <option name="interfaceBackgroundColor" value="-6494306" />
+      <option name="abstractClassBackgroundColor" value="-1580132" />
+      <option name="classBackgroundColor" value="-6508057" />
+      <option name="diagramBackgroundColor" value="-1" />
+      <option name="useAntialiasedConnectors" value="true" />
+      <option name="quickSourceLinkColor" value="-16776961" />
+      <option name="quickDiagramLinkColor" value="-8454144" />
+      <option name="drawDecorations" value="false" />
+      <option name="hideFieldList" value="" />
+      <option name="showFieldList" value="" />
+      <option name="hideConstructorList" value="" />
+      <option name="showConstructorList" value="" />
+      <option name="hideMethodList" value="" />
+      <option name="showMethodList" value="" />
+      <option name="minimumFigureSize" value="0,0" />
+    </Classdiagram>
+    <Dependencydiagram>
+      <option name="diagramTitleFont" value="SansSerif,1,12" />
+      <option name="diagramFont" value="SansSerif,0,10" />
+      <option name="diagramBackgroundColor" value="-1" />
+      <option name="useAntialiasedConnectors" value="true" />
+      <option name="packageNameCompressionLevel" value="0" />
+    </Dependencydiagram>
+    <Packagediagram>
+      <option name="diagramTitleFont" value="SansSerif,0,12" />
+      <option name="diagramFont" value="SansSerif,0,10" />
+      <option name="packageBackgroundColor" value="-4144960" />
+      <option name="diagramBackgroundColor" value="-1" />
+      <option name="useAntialiasedConnectors" value="true" />
+      <option name="packageNameCompressionLevel" value="2" />
+    </Packagediagram>
   </component>
 </project>

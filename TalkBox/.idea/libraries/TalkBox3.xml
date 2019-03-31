@@ -1,7 +1,7 @@
 <component name="libraryTable">
-  <library name="TalkBox">
+  <library name="TalkBox3">
     <CLASSES>
-      <root url="jar://$PROJECT_DIR$/build/libs/TalkBox.jar!/" />
+      <root url="jar://$PROJECT_DIR$/out/artifacts/TalkBox_jar/TalkBox.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />
