@@ -422,28 +422,36 @@ public class TalkBoxConfigurator extends JFrame implements TalkBoxConfiguration 
             @Override
             public void windowClosing(WindowEvent e) {
             	
-        		File dir = new File(ConfiguratorController.jDirectory);
+        		int x = JOptionPane.showConfirmDialog(null, "Would you like to save and exit? (You will lose your current configuration if you don't save)",
+        				"Exit", JOptionPane.YES_NO_OPTION, JOptionPane.INFORMATION_MESSAGE);
         		
-        		if(dir.isDirectory() == false) {
+        		if(x == JOptionPane.NO_OPTION) {
         			
-        			System.out.println("Not a directory. Do nothing");
-        			return;
+                	File dir = new File(ConfiguratorController.jDirectory);
+            		
+            		if(dir.isDirectory() == false) {
+            			
+            			System.out.println("Not a directory. Do nothing");
+            			return;
+            			
+            		}
+            		
+            		File[] listFiles = dir.listFiles();
+            		
+            		for(File file : listFiles){
+            			
+            			file.delete();
+            			
+            		}
+            		
+            		//now directory is empty, so we can delete it
+            		dir.delete();
+            		
+        			e.getWindow().dispose();
+            		
+                	System.exit(0);
         			
         		}
-        		
-        		File[] listFiles = dir.listFiles();
-        		
-        		for(File file : listFiles){
-        			
-        			System.out.println("Deleting "+file.getName());
-        			file.delete();
-        			
-        		}
-        		
-        		//now directory is empty, so we can delete it
-        		dir.delete();
-        		
-            	System.exit(0);
                 
             }
             
