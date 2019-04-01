@@ -15,7 +15,8 @@ import java.util.List;
 import java.util.stream.*;
 
 public class TalkBoxSimulator extends JFrame {
-
+	
+	private Clip clip;
     private JFrame frame;
     ArrayList<JButton> buttons = new ArrayList<JButton>();
 
@@ -83,6 +84,9 @@ public class TalkBoxSimulator extends JFrame {
         }
 
     }
+    public boolean isPlaying() {
+		return clip.isActive();
+	}
 
     public class PlayListener implements ActionListener {
 
@@ -93,12 +97,42 @@ public class TalkBoxSimulator extends JFrame {
                 if(event.getSource().equals(buttons.get(k))){
 
                     try {
-
-                        AudioInputStream audioInputStream = AudioSystem.getAudioInputStream(new File(resultAud.get(k)));
-                        Clip clip = AudioSystem.getClip();
-                        clip.open(audioInputStream);
-                        clip.start();
-
+                    	File soundFile = new File(resultAud.get(k));
+//                        AudioInputStream audioInputStream = AudioSystem.getAudioInputStream(new File(resultAud.get(k)));
+//                        clip = AudioSystem.getClip();
+//                        clip.open(audioInputStream);
+//                        clip.start();
+     /* Here Here Here Here */if (clip == null) {
+							AudioInputStream audioIn = AudioSystem.getAudioInputStream(soundFile);
+						
+							// Get a sound clip resource.
+							clip = AudioSystem.getClip();
+							// Open audio clip and load samples from the audio input stream.
+							clip.open(audioIn);
+							clip.start();
+					
+							
+							// getRelativePathToAudioFiles();
+						}
+						/* here */else if (isPlaying()) {
+							System.out.println("STOP");
+			//if the sound is playing, stop it then open a new one to play;				
+							clip.stop();
+							AudioInputStream audioIn = AudioSystem.getAudioInputStream(soundFile);
+							//	System.out.println(ConfiguratorController.saveFilePaths.get(j));
+								// Get a sound clip resource.
+								clip = AudioSystem.getClip();
+								clip.open(audioIn);
+							clip.start();
+						/* here */} else {
+							AudioInputStream audioIn = AudioSystem.getAudioInputStream(soundFile);
+					
+							// Get a sound clip resource.
+							clip = AudioSystem.getClip();
+							clip.open(audioIn);
+							clip.start();
+						}
+     
                     }
 
                     catch (Exception e){
