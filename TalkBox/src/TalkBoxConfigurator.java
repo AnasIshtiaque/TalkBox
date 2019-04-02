@@ -183,7 +183,7 @@ public class TalkBoxConfigurator extends JFrame implements TalkBoxConfiguration 
 					setSize(width += 80, height);
 					img_buttons.add(new JButton("Drag image file... "));
 					add(img_buttons.get(counter));
-					sound_buttons.add(new JButton("Drag audio file... "));
+					sound_buttons.add(new JButton("Press to play "));
 					sound_buttons.get(counter).addActionListener(new soundListener());
 					getContentPane().add(new javax.swing.JScrollPane(sound_buttons.get(counter)), java.awt.BorderLayout.CENTER);
 
