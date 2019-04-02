@@ -2,8 +2,11 @@ import javax.sound.sampled.*;
 import javax.swing.*;
 import java.awt.*;
 import java.io.IOException;
+import java.io.PrintStream;
 import java.util.*;
 import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
 import java.net.URISyntaxException;
 import java.security.CodeSource;
 import java.awt.event.ActionEvent;
@@ -98,6 +101,7 @@ public class TalkBoxSimulator extends JFrame {
 
                     try {
                     	File soundFile = new File(resultAud.get(k));
+                    	System.out.println(resultAud.get(k)+"	Playing");
 //                        AudioInputStream audioInputStream = AudioSystem.getAudioInputStream(new File(resultAud.get(k)));
 //                        clip = AudioSystem.getClip();
 //                        clip.open(audioInputStream);
@@ -115,7 +119,8 @@ public class TalkBoxSimulator extends JFrame {
 							// getRelativePathToAudioFiles();
 						}
 						/* here */else if (isPlaying()) {
-							System.out.println("STOP");
+							System.out.println(resultAud.get(k)+" Stop playing");
+						//	System.out.println("STOP");
 			//if the sound is playing, stop it then open a new one to play;				
 							clip.stop();
 							AudioInputStream audioIn = AudioSystem.getAudioInputStream(soundFile);
@@ -149,9 +154,11 @@ public class TalkBoxSimulator extends JFrame {
 
     }
     
-    public static void main(String args[]) throws URISyntaxException {
+    public static void main(String args[]) throws URISyntaxException, FileNotFoundException {
     	
 		TalkBoxSimulator talkBoxSim = new TalkBoxSimulator();
+		PrintStream out = new PrintStream( new FileOutputStream("simulator.txt"));
+		System.setOut(out);
     	
     }
 
