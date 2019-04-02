@@ -183,7 +183,7 @@ public class TalkBoxConfigurator extends JFrame implements TalkBoxConfiguration 
 					setSize(width += 80, height);
 					img_buttons.add(new JButton("Drag image file... "));
 					add(img_buttons.get(counter));
-					sound_buttons.add(new JButton("Drag audio file... "));
+					sound_buttons.add(new JButton("Press to play "));
 					sound_buttons.get(counter).addActionListener(new soundListener());
 					getContentPane().add(new javax.swing.JScrollPane(sound_buttons.get(counter)), java.awt.BorderLayout.CENTER);
 
@@ -395,11 +395,36 @@ public class TalkBoxConfigurator extends JFrame implements TalkBoxConfiguration 
 									
 									try {
 										
-										AudioInputStream audioInputStream = AudioSystem.getAudioInputStream(source);
-										Clip clip = AudioSystem.getClip();
-										clip.open(audioInputStream);
-										clip.start();
-										
+										/* Here Here Here Here */if (clip == null) {
+											AudioInputStream audioIn = AudioSystem.getAudioInputStream(source);
+											//System.out.println(ConfiguratorController.saveFilePaths.get(j));
+											// Get a sound clip resource.
+											clip = AudioSystem.getClip();
+											// Open audio clip and load samples from the audio input stream.
+											clip.open(audioIn);
+											clip.start();
+											getAudioFileNames();
+											
+											// getRelativePathToAudioFiles();
+										}
+										/* here */else if (isPlaying()) {
+											System.out.println("STOP");
+							//if the sound is playing, stop it then open a new one to play;				
+											clip.stop();
+											AudioInputStream audioIn = AudioSystem.getAudioInputStream(source);
+											//	System.out.println(ConfiguratorController.saveFilePaths.get(j));
+												// Get a sound clip resource.
+												clip = AudioSystem.getClip();
+												clip.open(audioIn);
+											clip.start();
+										/* here */} else {
+											AudioInputStream audioIn = AudioSystem.getAudioInputStream(source);
+										//	System.out.println(ConfiguratorController.saveFilePaths.get(j));
+											// Get a sound clip resource.
+											clip = AudioSystem.getClip();
+											clip.open(audioIn);
+											clip.start();
+										}
 									} catch (Exception e1) {
 										
 										e1.printStackTrace();
@@ -467,14 +492,36 @@ public class TalkBoxConfigurator extends JFrame implements TalkBoxConfiguration 
 					try {
 
 						File soundFile = new File(cc.filenames.get(k)); // you could also get the sound file with an URL
-						AudioInputStream audioIn = AudioSystem.getAudioInputStream(soundFile);
-
-						// Get a sound clip resource.
-						Clip clip = AudioSystem.getClip();
-
-						// Open audio clip and load samples from the audio input stream.
-						clip.open(audioIn);
-						clip.start();
+						/* Here Here Here Here */if (clip == null) {
+							AudioInputStream audioIn = AudioSystem.getAudioInputStream(soundFile);
+							//System.out.println(ConfiguratorController.saveFilePaths.get(j));
+							// Get a sound clip resource.
+							clip = AudioSystem.getClip();
+							// Open audio clip and load samples from the audio input stream.
+							clip.open(audioIn);
+							clip.start();
+							getAudioFileNames();
+							
+							// getRelativePathToAudioFiles();
+						}
+						/* here */else if (isPlaying()) {
+							System.out.println("STOP");
+			//if the sound is playing, stop it then open a new one to play;				
+							clip.stop();
+							AudioInputStream audioIn = AudioSystem.getAudioInputStream(soundFile);
+							//	System.out.println(ConfiguratorController.saveFilePaths.get(j));
+								// Get a sound clip resource.
+								clip = AudioSystem.getClip();
+								clip.open(audioIn);
+							clip.start();
+						/* here */} else {
+							AudioInputStream audioIn = AudioSystem.getAudioInputStream(soundFile);
+						//	System.out.println(ConfiguratorController.saveFilePaths.get(j));
+							// Get a sound clip resource.
+							clip = AudioSystem.getClip();
+							clip.open(audioIn);
+							clip.start();
+						}
 
 						getAudioFileNames();
 						getRelativePathToAudioFiles();
