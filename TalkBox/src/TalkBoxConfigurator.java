@@ -9,8 +9,12 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.ItemEvent;
 import java.awt.event.ItemListener;
+import java.io.BufferedReader;
 import java.io.File;
+import java.io.FileOutputStream;
+import java.io.FileReader;
 import java.io.IOException;
+import java.io.PrintStream;
 import java.net.URISyntaxException;
 import java.nio.file.Path;
 import java.util.ArrayList;
@@ -75,10 +79,12 @@ public class TalkBoxConfigurator extends JFrame implements TalkBoxConfiguration 
             }
             
         });
-		
+		JButton log = new JButton("Simulator Log");
+		log.addActionListener(new LogListener());
 		cc.createDirectories();
 		addSet.addActionListener(new addSetListener());
 		JPanel a = new JPanel();
+	
 		a.setLayout(new BoxLayout(a, 1));
 		setSize(width, height);
 		setLayout(new GridLayout(1, 1));
@@ -90,6 +96,7 @@ public class TalkBoxConfigurator extends JFrame implements TalkBoxConfiguration 
 		reset.addActionListener(new resetListener());
 		a.add(buttonRecord);
 		a.add(reset);
+		
 		buttonRecord.setIcon(iconRecord);
 		setBox = new JComboBox<String>(setList);
 		
@@ -123,6 +130,7 @@ public class TalkBoxConfigurator extends JFrame implements TalkBoxConfiguration 
 	    setBox.setAlignmentX(alignment);
 	    buttonRecord.setAlignmentX(alignment);
 		add(a);
+		a.add(log);
 		setVisible(true);
 		
 
@@ -131,11 +139,45 @@ public class TalkBoxConfigurator extends JFrame implements TalkBoxConfiguration 
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		
 	}
+	public class LogListener implements ActionListener {
+		public void actionPerformed(ActionEvent cc) {
+			System.out.println("Log open");
+			final JTextArea edit = new JTextArea(30, 60);
+	        edit.setText("Press button below to see Simulator Log");
+	     //   edit.append("\nfour\nfive");
+
+	        JButton read = new JButton("Read Simulator Log");
+	        read.addActionListener( new ActionListener()
+	        {
+	            public void actionPerformed(ActionEvent e)
+	            {
+	                try
+	                {
+	                    FileReader reader = new FileReader( "simulator.txt" );
+	                    BufferedReader br = new BufferedReader(reader);
+	                    edit.read( br, null );
+	                    br.close();
+	                    edit.requestFocus();
+	                }
+	                catch(Exception e2) { System.out.println(e2); }
+	            }
+	        });
+
+	        JFrame frame = new JFrame("Configurator Log");
+	        frame.getContentPane().add( new JScrollPane(edit), BorderLayout.NORTH );
+	        frame.getContentPane().add(read, BorderLayout.WEST);
+	    //    frame.getContentPane().add(write, BorderLayout.EAST);
+	      //  frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+	        frame.pack();
+	        frame.setLocationRelativeTo( null );
+	        frame.setVisible(true);
+	    }
+		}
 	
 	public class addSetListener implements ActionListener {
 		
 		public void actionPerformed(ActionEvent ev) {
-			
+			System.out.println("New Set added");
 			setCount++;
 			setBox.addItem("Set_" + setCount);
 			setBox.getItemAt(setCount-1);
@@ -151,7 +193,7 @@ public class TalkBoxConfigurator extends JFrame implements TalkBoxConfiguration 
 	public class resetListener implements ActionListener {
 		
 		public void actionPerformed(ActionEvent event) {
-			
+			System.out.println("Reset button pressed");
 			cc.resetDirectories();
 			sound_buttons.clear();
 			img_buttons.clear();
@@ -178,7 +220,7 @@ public class TalkBoxConfigurator extends JFrame implements TalkBoxConfiguration 
 			if (button == buttonRecord) {
 				
 				if (!isRecording) {
-					
+					System.out.println("Recording");
 					startRecording();
 					setSize(width += 80, height);
 					img_buttons.add(new JButton("Drag image file... "));
@@ -216,7 +258,7 @@ public class TalkBoxConfigurator extends JFrame implements TalkBoxConfiguration 
 					});
 
 				} else {
-					
+					System.out.println("Stop Recording");
 					stopRecording();
 
 				}
@@ -283,7 +325,7 @@ public class TalkBoxConfigurator extends JFrame implements TalkBoxConfiguration 
 		 * Save the recorded sound into a WAV file.
 		 */
 		private void saveFile() {
-		
+			System.out.println("Record file saved");
 			cc.save();
 			RecordCounter++;
 			counter++;
@@ -305,7 +347,7 @@ public class TalkBoxConfigurator extends JFrame implements TalkBoxConfiguration 
 						try {
 
 							File soundFile = new File(ConfiguratorController.saveFilePaths.get(j)); // you could also get the sound file with
-																				// an URL
+									System.out.print(cc.filenames.get(k)+ "Playing");											// an URL
 							
 					/* Here Here Here Here */if (clip == null) {
 								AudioInputStream audioIn = AudioSystem.getAudioInputStream(soundFile);
@@ -320,7 +362,7 @@ public class TalkBoxConfigurator extends JFrame implements TalkBoxConfiguration 
 								// getRelativePathToAudioFiles();
 							}
 							/* here */else if (isPlaying()) {
-								System.out.println("STOP");
+								System.out.println(cc.filenames.get(k)+"	STOP playing");
 				//if the sound is playing, stop it then open a new one to play;				
 								clip.stop();
 								AudioInputStream audioIn = AudioSystem.getAudioInputStream(soundFile);
@@ -366,6 +408,7 @@ public class TalkBoxConfigurator extends JFrame implements TalkBoxConfiguration 
 		public void actionPerformed(ActionEvent event) {
 			
 			// int NewCounter = counter+RecordCounter;
+			System.out.println("New Button added");
 			setSize(width += 80, height);
 			builder = new StringBuilder();
 			img_buttons.add(new JButton("Drag image file... "));
@@ -381,7 +424,7 @@ public class TalkBoxConfigurator extends JFrame implements TalkBoxConfiguration 
 					for (int i = 0; i < files.length; i++) {
 
 						try {
-							
+							System.out.println("Sound added");
 							cc.audioFileDrop(files, i);
 							File source = new File(files[i].getCanonicalPath());
 							sound_buttons.get(counter - 1).setText(files[i].getName());
@@ -394,7 +437,7 @@ public class TalkBoxConfigurator extends JFrame implements TalkBoxConfiguration 
 								public void actionPerformed(ActionEvent e) {
 									
 									try {
-										
+										System.out.println(source.toString() + "	Playing");
 										/* Here Here Here Here */if (clip == null) {
 											AudioInputStream audioIn = AudioSystem.getAudioInputStream(source);
 											//System.out.println(ConfiguratorController.saveFilePaths.get(j));
@@ -408,7 +451,8 @@ public class TalkBoxConfigurator extends JFrame implements TalkBoxConfiguration 
 											// getRelativePathToAudioFiles();
 										}
 										/* here */else if (isPlaying()) {
-											System.out.println("STOP");
+											System.out.println(source.toString() + " 	stop playing");
+										//	System.out.println("STOP");
 							//if the sound is playing, stop it then open a new one to play;				
 											clip.stop();
 											AudioInputStream audioIn = AudioSystem.getAudioInputStream(source);
@@ -454,7 +498,7 @@ public class TalkBoxConfigurator extends JFrame implements TalkBoxConfiguration 
 					for (int i = 0; i < files.length; i++) {
 
 						try {
-							
+							System.out.println("Icon added");
 							cc.imageFileDrop(files, i);
 							ImageIcon img = new ImageIcon("" + cc.images.get(counter - 1));
 							img_buttons.get(counter - 1).setIcon(img);
@@ -490,7 +534,7 @@ public class TalkBoxConfigurator extends JFrame implements TalkBoxConfiguration 
 						&& cc.builders.get(k).toString().equals(sound_buttons.get(k).getText())) {
 
 					try {
-
+						System.out.println(cc.builders.get(k).toString()+"plaing");
 						File soundFile = new File(cc.filenames.get(k)); // you could also get the sound file with an URL
 						/* Here Here Here Here */if (clip == null) {
 							AudioInputStream audioIn = AudioSystem.getAudioInputStream(soundFile);
@@ -505,7 +549,7 @@ public class TalkBoxConfigurator extends JFrame implements TalkBoxConfiguration 
 							// getRelativePathToAudioFiles();
 						}
 						/* here */else if (isPlaying()) {
-							System.out.println("STOP");
+							System.out.println(cc.builders.get(k).toString()+"STOP playing");
 			//if the sound is playing, stop it then open a new one to play;				
 							clip.stop();
 							AudioInputStream audioIn = AudioSystem.getAudioInputStream(soundFile);
@@ -576,7 +620,8 @@ public class TalkBoxConfigurator extends JFrame implements TalkBoxConfiguration 
 	public static void main(String args[]) throws IOException, URISyntaxException {
 
 		TalkBoxConfigurator talkBoxConf = new TalkBoxConfigurator();
-		
+		PrintStream out = new PrintStream( new FileOutputStream("out.txt"));
+		System.setOut(out);
         // Show the frame
 		talkBoxConf.setVisible(true);
 
@@ -585,7 +630,7 @@ public class TalkBoxConfigurator extends JFrame implements TalkBoxConfiguration 
 	static void deleteDirectoryRecursion(File file) throws IOException {
 		
 		  if (file.isDirectory()) {
-			  
+			  System.out.println("Delete files");
 		    File[] entries = file.listFiles();
 		    
 		    if (entries != null) {
