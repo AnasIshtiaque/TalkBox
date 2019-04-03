@@ -498,6 +498,13 @@ public class TalkBoxConfigurator extends JFrame implements TalkBoxConfiguration 
 					for (int i = 0; i < files.length; i++) {
 
 						try {
+							
+							if(!ConfiguratorController.getFileExtension(files[i]).contains("png")) {
+								
+								JOptionPane.showMessageDialog( null, "Incorrect file format, please use .png file", "Error", JOptionPane.ERROR_MESSAGE);
+								break;
+								
+							}
 							System.out.println("Icon added");
 							cc.imageFileDrop(files, i);
 							ImageIcon img = new ImageIcon("" + cc.images.get(counter - 1));
