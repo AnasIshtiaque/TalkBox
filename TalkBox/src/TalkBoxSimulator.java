@@ -101,6 +101,7 @@ public class TalkBoxSimulator extends JFrame {
 
                     try {
                     	File soundFile = new File(resultAud.get(k));
+                    	System.out.println(java.util.Calendar.getInstance().getTime()+":");
                     	System.out.println(resultAud.get(k)+"	Playing");
 //                        AudioInputStream audioInputStream = AudioSystem.getAudioInputStream(new File(resultAud.get(k)));
 //                        clip = AudioSystem.getClip();
@@ -119,6 +120,7 @@ public class TalkBoxSimulator extends JFrame {
 							// getRelativePathToAudioFiles();
 						}
 						/* here */else if (isPlaying()) {
+							System.out.println(java.util.Calendar.getInstance().getTime()+":");
 							System.out.println(resultAud.get(k)+" Stop playing");
 						//	System.out.println("STOP");
 			//if the sound is playing, stop it then open a new one to play;				
