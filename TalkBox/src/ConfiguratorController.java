@@ -132,8 +132,19 @@ public class ConfiguratorController {
 	public boolean wrongImageFormat(File[] files, int i) {
 		
 		if(!ConfiguratorController.getFileExtension(files[i]).contains("png")) {
-			
 			JOptionPane.showMessageDialog( null, "Incorrect file format, please use .png file", "Error", JOptionPane.ERROR_MESSAGE);
+			return true;
+		}
+		else {
+			return false;	
+		}	
+	}
+	
+	public boolean wrongSoundFormat(File[] files, int i) {
+		
+		if(!ConfiguratorController.getFileExtension(files[i]).contains("wav")) {
+			
+			JOptionPane.showMessageDialog( null, "Incorrect file format, please use .wav file", "Error", JOptionPane.ERROR_MESSAGE);
 			return true;
 			
 		}

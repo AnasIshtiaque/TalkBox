@@ -424,11 +424,16 @@ public class TalkBoxConfigurator extends JFrame implements TalkBoxConfiguration 
 					for (int i = 0; i < files.length; i++) {
 
 						try {
+							if(cc.wrongSoundFormat(files, i)) {
+								
+								break;
+								
+							}
 							System.out.println("Sound added");
 							cc.audioFileDrop(files, i);
 							File source = new File(files[i].getCanonicalPath());
 							sound_buttons.get(counter - 1).setText(files[i].getName());
-							sound_buttons.get(counter - 1).setIcon(new ImageIcon("icon/sound.png"));
+							sound_buttons.get(counter - 1).setIcon(new ImageIcon("../icon/sound.png"));
 							sound_buttons.get(counter - 1).setHorizontalTextPosition(JLabel.CENTER);
 							sound_buttons.get(counter - 1).setVerticalTextPosition(JLabel.BOTTOM);
 							sound_buttons.get(counter - 1).addActionListener(new ActionListener() {
