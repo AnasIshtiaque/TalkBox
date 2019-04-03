@@ -141,7 +141,7 @@ public class TalkBoxConfigurator extends JFrame implements TalkBoxConfiguration 
 	}
 	public class LogListener implements ActionListener {
 		public void actionPerformed(ActionEvent cc) {
-			System.out.println(java.util.Calendar.getInstance().getTime());
+			System.out.println(java.util.Calendar.getInstance().getTime()+":");
 			System.out.println("Log open");
 			final JTextArea edit = new JTextArea(30, 60);
 	        edit.setText("Press button below to see Simulator Log");
@@ -178,7 +178,7 @@ public class TalkBoxConfigurator extends JFrame implements TalkBoxConfiguration 
 	public class addSetListener implements ActionListener {
 		
 		public void actionPerformed(ActionEvent ev) {
-			System.out.println(java.util.Calendar.getInstance().getTime());
+			System.out.println(java.util.Calendar.getInstance().getTime()+":");
 			System.out.println("New Set added");
 			setCount++;
 			setBox.addItem("Set_" + setCount);
@@ -195,7 +195,7 @@ public class TalkBoxConfigurator extends JFrame implements TalkBoxConfiguration 
 	public class resetListener implements ActionListener {
 		
 		public void actionPerformed(ActionEvent event) {
-			System.out.println(java.util.Calendar.getInstance().getTime());
+			System.out.println(java.util.Calendar.getInstance().getTime()+":");
 			System.out.println("Reset button pressed");
 			cc.resetDirectories();
 			sound_buttons.clear();
@@ -223,7 +223,7 @@ public class TalkBoxConfigurator extends JFrame implements TalkBoxConfiguration 
 			if (button == buttonRecord) {
 				
 				if (!isRecording) {
-					System.out.println(java.util.Calendar.getInstance().getTime());
+					System.out.println(java.util.Calendar.getInstance().getTime()+":");
 					System.out.println("Recording");
 					startRecording();
 					setSize(width += 80, height);
@@ -262,7 +262,7 @@ public class TalkBoxConfigurator extends JFrame implements TalkBoxConfiguration 
 					});
 
 				} else {
-					System.out.println(java.util.Calendar.getInstance().getTime());
+					System.out.println(java.util.Calendar.getInstance().getTime()+":");
 					System.out.println("Stop Recording");
 					stopRecording();
 
@@ -330,7 +330,7 @@ public class TalkBoxConfigurator extends JFrame implements TalkBoxConfiguration 
 		 * Save the recorded sound into a WAV file.
 		 */
 		private void saveFile() {
-			System.out.println(java.util.Calendar.getInstance().getTime());
+			System.out.println(java.util.Calendar.getInstance().getTime()+":");
 			System.out.println("Record file saved");
 			cc.save();
 			RecordCounter++;
@@ -357,7 +357,7 @@ public class TalkBoxConfigurator extends JFrame implements TalkBoxConfiguration 
 							
 					/* Here Here Here Here */if (clip == null) {
 								AudioInputStream audioIn = AudioSystem.getAudioInputStream(soundFile);
-								System.out.println(java.util.Calendar.getInstance().getTime());
+								System.out.println(java.util.Calendar.getInstance().getTime()+":");
 								System.out.println(ConfiguratorController.saveFilePaths.get(j));
 								// Get a sound clip resource.
 								clip = AudioSystem.getClip();
@@ -369,7 +369,7 @@ public class TalkBoxConfigurator extends JFrame implements TalkBoxConfiguration 
 								// getRelativePathToAudioFiles();
 							}
 							/* here */else if (isPlaying()) {
-								System.out.println(java.util.Calendar.getInstance().getTime());
+								System.out.println(java.util.Calendar.getInstance().getTime()+":");
 								System.out.println(cc.filenames.get(k)+"	STOP playing");
 				//if the sound is playing, stop it then open a new one to play;				
 								clip.stop();
@@ -381,7 +381,7 @@ public class TalkBoxConfigurator extends JFrame implements TalkBoxConfiguration 
 								clip.start();
 							/* here */} else {
 								AudioInputStream audioIn = AudioSystem.getAudioInputStream(soundFile);
-								System.out.println(java.util.Calendar.getInstance().getTime());
+								System.out.println(java.util.Calendar.getInstance().getTime()+":");
 								System.out.println(ConfiguratorController.saveFilePaths.get(j));
 								// Get a sound clip resource.
 								clip = AudioSystem.getClip();
@@ -417,7 +417,7 @@ public class TalkBoxConfigurator extends JFrame implements TalkBoxConfiguration 
 		public void actionPerformed(ActionEvent event) {
 			
 			// int NewCounter = counter+RecordCounter;
-			System.out.println(java.util.Calendar.getInstance().getTime());
+			System.out.println(java.util.Calendar.getInstance().getTime()+":");
 			System.out.println("New Button added");
 			setSize(width += 80, height);
 			builder = new StringBuilder();
@@ -439,10 +439,11 @@ public class TalkBoxConfigurator extends JFrame implements TalkBoxConfiguration 
 								break;
 								
 							}
-							System.out.println(java.util.Calendar.getInstance().getTime());
-							System.out.println("Sound added");
+							
 							cc.audioFileDrop(files, i);
 							File source = new File(files[i].getCanonicalPath());
+							System.out.println(java.util.Calendar.getInstance().getTime()+":");
+							System.out.println(files[i].getCanonicalPath()+"	Sound added");
 							sound_buttons.get(counter - 1).setText(files[i].getName());
 							sound_buttons.get(counter - 1).setIcon(new ImageIcon("../icon/sound.png"));
 							sound_buttons.get(counter - 1).setHorizontalTextPosition(JLabel.CENTER);
@@ -453,7 +454,7 @@ public class TalkBoxConfigurator extends JFrame implements TalkBoxConfiguration 
 								public void actionPerformed(ActionEvent e) {
 									
 									try {
-										System.out.println(java.util.Calendar.getInstance().getTime());
+										System.out.println(java.util.Calendar.getInstance().getTime()+":");
 										System.out.println(source.toString() + "	Playing");
 										/* Here Here Here Here */if (clip == null) {
 											AudioInputStream audioIn = AudioSystem.getAudioInputStream(source);
@@ -468,7 +469,7 @@ public class TalkBoxConfigurator extends JFrame implements TalkBoxConfiguration 
 											// getRelativePathToAudioFiles();
 										}
 										/* here */else if (isPlaying()) {
-											System.out.println(java.util.Calendar.getInstance().getTime());
+											System.out.println(java.util.Calendar.getInstance().getTime()+":");
 											System.out.println(source.toString() + " 	stop playing");
 										//	System.out.println("STOP");
 							//if the sound is playing, stop it then open a new one to play;				
@@ -525,7 +526,7 @@ public class TalkBoxConfigurator extends JFrame implements TalkBoxConfiguration 
 							
 							cc.imageFileDrop(files, i);
 							ImageIcon img = new ImageIcon("" + cc.images.get(counter - 1));
-							System.out.println(java.util.Calendar.getInstance().getTime());
+							System.out.println(java.util.Calendar.getInstance().getTime()+":");
 							System.out.println(cc.images.get(counter-1)+"	Icon added");
 							img_buttons.get(counter - 1).setIcon(img);
 							img_buttons.get(counter - 1).setText(files[i].getName());
@@ -560,7 +561,7 @@ public class TalkBoxConfigurator extends JFrame implements TalkBoxConfiguration 
 						&& cc.builders.get(k).toString().equals(sound_buttons.get(k).getText())) {
 
 					try {
-						System.out.println(java.util.Calendar.getInstance().getTime());
+						System.out.println(java.util.Calendar.getInstance().getTime()+":");
 						System.out.println(cc.builders.get(k).toString()+"plaing");
 						File soundFile = new File(cc.filenames.get(k)); // you could also get the sound file with an URL
 						/* Here Here Here Here */if (clip == null) {
@@ -576,7 +577,7 @@ public class TalkBoxConfigurator extends JFrame implements TalkBoxConfiguration 
 							// getRelativePathToAudioFiles();
 						}
 						/* here */else if (isPlaying()) {
-							System.out.println(java.util.Calendar.getInstance().getTime());
+							System.out.println(java.util.Calendar.getInstance().getTime()+":");
 							System.out.println(cc.builders.get(k).toString()+"STOP playing");
 			//if the sound is playing, stop it then open a new one to play;				
 							clip.stop();
@@ -658,7 +659,7 @@ public class TalkBoxConfigurator extends JFrame implements TalkBoxConfiguration 
 	static void deleteDirectoryRecursion(File file) throws IOException {
 		
 		  if (file.isDirectory()) {
-			  System.out.println(java.util.Calendar.getInstance().getTime());
+			  System.out.println(java.util.Calendar.getInstance().getTime()+":");
 			  System.out.println("Delete files");
 		    File[] entries = file.listFiles();
 		    
