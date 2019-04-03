@@ -1,6 +1,7 @@
 EECS 2311 - Talk Box Project
 
 TalkBox App Project made by Anas, Linwei, and Thanh (Group 8)
+
 Contents of Current Repository: 
     - TalkBox Folder (Java Project)
     - Docs Folder

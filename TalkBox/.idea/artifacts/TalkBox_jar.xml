@@ -1,8 +1,0 @@
-<component name="ArtifactManager">
-  <artifact type="jar" name="TalkBox:jar">
-    <output-path>$PROJECT_DIR$/out/artifacts/TalkBox_jar</output-path>
-    <root id="archive" name="TalkBox.jar">
-      <element id="module-output" name="TalkBox" />
-    </root>
-  </artifact>
-</component>
