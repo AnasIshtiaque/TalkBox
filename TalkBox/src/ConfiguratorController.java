@@ -9,6 +9,8 @@ import java.security.CodeSource;
 import java.util.ArrayList;
 import java.util.List;
 
+import javax.swing.JOptionPane;
+
 public class ConfiguratorController {
 	
 	public static String jDirectory;
@@ -124,6 +126,22 @@ public class ConfiguratorController {
 		File source = new File(filename);
 		File dest = new File(jDirectory + "/audio/aud" + TalkBoxConfigurator.counter + TalkBoxConfigurator.currentSet + "." + ConfiguratorController.getFileExtension(source));
 		Files.copy(source.toPath(), dest.toPath(), StandardCopyOption.REPLACE_EXISTING);
+		
+	}
+	
+	public boolean wrongImageFormat(File[] files, int i) {
+		
+		if(!ConfiguratorController.getFileExtension(files[i]).contains("png")) {
+			
+			JOptionPane.showMessageDialog( null, "Incorrect file format, please use .png file", "Error", JOptionPane.ERROR_MESSAGE);
+			return true;
+			
+		}
+		else {
+			
+			return false;
+			
+		}
 		
 	}
 

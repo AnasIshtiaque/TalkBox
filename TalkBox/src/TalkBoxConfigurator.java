@@ -499,9 +499,8 @@ public class TalkBoxConfigurator extends JFrame implements TalkBoxConfiguration 
 
 						try {
 							
-							if(!ConfiguratorController.getFileExtension(files[i]).contains("png")) {
+							if(cc.wrongImageFormat(files, i)) {
 								
-								JOptionPane.showMessageDialog( null, "Incorrect file format, please use .png file", "Error", JOptionPane.ERROR_MESSAGE);
 								break;
 								
 							}
