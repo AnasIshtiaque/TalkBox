@@ -646,16 +646,6 @@ public class TalkBoxConfigurator extends JFrame implements TalkBoxConfiguration 
 		return cc.RRfilenames;
 	}
 
-	public static void main(String args[]) throws IOException, URISyntaxException {
-
-		TalkBoxConfigurator talkBoxConf = new TalkBoxConfigurator();
-		PrintStream out = new PrintStream( new FileOutputStream("out.txt"));
-		System.setOut(out);
-        // Show the frame
-		talkBoxConf.setVisible(true);
-
-	}
-
 	static void deleteDirectoryRecursion(File file) throws IOException {
 		
 		  if (file.isDirectory()) {
@@ -696,5 +686,13 @@ public class TalkBoxConfigurator extends JFrame implements TalkBoxConfiguration 
 		return null;
 		
 	}
+	public static void main(String args[]) throws IOException, URISyntaxException {
 
+		TalkBoxConfigurator talkBoxConf = new TalkBoxConfigurator();
+		PrintStream out = new PrintStream( new FileOutputStream("out.txt"));
+		System.setOut(out);
+        // Show the frame
+		talkBoxConf.setVisible(true);
+
+	}
 }

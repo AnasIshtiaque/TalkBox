@@ -21,12 +21,12 @@ public class TalkBoxSimulator extends JFrame {
 	
 	private Clip clip;
     private JFrame frame;
-    ArrayList<JButton> buttons = new ArrayList<JButton>();
+    private ArrayList<JButton> buttons = new ArrayList<JButton>();
 
     CodeSource cs = TalkBoxConfigurator.class.getProtectionDomain().getCodeSource();
     File jF = new File(cs.getLocation().toURI().getPath());
-    String jDirectoryAud = jF.getParentFile().getPath()+"/config/audio";
-    String jDirectoryImg = jF.getParentFile().getPath()+"/config/images";
+    public String jDirectoryAud = jF.getParentFile().getPath()+"/config/audio";
+    public String jDirectoryImg = jF.getParentFile().getPath()+"/config/images";
     List<String> resultAud;
     List<String> resultImg;
 

@@ -4,15 +4,17 @@ import java.io.*;
 import javax.swing.*;
 import javax.swing.text.*;
 
-class TBCLog
+public class TBCLog extends JFrame
 {
-    public static void main(String a[])
-    {
-        final JTextArea edit = new JTextArea(30, 60);
-        edit.setText("Press button below to see Configurator Log");
-     //   edit.append("\nfour\nfive");
-
-        JButton read = new JButton("Read Configurator Log");
+	private JFrame frame;
+	private JButton read;
+	private final JTextArea edit = new JTextArea(30, 60);
+	
+	public TBCLog() {
+		frame = new JFrame("Configurator Log");
+		edit.setText("Press button below to see Configurator Log");
+        read = new JButton("Read Configurator Log");
+        
         read.addActionListener( new ActionListener()
         {
             public void actionPerformed(ActionEvent e)
@@ -29,31 +31,20 @@ class TBCLog
             }
         });
 
-//        JButton write = new JButton("Write TextAreaLoad.txt");
-//        write.addActionListener( new ActionListener()
-//        {
-//            public void actionPerformed(ActionEvent e)
-//            {
-//                try
-//                {
-//                    FileWriter writer = new FileWriter( "TextAreaLoad.txt" );
-//                    BufferedWriter bw = new BufferedWriter( writer );
-//                    edit.write( bw );
-//                    bw.close();
-//                    edit.setText("");
-//                    edit.requestFocus();
-//                }
-//                catch(Exception e2) {}
-//            }
-//        });
-
-        JFrame frame = new JFrame("Configurator Log");
-        frame.getContentPane().add( new JScrollPane(edit), BorderLayout.NORTH );
+		frame.getContentPane().add( new JScrollPane(edit), BorderLayout.NORTH );
         frame.getContentPane().add(read, BorderLayout.WEST);
-    //    frame.getContentPane().add(write, BorderLayout.EAST);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.pack();
         frame.setLocationRelativeTo( null );
         frame.setVisible(true);
+	}
+	
+	
+	
+    public static void main(String a[])
+    {
+        TBCLog log = new TBCLog();
+        log.setVisible(true);
+
     }
 }
