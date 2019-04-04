@@ -1,11 +1,10 @@
-/.DS_Store
+/.classpath
 /.project
 /META-INF/
 /Play.gif
 /Record.gif
 /Stop.gif
 /bin/
-/.classpath
-/out.txt
 /config/
+/out.txt
 /simulator.txt
